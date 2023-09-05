@@ -1,0 +1,193 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,500&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,500&family=Nunito+Sans:opsz,wght@6..12,800&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo:#FFF;
+    --borde:#DCDCDC;
+    --tipo_letra:#808080;
+    --color_button:#2F2F2F;
+    --button-modi:#6966FF;
+    --texto-letra:#242331;
+    --fondo_but:#D3D3D3;
+}
+body{
+    text-align: center;
+}
+.compare{
+    color: #242331;
+font-family: Nunito;
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 123%; /* 49.2px */
+}
+/*solo tarjetas */
+
+.tarjetas{
+    display: flex;
+    width: 65%;
+    padding-top: 65px;
+    margin: auto;
+    justify-content: space-evenly;
+    gap: 18px;
+    background-color: var(--fondo);
+}
+.tarjetas__standar{
+   width: 35%;
+   border: 1px solid var(--borde);
+   border-radius: 25px;
+   height: 70%;
+}
+.tarjetas__standar:hover{
+   margin-top: -50px;
+
+}
+
+.tarjetas__supreme{
+    width: 35%;
+    border: 1px solid var(--borde);
+    border-radius: 25px;
+    height: 70%;
+}
+.tarjetas__supreme:hover{
+    margin-top: -50px;
+ 
+ }
+ 
+.standar__save{
+   padding: 12px 20px;
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    border-bottom: 1.2px solid var(--borde) ;
+}
+
+.save__titulo{
+    color: #2F2F2F;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 22px */
+    text-transform: uppercase;
+}
+.billed__cantidad{
+    color: #2F2F2F;
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 44px */
+}
+.billed__annu{
+    color: #808080;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.5%; /* 30.1px */
+}
+.save__button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--color_button);
+    color: var(--fondo);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    border: none;
+}
+.tarjetas__billed{
+    display: flex;
+    padding: 12px 25px;
+    justify-content:space-between;
+    border-bottom: 1.2px solid var(--borde) ;
+}
+.tarjetas__social{
+    padding: 45px;
+}
+.social_p{
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.social__img{
+    margin-right: 15px;
+}
+.social__p_difere{
+    color: var(--tipo_letra);
+}
+.supreme{
+    padding: 0;
+    border-radius: 22px;
+    width:115px ;
+    height: 47px;
+    background: none;
+}
+.supreme_im{
+    height: 90%;
+    width: 95%;
+}
+.billed__get_but{
+    margin: 16px;
+    background-color: var(--fondo);
+    border: var(--tipo_letra) 1px solid;
+    padding: 12px 82px;
+    color: var(--texto-letra);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 15px;
+}
+
+/*siguiente parte */ 
+
+.conten-money{
+    margin:50px auto;
+    width: 65%;
+    height: 30vh;
+    border-radius: 30px;
+    background: #F6F6F6;
+    padding: 20px 30px;
+    display: flex;
+    font-family: Mulish;
+    gap: 20px;
+        line-height: 20px;
+}
+.conten-money img{ 
+    height: 100%;
+}
+.contenn{
+    height: 100%;
+}
+.contenn-texto p{
+    color: #808080;
+    font-family: Mulish; 
+    margin-bottom: 10px;
+   
+}
+.contenn-texto h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+  
+}
