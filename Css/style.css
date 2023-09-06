@@ -9,19 +9,24 @@ header{
     align-items: center;
     padding: 0px 80px;
     justify-content: space-between;
-    height: 80px;
+    height: 100px;
     /* border: 1px solid red; */
 }
 
 header .titulo__pagina{
     display: flex;
-    font-size: 14px;
+    font-size: 1vw;
 }
 
 .titulo__pagina div{
     display: grid;
     place-items: center;
     padding-right: 10px;
+    width: 30%;
+}
+
+header li{
+    font-size: 1vw;
 }
 
 header ul{
@@ -32,6 +37,7 @@ header ul{
 
 header ul div p{
     font-size: 10px;
+    color: #CFCFCF;
 }
 
 header .carrito__buttom{
@@ -41,6 +47,7 @@ header .carrito__buttom{
 
 .carrito__buttom div{
     padding-right: 20px;
+    margin-top: 2px;
 }
 
 .carrito__buttom img{
@@ -126,8 +133,8 @@ header .carrito__buttom{
 .fechas__redes{
     position: absolute;
     width: 70%;
-    height: 62%;
-    bottom: -110px;
+    height: 74%;
+    bottom: -30%;
     box-shadow: 0px 28px 22px 0px rgba(0, 0, 255, 0.30);
     border-radius: 26px;
 }
@@ -139,10 +146,349 @@ header .carrito__buttom{
 
 .marcas{
     /* border: 1px solid red; */
-    margin-top: 80px;
+    margin-top: 10%;
     height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
+
+/*------------------------Estilos sentir__herramientas----------------------------*/
+
+.sentir__herramientas{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conten__herramientas{
+    /* border: 1px solid blue; */
+    width: 86%;
+    height: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.conten__herramientas article{
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.conten__herramientas h2{
+    font-size: 2.6vw;
+}
+
+.conten__herramientas .descricion{
+    margin-top: 2.6vh;
+    padding-bottom: 2vh;
+    width: 78%;
+    font-size: 1.2vw;
+    color: #808080;
+}
+
+.conten__herramientas div{
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    gap: 0.5vw;
+}
+
+.conten__herramientas img{
+    width: 1.4vw;
+}
+
+.conten__herramientas div p{
+    font-size: 1.3vw;
+}
+
+.conten__herramientas button{
+    margin-top: 4vh;
+    font-size: 0.9vw;
+    font-weight: 600;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 12vw;
+    border: none;
+    background: #2F2F2F;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+
+.img__herramienta img{
+    width: 110%;
+}
+
+/*---------------------*/
+
+/*------------------------Estilos funciones----------------------------*/
+
+.funciones{
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todasLas_funciones{
+    height: 94%;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todasLas_funciones h2{
+    font-size: 2vw;
+    margin-top: 6vh;
+}
+
+.contenedor__funciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+}
+
+.cuadros__funciones{
+    border: 1px solid #cacaca;
+    width: 26vw;
+    height: 46vh;
+    border-radius: 1vw;
+    margin-top: 6vh;
+}
+
+.cuadros__funciones .btn__primero{
+    margin-top: 3vh;
+    margin-left: 1vw;
+    width: 26%;
+    height: 5vh;
+    border-radius: 20vw;
+    border: none;
+    background-color: #e0e0e0;
+    font-size: 1vw;
+}
+
+.cuadros__funciones h3{
+    margin-top: 4vh;
+    margin-left: 1vw;
+    font-size: 1.8vw;
+}
+
+.cuadros__funciones p{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    color: #808080;
+}
+
+.cuadros__funciones div{
+    border-top: 1px solid #DCDCDC;
+    width: 23vw;
+    padding-top: 3vh;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cuadros__funciones div img{
+    width: 3vw;
+}
+
+.cuadros__funciones div button{
+    width: 8vw;
+    height: 6vh;
+    border-radius: 2vw;
+    border: 1px solid #DCDCDC;
+    font-size: 0.9vw;
+}
+
+/*---------------------*/
+
+/*------------------------Estilos Footer----------------------------*/
+footer{
+    padding:4% 7% 2% 7%;
+}
+.Footer_Cuerpo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.Footer_Encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+    border-top: 0.1vw solid #DCDCDC;
+    border-bottom: 0.1vw solid #DCDCDC;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+.Logo img{
+    width: 4vw;
+    height: 2vw;
+}
+.Logo h2{
+    font-size: 1.6vw;
+}
+.Footer_Encabezado button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    text-align: center;
+    border: 0.1vw solid #DCDCDC;
+    background-color: white;
+    padding: 1vw 1.5vw;
+    border-radius: 2vw;
+}
+.Footer_Medio{
+    grid-template-columns: 60% 37%;
+    display: grid;
+    padding: 4vw 0;
+    gap: 2.5vw;
+}
+.Footer_Links{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    width: 100%;
+}
+.Resources,.Utility_Pages{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.Utility_Pages{
+    border-right: 0.1vw solid #DCDCDC;
+}
+.Resources,.Utility_Pages h3{
+    font-family: "Mulish";
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Links a{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 2vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #808080;
+}
+.Careers{
+    display: flex;
+    padding-top: 26%;
+}
+.startup_25{
+    display: grid;
+    grid-template-columns: 50% 48%;
+    background-color: #2F2F2F;
+    align-items: center;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 2vw;
+    width: 100%;
+}
+.startup_izquierda{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    border-right: 0.1vw solid #646464;
+}
+.startup_izquierda img{
+    width: 8vw;
+}
+.startup_izquierda h4{
+    font-family: "Mulish";
+    font-size: 1.4vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.startup_izquierda span{
+    font-family: "Mulish";
+    font-size: 3vw;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.startup_izquierda button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #424242;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2vw;
+    width: 11.5vw;
+    height: 3.6vw;
+    cursor: pointer;
+}
+.startup_derecha{
+    display: flex;
+    flex-direction: column;
+}
+.startup_derecha article{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.startup_derecha img{
+    width: 1.1vw;
+    height: 1.1vw;
+}
+.startup_derecha h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.startup_derecha span{
+    color: #38D4FF;
+}
+.Footer_Final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vw;
+    border-top: 0.1vw solid #DCDCDC;
+}
+.Footer_Final h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+}
+.Footer_Final span{
+    font-weight: 700;
+    color: #2F2F2F;
+}
+.Redes_Footer{
+    display: flex;
+    gap: 1vw;
+}
+.Redes_Footer img{
+    width: 1.3vw;
+    height: 1.3vw;
+}
+/* ------------------------ */
