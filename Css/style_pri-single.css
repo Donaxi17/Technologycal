@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo:#FFF;
+    --borde:#DCDCDC;
+    --tipo_letra:#808080;
+    --color_button:#2F2F2F;
+    --button-modi:#6966FF;
+    --texto-letra:#242331;
+    --fondo_but:#D3D3D3;
+}
