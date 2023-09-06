@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,500&family=Nunito+Sans:opsz,wght@6..12,800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo:#FFF;
+    --borde:#DCDCDC;
+    --tipo_letra:#808080;
+    --color_button:#2F2F2F;
+    --button-modi:#6966FF;
+    --texto-letra:#242331;
+    --fondo_but:#D3D3D3;
+    --color:#5956E9;
+}
+.carer__become{
+    margin: auto;
+    width: 70%;
+}
+.become__experts{
+    padding: 55px 0px;
+    text-align: center;
+}
+.become__marketing{
+    margin-left: 75px;
+    border-bottom: 1.2px solid var(--tipo_letra);
+}
+.professional{
+    color:var(--color_button);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 142%; /* 71px */
+}
+.professional_modi{
+    color: var(--color);
+}
+.become__marke{
+    color: var(--color_button);
+    font-family: Mulish;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 44px */
+    padding-bottom: 45px;
+}
+.become__marketing{
+    display: flex;
+    padding-top: 20px;
+}
+.marketing__copywrite{
+    width: 75%;
+}
+.marketing__play-now{
+    width: 25%;
+    padding: 65px 12px;
+}
+.play-now__button{
+    padding: 18px 45px;
+    background-color: var(--borde);
+    border: none;
+    border-radius: 50px;
+}
+.play-now__button:hover{
+    background-color: var(--color_button);
+    color: var(--fondo);
+}
+
+.copywrite__lorem{
+    color: var(--tipo_letra);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.5%; /* 30.1px */
+    padding-bottom: 35px;
+}
+
+.copywrite__title{
+    color: var(--color_button);
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 33px */
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+.copywrite__part{
+    color: #242331;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.5%; /* 33.3px */
+    padding-bottom: 12px;
+}
+.part__modi{
+    color: var(--color);
+}
+.modificado{
+    padding-top: 115px;
+}
+
+/*parte de boton azul */
+
+.experts__can{
+    color: var(--color_button);
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 33px */
+
+}
+.experts_pro{
+    color:var(--tipo_letra);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.5%; /* 30.1px */
+    padding: 22px 0px;
+}
+.experts__contact{
+    background-color: var(--color);
+    color: var(--fondo);
+    font-size: 15px;
+    width: 228px;
+    padding: 25px 38px 26px 38px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 10px;
+    border-radius: 50px;
+}
+.experts__contact:hover{
+    background-color: var(--fondo);
+    color: var(--color_button);
+}
+
+/* ultima parte foto mujer */
+
+.carer__happy{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.happy__family{
+    width: 70%;
+    margin: auto;
+    background-color: #808080;
+    text-align: center;
+}
+
+.mujer{
+    max-width: 54%;
+    border-radius: 50%;
+    margin-left: -85px;
+    position:absolute;
+}
+.family__imagenes{
+    margin: auto;
+    border-radius: 50%;
+   
+}
+.img_comillas{
+    margin-left: -98px;
+    padding-top: 85px;
+  position: relative;
+}
