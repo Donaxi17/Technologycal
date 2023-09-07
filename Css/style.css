@@ -655,16 +655,132 @@ header .carrito__buttom{
 
 /*---------------------*/
 
+/*------------------------Estilos ultimas_noticias----------------------------*/
+
+.ultimas_noticias{
+    height: 110vh;
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ultimas_titulo{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-between;
+    width: 72vw;
+    height: 14vh;
+}
+
+.ultimas_titulo h2{
+    font-size: 2.4vw;
+}
+
+.ultimas_titulo p{
+    font-size: 1vw;
+    width: 34vw;
+    margin-top: 2vh;
+    color: #808080;
+}
+
+.ultimas_titulo button{
+    font-size: 0.9vw;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 2vw;
+    border: 1px solid #DCDCDC;
+    background: white;
+    margin-top: 4vh;
+    user-select: none;
+    cursor: pointer;
+}
+
+.noticias__article{
+    display: flex;
+    gap: 2.8vw;
+    margin-top: 8vh;
+    width: 72vw;
+    height: 74vh;
+}
+
+.noticias__article section{
+    width: 22.1vw;
+}
+
+.noticias__article .img_noticia{
+    width: 22vw;
+    height: 38vh;
+    position: relative;
+}
+
+.img_noticia div{
+    position: absolute;
+    bottom: 1.4vh;
+    left: 0.8vw;
+}
+
+.img_noticia button{
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    border-radius: 1vw;
+    margin-right: 0.4vw;
+    font-size: 0.8vw;
+    background: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.img_noticia img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8vw;
+}
+
+.fecha_noticia{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DCDCDC;
+    color: #808080;
+    font-size: 1vw;
+    height: 5vh;
+}
+
+.noticias__article h3{
+    margin-top: 2vh;
+    font-size: 1.6vw;
+}
+
+.noticias__article .descripcion__noticia{
+    margin-top: 2vh;
+    width: 22vw;
+    font-size: 1vw;
+    color: #808080;
+}
+
+.noticias__article h4{
+    margin-top: 3vh;
+    font-size: 1vw;
+}
+
+
+
+/*---------------------*/
+
 /*------------------------Estilos Footer----------------------------*/
 footer{
     padding:4% 7% 2% 7%;
 }
+
 .Footer_Cuerpo{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
+
 .Footer_Encabezado{
     display: flex;
     justify-content: space-between;
@@ -672,18 +788,22 @@ footer{
     border-top: 0.1vw solid #DCDCDC;
     border-bottom: 0.1vw solid #DCDCDC;
 }
+
 .Logo{
     display: flex;
     align-items: center;
     gap: 0.3vw;
 }
+
 .Logo img{
     width: 4vw;
     height: 2vw;
 }
+
 .Logo h2{
     font-size: 1.6vw;
 }
+
 .Footer_Encabezado button{
     font-family: "Mulish";
     font-size: 1.1vw;
@@ -693,25 +813,30 @@ footer{
     padding: 1vw 1.5vw;
     border-radius: 2vw;
 }
+
 .Footer_Medio{
     grid-template-columns: 60% 37%;
     display: grid;
     padding: 4vw 0;
     gap: 2.5vw;
 }
+
 .Footer_Links{
     display: grid;
     grid-template-columns: 35% 30% 35%;
     width: 100%;
 }
+
 .Resources,.Utility_Pages{
     display: flex;
     flex-direction: column;
     gap: 1.5vw;
 }
+
 .Utility_Pages{
     border-right: 0.1vw solid #DCDCDC;
 }
+
 .Resources,.Utility_Pages h3{
     font-family: "Mulish";
     font-size: 1.5vw;
@@ -719,11 +844,13 @@ footer{
     letter-spacing: 0em;
     text-align: left;
 }
+
 .Links{
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+
 .Links a{
     font-family: "Mulish";
     font-size: 1vw;
@@ -734,10 +861,12 @@ footer{
     text-decoration: none;
     color: #808080;
 }
+
 .Careers{
     display: flex;
     padding-top: 26%;
 }
+
 .startup_25{
     display: grid;
     grid-template-columns: 50% 48%;
@@ -748,27 +877,32 @@ footer{
     border-radius: 2vw;
     width: 100%;
 }
+
 .startup_izquierda{
     display: flex;
     flex-direction: column;
     gap: 0.6vw;
     border-right: 0.1vw solid #646464;
 }
+
 .startup_izquierda img{
     width: 8vw;
 }
+
 .startup_izquierda h4{
     font-family: "Mulish";
     font-size: 1.4vw;
     font-weight: 700;
     color: #FFFFFF;
 }
+
 .startup_izquierda span{
     font-family: "Mulish";
     font-size: 3vw;
     font-weight: 900;
     color: #FFFFFF;
 }
+
 .startup_izquierda button{
     font-family: "Mulish";
     font-size: 1.1vw;
@@ -783,19 +917,23 @@ footer{
     height: 3.6vw;
     cursor: pointer;
 }
+
 .startup_derecha{
     display: flex;
     flex-direction: column;
 }
+
 .startup_derecha article{
     display: flex;
     align-items: center;
     gap: 0.5vw;
 }
+
 .startup_derecha img{
     width: 1.1vw;
     height: 1.1vw;
 }
+
 .startup_derecha h4{
     font-family: "Mulish";
     font-size: 1vw;
@@ -805,9 +943,11 @@ footer{
     text-align: left;
     color: #FFFFFF;
 }
+
 .startup_derecha span{
     color: #38D4FF;
 }
+
 .Footer_Final{
     display: flex;
     justify-content: space-between;
@@ -815,6 +955,7 @@ footer{
     padding-top: 2vw;
     border-top: 0.1vw solid #DCDCDC;
 }
+
 .Footer_Final h4{
     font-family: "Mulish";
     font-size: 1vw;
@@ -823,14 +964,17 @@ footer{
     text-align: left;
     color: #808080;
 }
+
 .Footer_Final span{
     font-weight: 700;
     color: #2F2F2F;
 }
+
 .Redes_Footer{
     display: flex;
     gap: 1vw;
 }
+
 .Redes_Footer img{
     width: 1.3vw;
     height: 1.3vw;
