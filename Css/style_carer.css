@@ -149,14 +149,31 @@
 /* ultima parte foto mujer */
 
 .carer__happy{
+    margin-top: 34px;
+    padding-top: 30px;
     width: 70%;
     margin: auto;
     display: flex;
+    background-color:#F6F6F6;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 34px;
+   
+}
+.happy__flecha{
+    display: flex;
+    width: 20%;
+    
+}
+.flecha__centro{
+    margin: auto;
+   padding-top: 24px;
+    align-items: center;
+    
 }
 .happy__family{
-    width: 70%;
+    width: 60%;
     margin: auto;
-    background-color: #808080;
     text-align: center;
 }
 
@@ -173,6 +190,36 @@
 }
 .img_comillas{
     margin-left: -98px;
-    padding-top: 85px;
+    padding-top: 90px;
   position: relative;
+}
+.family__title{
+    color: var(--color_button);
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 33px */
+    padding: 18px 0px;
+
+}
+.family__Mick{
+    color: var(--texto-letra);
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 33px */
+    padding: 8px 0px;
+
+}
+.family__lorem{
+    color: var(--texto-letra);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 33px */
+    padding: 8px 0px;
+
 }
