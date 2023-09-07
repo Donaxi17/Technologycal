@@ -311,6 +311,103 @@ header .carrito__buttom{
 
 /*---------------------*/
 
+/*------------------------Estilos ayuda_amigos----------------------------*/
+
+.ayuda_amigos{
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.ayuda_amigos .fondo_ayuda_amigos{
+    width: 100%;
+    height: 100%;
+}
+
+.ayuda_amigos .titulo__btn{
+    position: absolute;
+    width: 74vw;
+    top: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.titulo__btn h2{
+    font-size: 2.5vw;
+}
+
+.titulo__btn p{
+    margin-top: 2vh;
+    font-size: 1.1vw;
+}
+
+.titulo__btn button{
+    width: 9vw;
+    height: 7vh;
+    border-radius: 10vw;
+    border: none;
+    font-size: 0.9vw;
+    user-select: none;
+    cursor: pointer;
+}
+
+.foto_amigos{
+    position: absolute;
+    height: 76vh;
+    width: 74vw;
+    top: 44vh;
+}
+
+.foto_amigos img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+.foto__button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 4vh;
+    left: 2vw;
+    background: white;
+    width: 16vw;
+    height: 10vh;
+    border-radius: 3vw;
+}
+
+.foto__button img{
+    width: 3.5vw;
+    height: 7vh;
+    margin-left: 0.4vw;
+    user-select: none;
+    cursor: pointer;
+}
+
+.foto__button p{
+    font-size: 0.9vw;
+    margin-left: 1vw;
+}
+
+.foto__button span{
+    color: #5956E9;
+}
+
+/*---------------------*/
+
+/*------------------------Estilos contantos__redesSociales----------------------------*/
+
+.contantos__redesSociales{
+    margin-top: 60vh;
+    height: 60vh;
+    border: 1px solid blue;
+}
+
+/*---------------------*/
+
 /*------------------------Estilos Footer----------------------------*/
 footer{
     padding:4% 7% 2% 7%;
