@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,500&family=Nunito+Sans:opsz,wght@6..12,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo:#FFF;
+    --borde:#DCDCDC;
+    --tipo_letra:#808080;
+    --color_button:#2F2F2F;
+    --button-modi:#6966FF;
+    --texto-letra:#242331;
+    --fondo_but:#D3D3D3;
+    --color:#5956E9;
+    --fondo-princing:#F6F6F6;
+}
+.single{
+    padding: 65px 0px;
+}
+.single__princing{
+    
+    margin: auto;
+    width: 70%;
+    display: flex;
+}
+.princing__chose{
+    width: 50%;
+    background-color: var(--fondo-princing);
+    height: 50%;
+    padding: 45px 35px;
+    border-radius: 18px;
+}
+.chose__title{
+    color:var(--color_button);
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 38.5px */
+}
+.chose__lorem{
+    padding-top: 15px;
+    color: var(--tipo_letra);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.5%; /* 30.1px */
+}
+.chose__cantidad{
+    padding-top: 25px;
+    color: var(--color_button);
+    font-family: Mulish;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 55px */
+}
+
+.chose__select{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 80%;
+    padding: 15px 25px;
+     border-radius: 39px;
+     font-size: 18px;
+    background-color:var(--fondo-princing);
+    border: 1px solid #D3D3D3;
+}
+.chose__add{
+    margin-top: 24px;
+    width: 80%;
+    padding: 18px;
+    border-radius: 39px;
+    border: none;
+    font-size: 18px;
+    color: var(--fondo);
+    background-color: var(--color);
+}
+
+.princing__automated{
+    width: 50%;
+    background-color: var(--fondo);
+    padding: 45px 15px;
+}
+.automated__title{
+    color: #2F2F2F;
+    font-family: Mulish;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 44px */
+}
+.automated__parrafo{
+    padding-top: 24px;
+    color: #808080;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.5%; /* 30.1px */
+}
+.listen__parrafo{
+    color: #2F2F2F;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125.9%; /* 31.475px */
+}
+.listen__imagen{
+    margin-right: 20px;
+    padding-top: 6px;
+}
+
+.automated__listen{
+    display: flex;
+    margin-top: 12px;
+    height: 4%;
+    margin-bottom: 30px;
+}
+
+/*parte de tarjetas */
+
+.Star{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    background: url("../Imagenes/Pricing_Single/Image\ \(4\).png");
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.Star__imagen{
+    width: 100%;
+    height: 100%;
+}
+.image__rotate{
+    width: 95%;
+    height: 100%;
+}
+.Star__your{
+    width: 50%;
+    
+}
+.Star__imagen{
+    margin-top: -6%;
+    width: 50%;
+    rotate: 3deg; 
+}
