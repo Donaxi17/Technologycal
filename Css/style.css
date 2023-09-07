@@ -543,6 +543,118 @@ header .carrito__buttom{
 
 /*---------------------*/
 
+/*------------------------Estilos nuestra_familia----------------------------*/
+
+.nuestra_familia{
+    margin-top: 12vh;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__nFamilia{
+    background: #ebebeb;
+    height: 140vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+}
+
+.content__nFamilia article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo__persona{
+    margin-top: 8vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo__persona h2{
+    font-size: 2.2vw;
+}
+
+.titulo__persona img{
+    margin-top: 6vh;
+    width: 18vw;
+}
+
+.titulo__persona p{
+    width: 36vw;
+    margin-top: 4vh;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.confianza__buffer{
+    margin-top: 6vh;
+    width: 60vw;
+    height: 40vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.30);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.confianza__buffer h2{
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 6vh;
+}
+
+.tiempo_persona{
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+}
+
+.tiempo_persona div{
+    text-align: center;
+}
+
+.tiempo_persona h3{
+    font-size: 2.1vw;
+    color: #5956E9;
+}
+
+.tiempo_persona p{
+    font-size: 1vw;
+    margin-top: 1vh;
+}
+
+.texto__btn{
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto__btn p{
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+.texto__btn button{
+    font-size: 1.2vw;
+    background: #2F2F2F;
+    color: white;
+    margin-top: 3vh;
+    width: 12vw;
+    height: 7vh;
+    border: none;
+    border-radius: 2vw;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+/*---------------------*/
+
 /*------------------------Estilos Footer----------------------------*/
 footer{
     padding:4% 7% 2% 7%;
