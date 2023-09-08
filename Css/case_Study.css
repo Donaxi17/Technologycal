@@ -115,7 +115,7 @@ header{
     position: absolute;
     color: white;
     top: 20vh;
-    left: 32vw;
+    left: 33vw;
 }
 
 .fondo__header h2{
@@ -126,209 +126,61 @@ header{
     font-size: 1.1vw;
     width: 22vw;
     margin-top: 2vh;
-    margin-left: 4vw;
+    margin-left: 2vw;
     text-align: center;
 }
 
 /* ------------------------------- */
 
-/* ------------------- Estilo section--noticias__article ------------------------- */
+/* ------------------- Estilo main ------------------------- */
 
-.section--noticias__article{
-    margin-top: 10vh;
+main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
     height: 180vh;
 }
 
-.noticias__article{
+main article{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.8vw;
-    margin-top: 2vh;
-    width: 72vw;
-    height: 160vh;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 5vw;
+    width: 70vw;
+    height: 170vh;
 }
 
-.noticias__article section{
-    width: 22.1vw;
-}
-
-.noticias__article .img_noticia{
-    width: 22vw;
-    height: 38vh;
-    position: relative;
-}
-
-.img_noticia div{
-    position: absolute;
-    bottom: 1.4vh;
-    left: 0.8vw;
-}
-
-.img_noticia button{
-    width: 8vw;
-    height: 5vh;
-    border: none;
-    border-radius: 1vw;
-    margin-right: 0.4vw;
-    font-size: 0.8vw;
-    background: white;
-    cursor: pointer;
-    user-select: none;
-}
-
-.img_noticia img{
-    width: 100%;
-    height: 100%;
-    border-radius: 0.8vw;
-}
-
-.fecha_noticia{
-    margin-top: 3vh;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #DCDCDC;
-    color: #808080;
-    font-size: 1vw;
-    height: 5vh;
-}
-
-.noticias__article h3{
-    margin-top: 2vh;
-    font-size: 1.6vw;
-}
-
-.noticias__article .descripcion__noticia{
-    margin-top: 2vh;
-    width: 22vw;
-    font-size: 1vw;
-    color: #808080;
-}
-
-.noticias__article h4{
-    margin-top: 3vh;
-    font-size: 1vw;
-}
-
-/*---------------------*/
-
-/*------------------------Estilos prueba_gratis----------------------------*/
-
-.prueba_gratis{
-    margin-top: 10vh;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.prueba_gratis .content__pruebaGratis{
-    position: relative;
-    gap: 1vw;
-    height: 70vh;
-    width: 80vw;
-}
-
-.fondo_prubaGratis {
-    height: 100%;
-    width: 100%;
-}
-
-.content__pruebaGratis .pruebaGratis__secciones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-}
-
-.pruebaGratis__secciones article{
-    color: white;
-    width: 34vw;
-    height: 42vh;
-}
-
-
-.pruebaGratis__secciones article h2{
-    font-size: 2.6vw;
-    margin-top: 3vh;
-}
-
-.pruebaGratis__secciones .descricion_pG{
-    font-size: 1vw;
-    margin-top: 1.4vh;
-    color: rgba(255, 255, 255, 0.86);
-}
-
-.pruebaGratis__secciones .mail_bok{
-    position: relative;
-    margin-top: 4vh;
-}
-
-.mail_bok input{
-    height: 9vh;
+main .content__grip{
     width: 30vw;
+}
+
+.cuadro__img,
+.cuadro__img img{
+    width: 100%;
+}
+
+.texto__cuadro{
+    margin-left: 3vw;
+}
+
+.texto__cuadro h4{
     font-size: 1.4vw;
-    padding-left: 1vw;
-    border-radius: 2vw;
-    border: none;
 }
 
-.mail_bok button{
-    position: absolute;
-    width: 8vw;
-    height: 8vh;
-    border-radius: 2vw;
-    border: none;
-    background: #2F2F2F;
-    color: white;
-    font-size: 1.3vw;
-    right: 4.2vw;
-    top: 0.5vh;
-    user-select: none;
-    cursor: pointer;
-}
-
-.section__3Puntos{
-    display: flex;
-    align-items: center;
-    margin-top: 2vh;
-}
-
-.section__3Puntos div{
-    display: flex;
-    margin-top: 1vh;
-    margin-right: 1.8vw;
-    align-items: center;
-}
-
-.section__3Puntos img{
-    width: 1.4vw;
-    height: 3.2vh;
-}
-
-.section__3Puntos p{
-    margin-left: 0.6vw;
-    margin-top: 0.4vh;
+.texto__cuadro p{
     font-size: 1vw;
+    margin-top: 1vh;
+    color: #2F2F2F;
 }
 
-.foto_pruebaGratis{
-    width: 110%;
-    margin-top: -26vh;
-}
-
-/*---------------------*/
+/* ------------------------------- */
 
 /*------------------------Estilos Footer----------------------------*/
+
 footer{
     padding:4% 7% 2% 7%;
-    margin-top: 10vh;
+    margin-top: 30vh;
 }
 
 .Footer_Cuerpo{
@@ -537,4 +389,3 @@ footer{
     height: 1.3vw;
 }
 /* ------------------------ */
-
