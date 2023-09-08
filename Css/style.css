@@ -6,79 +6,82 @@
 
 header{
     display: flex;
-    align-items: center;
-    padding: 0px 80px;
+    width: 100%;
     justify-content: space-between;
-    height: 100px;
-    /* border: 1px solid red; */
+    align-items: center;
+    padding: 2vw 3vw;
 }
-
-header .titulo__pagina{
-    display: flex;
-    font-size: 1vw;
-}
-
-.titulo__pagina div{
-    display: grid;
-    place-items: center;
-    padding-right: 10px;
-    width: 30%;
-}
-
-header li{
-    font-size: 1vw;
-}
-
-header ul{
-    display: flex;
-    gap: 40px;
-    list-style: none;
-}
-
-header ul div p{
-    font-size: 10px;
-    color: #CFCFCF;
-}
-
-header .carrito__buttom{
+.Header_Logo{
     display: flex;
     align-items: center;
+    gap: 0.3vw;
 }
-
-.carrito__buttom div{
-    padding-right: 20px;
-    margin-top: 2px;
+.Header_Logo img{
+    width: 3vw;
 }
-
-.carrito__buttom img{
-    width: 42px;
+.Header_Logo h2,.Logo h2{
+    font-family: "Mulish";
+    font-size: 1.6vw;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F2F2F;
+}
+.Header_Links{
+    display: flex;
+    gap: 2vw;
+}
+.Header_Links img{
+    width: 0.7vw;
+    height: 0.5vw;
+}
+.Header_Links a{
+    font-family: "Mulish";
+    font-size: 1.2vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+.Sing_up{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.Sing_up div{
+    display: flex;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    align-items: center;
+    justify-content:center;
+    background-color: #5956E9;
+}
+.Sing_up button{
+    font-family: "Open Sans";
+    font-size: 1.2vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2F2F2F;
     cursor: pointer;
-    user-select: none;
+    background-color: white;
+    border: 0.1vw solid #DCDCDC;
+    border-radius: 2vw;
+    width: 10vw;
+    height: 3vw;
 }
-
-.carrito__buttom button{
-    width: 100px;
-    height: 40px;
-    border-radius: 22px;
-    border: 1px solid rgba(0, 0, 0, 0.40);
-    color: rgba(0, 0, 0, 0.80);
-    background: white;
+.Sing_up img{
+    width: 3vw;
     user-select: none;
     cursor: pointer;
 }
 
-.carrito__buttom button:hover{
-    border: 1px solid rgba(0, 0, 0, 0.80);
-    color: black;
-}
 
 .encabezado{
-    margin-top: 20px;
-    width: 100%;
-    height: 600px;
+    margin-top: 2vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
-    /* border: 1px solid blue; */
 }
 
 
@@ -88,7 +91,6 @@ header .carrito__buttom{
     justify-content: center;
     width: 90%;
     height: 90%;
-    /* border: 1px solid red; */
 }
 
 .Background__img img{
@@ -98,10 +100,9 @@ header .carrito__buttom{
 
 .Background__img .encabezado__article{
     position: absolute;
-    top: 60px;
-    width: 700px;
-    height: 230px;
-    /* border: 1px solid black; */
+    top: 6vh;
+    width: 50vw;
+    height: 38vh;
 }
 
 .encabezado__article{
@@ -109,23 +110,24 @@ header .carrito__buttom{
 }
 
 .encabezado__article h2{
-    font-size: 42px;
+    font-size: 3vw;
     text-align: center;
 }
 
 .encabezado__article p{
-    margin-top: 10px;
+    margin-top: 2vh;
+    font-size: 1.1vw;
     text-align: center;
 }
 
 .encabezado__article button{
-    width: 200px;
-    height: 50px;
-    margin-top: 50px;
-    margin-left: 240px;
-    border-radius: 24px;
+    width: 14vw;
+    height: 8vh;
+    margin-top: 6vh;
+    margin-left: 18vw;
+    border-radius: 2vw;
+    font-size: 1vw;
     border: none;
-    font-weight: 600;
     user-select: none;
     cursor: pointer;
 }
@@ -145,18 +147,22 @@ header .carrito__buttom{
 }
 
 .marcas{
-    /* border: 1px solid red; */
-    margin-top: 10%;
-    height: 140px;
+    margin-top: 18vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 4vw;
+}
+
+.marcas img{
+    width: 9vw;
 }
 
 /*------------------------Estilos sentir__herramientas----------------------------*/
 
 .sentir__herramientas{
+    margin-top: 20vh;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -765,13 +771,123 @@ header .carrito__buttom{
     font-size: 1vw;
 }
 
+/*---------------------*/
 
+/*------------------------Estilos prueba_gratis----------------------------*/
+
+.prueba_gratis{
+    margin-top: 10vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prueba_gratis .content__pruebaGratis{
+    position: relative;
+    gap: 1vw;
+    height: 70vh;
+    width: 80vw;
+}
+
+.fondo_prubaGratis {
+    height: 100%;
+    width: 100%;
+}
+
+.content__pruebaGratis .pruebaGratis__secciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.pruebaGratis__secciones article{
+    color: white;
+    width: 34vw;
+    height: 42vh;
+}
+
+
+.pruebaGratis__secciones article h2{
+    font-size: 2.6vw;
+    margin-top: 3vh;
+}
+
+.pruebaGratis__secciones .descricion_pG{
+    font-size: 1vw;
+    margin-top: 1.4vh;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.pruebaGratis__secciones .mail_bok{
+    position: relative;
+    margin-top: 4vh;
+}
+
+.mail_bok input{
+    height: 9vh;
+    width: 30vw;
+    font-size: 1.4vw;
+    padding-left: 1vw;
+    border-radius: 2vw;
+    border: none;
+}
+
+.mail_bok button{
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    border-radius: 2vw;
+    border: none;
+    background: #2F2F2F;
+    color: white;
+    font-size: 1.3vw;
+    right: 4.2vw;
+    top: 0.5vh;
+    user-select: none;
+    cursor: pointer;
+}
+
+.section__3Puntos{
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.section__3Puntos div{
+    display: flex;
+    margin-top: 1vh;
+    margin-right: 1.8vw;
+    align-items: center;
+}
+
+.section__3Puntos img{
+    width: 1.4vw;
+    height: 3.2vh;
+}
+
+.section__3Puntos p{
+    margin-left: 0.6vw;
+    margin-top: 0.4vh;
+    font-size: 1vw;
+}
+
+.foto_pruebaGratis{
+    width: 110%;
+    margin-top: -26vh;
+}
 
 /*---------------------*/
 
 /*------------------------Estilos Footer----------------------------*/
 footer{
     padding:4% 7% 2% 7%;
+    margin-top: 10vh;
 }
 
 .Footer_Cuerpo{
