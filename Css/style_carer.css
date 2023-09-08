@@ -33,7 +33,7 @@
     color:var(--color_button);
     text-align: center;
     font-family: Mulish;
-    font-size: 35px;
+    font-size: 2.1vw;
     font-style: normal;
     font-weight: 800;
     line-height: 142%; /* 71px */
@@ -44,7 +44,7 @@
 .become__marke{
     color: var(--color_button);
     font-family: Mulish;
-    font-size: 35px;
+    font-size: 2.1vw;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 44px */
@@ -62,10 +62,11 @@
     padding: 65px 12px;
 }
 .play-now__button{
-    padding: 18px 45px;
+    padding: 1.2vw 3.2vw;
     background-color: var(--borde);
     border: none;
-    border-radius: 50px;
+    border-radius: 2vw;
+    font-size: 1vw;
 }
 .play-now__button:hover{
     background-color: var(--color_button);
@@ -75,7 +76,7 @@
 .copywrite__lorem{
     color: var(--tipo_letra);
     font-family: Mulish;
-    font-size: 18px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150.5%; /* 30.1px */
@@ -85,7 +86,7 @@
 .copywrite__title{
     color: var(--color_button);
     font-family: Mulish;
-    font-size: 30px;
+    font-size: 1.8vw;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 33px */

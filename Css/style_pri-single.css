@@ -19,7 +19,7 @@
     --fondo-princing:#F6F6F6;
 }
 .single{
-    padding: 65px 0px;
+    padding: 5vw 0px;
 }
 .single__princing{
     
@@ -30,9 +30,9 @@
 .princing__chose{
     width: 28vw;
     background-color: var(--fondo-princing);
-    height: 26vw;
-    padding: 2vw 2.1vw;
-    border-radius: 18px;
+    height: 28vw;
+    padding: 2.3vw 2.1vw;
+    border-radius: 1.3vw;
 }
 .chose__title{
     color:var(--color_button);
@@ -43,16 +43,16 @@
     line-height: 110%; /* 38.5px */
 }
 .chose__lorem{
-    padding-top: 15px;
+    padding-top: 1.3vw;
     color: var(--tipo_letra);
     font-family: Mulish;
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150.5%; /* 30.1px */
 }
 .chose__cantidad{
-    padding-top: 25px;
+    padding-top: 1.4vw;
     color: var(--color_button);
     font-family: Mulish;
     font-size: 1.4vw;
@@ -65,18 +65,18 @@
     display: flex;
     margin-top: 1vw;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     padding: 1.2vw;
      border-radius: 1.5vw;
      font-size: 1vw;
     background-color:var(--fondo-princing);
-    border: 1px solid #D3D3D3;
+    border: 0.1vw solid #D3D3D3;
 }
 .img{
     width: 1vw;
 }
 .chose__add{
-    margin-top: 1.2vw;
+    margin-top: 1.1vw;
     width: 19vw;
     padding: 1.2vw;
     border-radius: 1.5vw;
@@ -100,22 +100,21 @@
     line-height: 110%; /* 44px */
 }
 .automated__parrafo{
-    padding-top: 24px;
+    padding-top: 1.3vw;
     color: #808080;
     font-family: Mulish;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-style: normal;
-    
     font-weight: 400;
     line-height: 150.5%; /* 30.1px */
 }
 .listen__parrafo{
     color: #2F2F2F;
     font-family: Mulish;
-    font-size: 20px;
+    font-size:  1.3vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 125.9%; /* 31.475px */
+    line-height: 1.3vw; /* 31.475px */
 }
 .listen__imagen{
     margin-right: 20px;
@@ -124,14 +123,15 @@
 
 .automated__listen{
     display: flex;
-    margin-top: 12px;
+    margin-top: 1.4vw;
     height: 4%;
-    margin-bottom: 30px;
+    margin-bottom: 1.9vw;
 }
 
 /*parte de tarjetas */
 
 .Star{
+    
     display: flex;
     margin: auto;
     width: 70%;
@@ -148,7 +148,7 @@
     height: 100%;
 }
 .Star__your{
-    padding: 65px;
+    padding: 3.4vw;
     width: 50%;
     
 }
@@ -162,20 +162,21 @@
     justify-content: space-between;
     width:19vw;
     height:3vw;
-    padding: 8px 16px;
-    border-radius: 50px;
-    gap: 10px;
+    text-align: center;
+    padding: 0.5vw 1.2vw;
+    border-radius: 1.4vw;
+    gap: 1.3vw  ;
     background-color: var(--fondo);
-    margin-top: 18px;
+    margin-top: 1.3vw;
 
 }
 .your__day{
-    padding-top: 14px;
+    padding-top: 1.2vw;
     color: var(--fondo);
     font-family: Mulish;
-    font-size: 40px;
+    font-size: 2.3vw;
     font-weight: 800;
-    line-height: 55px;
+    line-height: 2.3vw;
     letter-spacing: 0em;
     text-align: left;
 
@@ -184,42 +185,46 @@
     padding-top: 14px;
     color: var(--fondo);
     font-family: Mulish;
-    font-size: 20px;
+    font-size: 1.6vw;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 2.5vw;
     letter-spacing: 0em;
     text-align: center;
 
 }
 .email__parra{
     font-family: Mulish;
-    font-size: 18px;
+    font-size: 1.4vw;
     font-weight: 600;
-    line-height: 26px;
+    line-height: 1.5vw;
     letter-spacing: 0em;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 1.2vw;
 
 }
 .email__star{
-    padding: 0.7vw 1vw 1vw 1vw  ;
+    padding: 0.6vw 1.4vw 1.4vw 1.2vw  ;
     border-radius: 50px;
     border: none;
     color: var(--fondo);
     background-color: var(--color_button);
     font-size: 0.8vw;
+    text-align: center;
 }
 .your__free{
-    padding-top: 22px;
+    padding-top: 1.2vw;
     display: flex;
-    gap: 12px   ;
+    gap: 1vw       ;
 }
 .free__parra{
+    color: var(--fondo);
     font-family: Mulish;
-font-size: 0.8vw;
-font-weight: 700;
-line-height: 10px;
-letter-spacing: 0em;
-text-align: left;
-
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1vw;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.free__img{
+    width: 1.7vw;
 }
