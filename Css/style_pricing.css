@@ -22,12 +22,123 @@
 body{
     text-align: center;
 }
+
+/* codigo header */
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 3vw;
+}
+.Header_Logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+.Header_Logo img{
+    width: 3vw;
+}
+.Header_Logo h2,.Logo h2{
+    font-family: "Mulish";
+    font-size: 1.6vw;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F2F2F;
+}
+.Header_Links{
+    display: flex;
+    gap: 2vw;
+}
+.Header_Links img{
+    width: 0.7vw;
+    height: 0.5vw;
+}
+.Header_Links a{
+    font-family: "Mulish";
+    font-size: 1.4vw;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+.Sing_up{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.Sing_up div{
+    display: flex;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    align-items: center;
+    justify-content:center;
+    background-color: #5956E9;
+}
+.Sing_up button{
+    font-family: "Open Sans";
+    font-size: 1.3vw;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2F2F2F;
+    cursor: pointer;
+    background-color: white;
+    border: 0.1vw solid #DCDCDC;
+    border-radius: 2vw;
+    width: 10vw;
+    height: 4vw;
+}
+.Sing_up img{
+    width: 1.5vw;
+}
+
+
+.background{
+    width: 95%;
+    margin: auto;
+    height: 27vw;
+    border-radius: 2vw;
+    background: url("../Imagenes/Pricing/fondo__header.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    
+}
+.background__title{
+    padding-top: 6vw;
+    color:var(--fondo);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 66px */
+    
+}
+.background__parrafo{
+    padding-top: 0.8vw;
+    color:var(--fondo);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.3vw ; /* 29.1px */
+}
+
+/* termina el header */
+
 .compare{
     color: #242331;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 1.6vw;
+    margin-bottom: 1.4vw;
     font-family: Nunito;
-    font-size: 40px;
+    font-size: 2.5vw;
     font-style: normal;
     font-weight: 800;
     line-height: 123%; /* 49.2px */
@@ -36,38 +147,40 @@ body{
 
 .tarjetas{
     display: flex;
-    width: 65%;
-    padding-top: 65px;
-    margin: auto;
+    width: 70%;
+    padding-top: 2vw;
+    margin: 3vw auto;
     justify-content: space-evenly;
-    gap: 18px;
+    gap: 1.4vw;
     background-color: var(--fondo);
 }
 .tarjetas__standar{
    width: 35%;
    border: 1px solid var(--borde);
-   border-radius: 25px;
-   height: 70%;
+   border-radius: 1.8vw;
+   height: 80%;
 }
 .tarjetas__standar:hover{
-   margin-top: -50px;
+   margin-top: -5vw;
 
 }
 
 .tarjetas__supreme{
     width: 35%;
     border: 1px solid var(--borde);
-    border-radius: 25px;
-    height: 70%;
+    border-radius: 1.8vw;
+    height:80%  ;
+    
 }
 .tarjetas__supreme:hover{
-    margin-top: -50px;
+    margin-top: -5vw;
  
  }
  
 .standar__save{
-   padding: 12px 20px;
+   padding: 1vw 1.5vw;
     display: flex;
+    height: 6vw;
     text-align: center;
     justify-content:space-between;
     border-bottom: 1.2px solid var(--borde) ;
@@ -76,8 +189,9 @@ body{
 .save__titulo{
     color: #2F2F2F;
     font-family: Mulish;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-style: normal;
+    padding: 1.1vw 0vw;
     font-weight: 800;
     line-height: 110%; /* 22px */
     text-transform: uppercase;
@@ -85,7 +199,7 @@ body{
 .billed__cantidad{
     color: #2F2F2F;
     font-family: Mulish;
-    font-size: 30px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 800;
     line-height: 110%; /* 44px */
@@ -93,20 +207,21 @@ body{
 .billed__annu{
     color: #808080;
     font-family: Mulish;
-    font-size: 20px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150.5%; /* 30.1px */
 }
 .save__button{
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 0.3vw 1.2vw;
+    border-radius: 1.6vw;
     background-color: var(--color_button);
     color: var(--fondo);
     font-family: Mulish;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 800;
     line-height: 23px;
+    margin: 0.3vw;
     letter-spacing: 0em;
     text-align: left;
 
@@ -114,33 +229,36 @@ body{
 }
 .tarjetas__billed{
     display: flex;
-    padding: 12px 25px;
+    padding: 0.8vw 1.2vw;
     justify-content:space-between;
     border-bottom: 1.2px solid var(--borde) ;
 }
 .tarjetas__social{
-    padding: 45px;
+    padding: 1.2vw;
 }
 .social_p{
     font-family: Mulish;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 1.9vw;
     letter-spacing: 0em;
     text-align: left;
 
 }
 .social__img{
-    margin-right: 15px;
+    margin-right: 1vw;
+}
+.img__imag{
+    width: 1.2vw;
 }
 .social__p_difere{
     color: var(--tipo_letra);
 }
 .supreme{
     padding: 0;
-    border-radius: 22px;
-    width:115px ;
-    height: 47px;
+    border-radius: 1.1vw ;
+    width:7.6vw ;
+    height: 3.5vw;
     background: none;
 }
 .supreme_im{
@@ -148,17 +266,17 @@ body{
     width: 95%;
 }
 .billed__get_but{
-    margin: 16px;
+    margin: 1.1vw;
     background-color: var(--fondo);
     border: var(--tipo_letra) 1px solid;
-    padding: 12px 82px;
+    padding: 0.8vw 5vw;
     color: var(--texto-letra);
     font-family: Nunito;
-    font-size: 18px;
+    font-size: 1.1vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    border-radius: 15px;
+    border-radius: 1.4vw;
 }
 .billed__get_but:hover{
     background-color: #5956E9;
@@ -167,16 +285,17 @@ body{
 /*siguiente parte */ 
 
 .conten-money{
-    margin:50px auto;
-    width: 65%;
-    height: 30vh;
-    border-radius: 30px;
+    margin:auto;
+    margin-top: 5vw;
+    width: 70%;
+    height: 34vh;
+    border-radius: 1.8vw;
     background: #F6F6F6;
-    padding: 20px 30px;
+    padding: 1.9vw 2.1vw;
     display: flex;
     font-family: Mulish;
-    gap: 20px;
-        line-height: 20px;
+    gap: 1.7vw;
+        line-height: 1.8vw;
 }
 .conten-money img{ 
     height: 100%;
@@ -186,24 +305,32 @@ body{
 }
 .contenn-texto p{
     color: #808080;
-    font-family: Mulish; 
-    margin-bottom: 10px;
+    font-size: 1.3vw;
+    font-family: Mulish;
+    line-height: 1.8vw; 
+    margin-bottom: 1.3vw;
+    text-align: justify;
    
 }
 .contenn-texto h2{
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 1vw;
+    font-size: 1.4vw;
+    
    
+}
+.contenn-texto h3{
+    margin-top: 1.6vw;
+    font-size: 1.4vw;
 }
 
 /* tablas de redes */
 
 .feature{
-    width: 65%;
+    width:70%;
     margin: auto;
-    margin-top: 5%;
-    border-radius: 14px;
-    margin-bottom: 10%;
+    margin-top: 3vw;
+    border-radius: 1.4vw;
+    margin-bottom: 4vw;
     border: 1.2px solid var(--fondo_but);
 }
 .feature__standar{
@@ -215,7 +342,7 @@ body{
 .super__title{
     color: #242331;
     font-family: Mulish;
-    font-size: 40px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 800;
     line-height: 110%; /* 44px */
@@ -224,7 +351,7 @@ body{
 .super__month{
     color: #242331;
     font-family: Mulish;
-    font-size: 20px;
+    font-size: 1.1vw;
     font-style: normal;
     font-weight: 600;
     line-height: 110%; /* 22px */
@@ -233,50 +360,232 @@ body{
 .feature__social{
     text-align: left;
     background-color: var(--fondo_but);
-    padding: 20px 12px;
+    padding: 1.4vw 1.2vw;
     
 }
 .social__title{
     color: #5956E9;
     font-family: Mulish;
-    font-size: 25px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 27.5px */
     margin-left: 25px;
 }
+
 .social__redes{
     display: flex;
-    border-bottom: 1.2px solid var(--borde);
+    border-bottom: 0.1vw solid var(--borde);
+}
+.red__tick{
+  width: 1.8vw;  
 }
 .redes__red{
     width: 60%;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    
+    text-align: center;
+    padding-top: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1.5vw;
     
 }
   
 .red__title{
     color: #797979;
     font-family: Mulish;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-left: 22px;
 }
 .feature__custom{
-    padding: 35px;
+    padding: 2.5vw;
 }
 .custom__title{
     color: #2F2F2F;
     font-family: Mulish;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-
+/*--------------------------------------------------Estilos Footer----------------------------------------------------------------*/
+footer{
+    padding:4% 7% 2% 7%;
+}
+.Footer_Cuerpo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.Footer_Encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+    border-top: 0.1vw solid #DCDCDC;
+    border-bottom: 0.1vw solid #DCDCDC;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+.Logo img{
+    width: 3vw;
+    height: 2vw;
+}
+.Footer_Encabezado button{
+    font-family: "Mulish";
+    font-size: 1.3vw;
+    font-weight: 600;
+    text-align: center;
+    border: 0.1vw solid #DCDCDC;
+    background-color: white;
+    padding: 1vw 1.5vw;
+    border-radius: 2vw;
+}
+.Footer_Medio{
+    grid-template-columns: 60% 37%;
+    display: grid;
+    padding: 4vw 0;
+    gap: 2.5vw;
+}
+.Footer_Links{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    width: 100%;
+}
+.Resources,.Utility_Pages{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.Utility_Pages{
+    border-right: 0.1vw solid #DCDCDC;
+}
+.Resources,.Utility_Pages h3{
+    font-family: "Mulish";
+    font-size: 1.8vw;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Links a{
+    font-family: "Mulish";
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 2vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #808080;
+}
+.Careers{
+    display: flex;
+    padding-top: 26%;
+}
+.startup_25{
+    display: grid;
+    grid-template-columns: 50% 48%;
+    background-color: #2F2F2F;
+    align-items: center;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 2vw;
+    width: 100%;
+}
+.startup_izquierda{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+    border-right: 0.1vw solid #646464;
+}
+.startup_izquierda img{
+    width: 6vw;
+}
+.startup_izquierda h4{
+    font-family: "Mulish";
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.startup_izquierda span{
+    font-family: "Mulish";
+    font-size: 3vw;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.startup_izquierda button{
+    font-family: "Mulish";
+    font-size: 1.3vw;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #424242;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2vw;
+    width: 9vw;
+    height: 3vw;
+    cursor: pointer;
+}
+.startup_derecha{
+    display: flex;
+    flex-direction: column;
+}
+.startup_derecha article{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.startup_derecha img{
+    width: 0.8vw;
+    height: 0.8vw;
+}
+.startup_derecha h4{
+    font-family: "Mulish";
+    font-size: 1.2vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.startup_derecha span{
+    color: #38D4FF;
+}
+.Footer_Final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vw;
+    border-top: 0.1vw solid #DCDCDC;
+}
+.Footer_Final h4{
+    font-family: "Mulish";
+    font-size: 1.3vw;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+}
+.Footer_Final span{
+    font-weight: 700;
+    color: #2F2F2F;
+}
+.Redes_Footer{
+    display: flex;
+    gap: 1vw;
+}
+.Redes_Footer img{
+    width: 1.8vw;
+    height: 1.8vw;
+}
 
