@@ -74,6 +74,7 @@ li{
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 3vw;
 }
 .banners{
     width: 90vw;
