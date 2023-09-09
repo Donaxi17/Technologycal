@@ -1,25 +1,26 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
     font-size: clamp(1rem, 1.3vw, 20rem);
 }
-/* MENU */
+/* EMCABEZADO */
 .menu{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 10vw;
-    padding: 1vw 0 0 0;
+    padding: 2vw 2vw;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .Links{
     display: flex;
-    /* position: relative;
-    top: 0.5vw;
+    gap: 2vw;
+    /* position: relative; */
+    /* top: 0.5vw;
     width: 40%; */
 }
 ul{
@@ -67,9 +68,7 @@ li{
     background:rgb(109, 118, 239) ;
     font-weight: 500;
 }
-/* MENU */
-
-/* BANNER */
+/* FIN */
 .container{
     justify-content: center;
     align-items: center;
@@ -85,52 +84,26 @@ li{
 .text{
     font-size: 1.2vw;
     position: absolute;
-    bottom: 70%;
-    left: 30%;
+    bottom: 28vw;
+    left: 40vw;
+    color: #FFFFFF;
 }
-.password{
-    background: rgb(255, 255, 255);
-    width: 40vw;
-    height: 30vh;
-    position: relative;
-    left: 30%;
-    bottom: 5vw;
-    border-radius: 10px;
-    box-shadow: 0px 1.2vw 1vw rgba(0, 0, 0, 0.5);
+.text p{
+    width: 20vw;
 }
-.form{
-    font-size: 1.2vw;
-    padding: 1vw 2vw 1vw 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.form span{
-    padding: 1vw 1vw 1vw 1vw; 
-    width: 9vw;
-}
-.form input{
-    width: 22vw;
-    height: 2.2vw;
-    border: 1px solid #cccbcb;
-    border-radius: 1vw;
-    padding: 1vw 0px 0px 1vw;
-    font-size: 2vw;
-}
-.form button{
-    position: absolute;
-    left: 27vw;
-    bottom: 1vw;
-    height: 3vw;
-    width: 10vw;
-    background: #2F2F2F;
-    border: none;
-    border-radius: 1vw;
-    color: white;
-    font-size: 1vw;
-}
-/* BANNER */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer{

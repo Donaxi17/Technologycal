@@ -70,37 +70,57 @@ li{
 /* MENU */
 
 /* BANNER */
-.container{
-    justify-content: center;
+.banner{
     align-items: center;
     text-align: center;
-}
-.container img{
-    width: 70%;
-    position: relative;
-    display: inline-block;
-    align-items: center;
     justify-content: center;
 }
-.text{
-    font-size: 1.2vw;
-    position: absolute;
-    bottom: 70%;
-    left: 30%;
+.banners{
+    width: 90vw;
+    height: 35vw;
 }
-.password{
-    background: rgb(255, 255, 255);
-    width: 40vw;
-    height: 30vh;
+.banner p{
+    color:#FFFFFF;
     position: relative;
-    left: 30%;
-    bottom: 5vw;
-    border-radius: 10px;
+    bottom: 30vw;
+    font-size: 3.2vw;
+    font-weight: 900;
+}
+.contactos{
+    position: relative;
+    bottom: 25vw;
+    display: flex;
+    /* left: 30vw; */
+    gap: 5vw;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+}
+.contact_correo{
+    display: flex;
+    gap: 1vw;
+}
+.contactos img{
+    width: 2.4vw;
+}
+.contact_numer{
+    display: flex;
+    gap: 1vw;
+}
+.banner_contact{
+    background: #e9e6e6;
+    width: 80vw;
+    height: 40vw;
+    position: relative;
+    left: 9.5vw;
+    bottom: 20vw;
+    border-radius: 1vw;
     box-shadow: 0px 1.2vw 1vw rgba(0, 0, 0, 0.5);
 }
 .form{
     font-size: 1.2vw;
-    padding: 1vw 2vw 1vw 2vw;
+    padding: 1vw 2vw 1vw 10vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -115,22 +135,220 @@ li{
     height: 2.2vw;
     border: 1px solid #cccbcb;
     border-radius: 1vw;
-    padding: 1vw 0px 0px 1vw;
-    font-size: 2vw;
-}
-.form button{
-    position: absolute;
-    left: 27vw;
-    bottom: 1vw;
-    height: 3vw;
-    width: 10vw;
-    background: #2F2F2F;
-    border: none;
-    border-radius: 1vw;
-    color: white;
+    padding: 0vw 0px 0px 1vw;
     font-size: 1vw;
+    border: none;
+    outline: none;
 }
-/* BANNER */
+.form .tarea, textarea{
+    position: relative;
+    bottom: 15vw;
+}
+textarea{
+    width: 60vw;
+    height: 12vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    padding: 1vw 1vw 1vw 1vw;
+    border: none;
+    outline: none;
+}
+.left{
+    margin-left: 39vw;
+    position: relative;
+    bottom: 15vw;
+}
+.banner_contact button{
+    position: relative;
+    bottom: 13vw;
+    right: 22vw;
+    width: 15vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: none;
+    background: #2F2F2F;
+    color: #FFFFFF;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+.banner_contact button:hover{
+    background: linear-gradient(to right, #21cbe6f4, #2e06f4);
+    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0,2)inset;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.global_Growing{
+    width: 80vw;
+    height: 50vw;
+    text-align: center;
+    position: relative;
+    left: 9vw;
+    font-size: 1.4vw;
+}
+.titulo_global{
+    display: grid;
+    gap: 1vw;
+}
+.tarj_global{
+    padding: 2vw;
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+}
+.tarj{
+    background: #dedde1;
+    padding: 3vw;
+    width: 26vw;
+    height: 20vw;
+    border-radius: 2vw;
+}
+.tarj p{
+    padding: 1vw;
+}
+.tarj button{
+    position: absolute;
+    bottom: 38vw;
+    right: 70vw;
+    width: 7vw;
+    height: 2vw;
+    border-radius: 3vw;
+    border: none;
+    background: #6966FF;
+    color: #FFFFFF;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+.tarj button:hover{
+    background:cadetblue;
+    color:#FFFFFF;
+}
+.tarj img{
+    width: 7vw;
+    height: 7vw;
+}
+
+.Frequently{
+    width: 50vw;
+    height: 75vw;
+    position: relative;
+    left: 25vw;
+    font-size: 1.3vw;
+}
+.Frequently h2{
+    text-align: center;
+}
+.contenedor_freq{
+    display: grid;
+    gap: 1vw;
+    padding: 0 2vw 0 2vw;
+}
+.conta_one{
+    margin-top: 2vw;
+    padding: 2vw 0 0vw 0;
+    border: 1px solid #DCDCDC;
+    border-radius: 2vw;
+    width: 46vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.conta_one span{
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.conta_one img{
+    width: 2vw;
+    height: 2vw;
+    margin-top: -0.4vw;
+    margin-right: 1vw;
+}
+.cont_freq{
+    background: #DCDCDC;
+    border-radius: 2vw;
+}
+.conta_two{
+    margin-top: 2vw;
+    padding: 2vw 0 0vw 0;
+    width: 46vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.conta_two span{
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.conta_two img{
+    width: 2vw;
+    height: 2vw;
+    margin-top: -0.4vw;
+    margin-right: 1vw;
+}
+.freq_def{
+    padding-left: 1vw;
+    font-size: 1.2vw;
+}
+.insisos{
+    padding: 2vw;
+    display: grid;
+    gap: 2vw;
+}
+.insisos_freq{
+    display: flex;
+    gap: 1vw;
+}
+.insisos_freq span{
+    margin-top: 0.4vw;
+}
+.insisos_freq img{
+    width: 2vw;
+}
+.definicion_freq{
+    display: grid;
+    gap: 2vw;
+}
+.definicion_freq span{
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.definicion_freq p{
+    font-size: 1.2vw;
+}
+.ultimas_triples{
+    margin-top: 2vw;
+    padding: 2vw 0 0vw 0;
+    width: 46vw;
+    height: 18vw;
+    display:grid;
+    gap: 1vw;
+}
+.conta_triple{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #DCDCDC;
+    border-radius: 2vw;
+}
+.conta_triple span{
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    font-weight: 800;
+    padding-top: 1.5vw;
+}
+.conta_triple img{
+    width: 2vw;
+    height: 2vw;
+    margin-top: 1.3vw;
+    margin-right: 1vw;
+}
+
+
+
+
+
 
 /* FOOTER */
 footer{
@@ -153,6 +371,9 @@ footer{
     display: flex;
     align-items: center;
     gap: 0.3vw;
+}
+.Logo h2{
+    font-size: 2vw;
 }
 .Logo img{
     width: 3vw;
