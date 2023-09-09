@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------- Estilo Header ------------------------- */
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 3vw;
+}
+
+.Header_Logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+
+.Header_Logo img{
+    width: 3vw;
+}
+
+.Header_Logo h2,.Logo h2{
+    font-family: "Mulish";
+    font-size: 1.6vw;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F2F2F;
+}
+
+.Header_Links{
+    display: flex;
+    gap: 2vw;
+}
+
+.Header_Links img{
+    width: 0.7vw;
+    height: 0.5vw;
+}
+
+.Header_Links a{
+    font-family: "Mulish";
+    font-size: 1.2vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+
+.Sing_up{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.Sing_up div{
+    display: flex;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    align-items: center;
+    justify-content:center;
+    background-color: #5956E9;
+}
+
+.Sing_up button{
+    font-family: "Open Sans";
+    font-size: 1.2vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2F2F2F;
+    cursor: pointer;
+    background-color: white;
+    border: 0.1vw solid #DCDCDC;
+    border-radius: 2vw;
+    width: 10vw;
+    height: 3vw;
+}
+
+.Sing_up img{
+    width: 3vw;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* ------------------------------- */
+
+
+/* ------------------- Estilo fondo__header ------------------------- */
+
+.fondo__header{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo__header article{
+    position: relative;
+    height: 60vh;
+    width: 94vw;
+}
+
+.fondo__header img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.fondo__header div{
+    position: absolute;
+    color: white;
+    top: 20vh;
+    left: 32vw;
+}
+
+.fondo__header h2{
+    font-size: 3vw;
+}
+
+.fondo__header p{
+    font-size: 1.1vw;
+    width: 22vw;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    text-align: center;
+}
+
+/* ------------------------------- */
