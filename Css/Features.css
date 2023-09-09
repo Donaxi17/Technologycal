@@ -177,6 +177,9 @@ li{
     width: 20vw;
     cursor: pointer;
 }
+
+
+
 .graficas{
     position: relative;
     /* bottom: 15vw; */
@@ -213,6 +216,9 @@ li{
     width: 40vw;
     height: 50vw;
 }
+
+
+
 
 .background{
     background: #F6F6F6;

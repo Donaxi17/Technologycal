@@ -69,6 +69,8 @@ li{
     font-weight: 500;
 }
 /* FIN */
+
+
 .container{
     justify-content: center;
     align-items: center;
@@ -91,17 +93,234 @@ li{
 .text p{
     width: 20vw;
 }
+.contenedor{
+    position: relative;
+    left: 9vw;
+    top: 10vw;
+    width: 80vw;
+    height: 60vw;
+    display: flex;
+    gap: 2vw;
+    font-size: 1.2vw;
+}
+.text_conten{
+    padding: 1vw 1vw 1vw 1vw;
+}
+.doble{
+    padding: 2vw 0vw 0vw 0vw;
+}
+.doble img{
+    width:8vw;
+}
+.inform{
+    position: relative;
+    left: 8.2vw;
+    bottom: 6vw;
+}
+.inform span{
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+.conten_img{
+    width: 40vw;
+    height: 40vw;
+}
+.defin_conten button{
+    width: 10vw;
+    height: 3vw;
+    background: #424242;
+    border: none;
+    border-radius: 3vw;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1vw;
+}
+.defin_conten button:hover{
+    background: #2F2F2F;
+    color: deepskyblue;
+}
+
+
+
+.porcent{
+    text-align: center;
+    width: 98.2vw;
+    height: 40vw;
+    font-size: 1.5vw;
+}
+.porcent img{
+    width: 60vw;
+    padding: 4vw;
+}
+.mission{
+    position: relative;
+    bottom: 15vw;
+    left: 11vw;
+    width: 70vw;
+    height: 25vw;
+    /* display: grid; */
+    gap: 2vw;
+    font-size: 1.2vw;
+}
+.text_mission{
+    font-size: 1.2vw;
+    padding: 1vw 1vw 1vw 1vw;
+    width: 80vw;
+    gap: 1vw;
+    display: grid;
+}
+.mission_insisos{
+    padding: 1vw 1vw 1vw 1vw;
+    display: grid;
+    gap: 2vw;
+}
+.insisos_mission{
+    font-size: 1.5vw;
+}
+.insisos_mission img{
+    width: 1.4vw;
+}
+.img_consulta img{
+    width: 40vw;
+    position: relative;
+    bottom: 20vw;
+    left: 34vw;
+}
 
 
 
 
+.Our_Values{
+    width: 98.6vw;
+    height: 40vw;
+    display: grid;
+    text-align: center;
+    font-size: 1.3vw;
+}
+.Our_Values img{
+    margin-left: 6vw;
+    width: 5vw;
+    height: 5vw;
+}
+.Our_Values span{
+    font-weight: 800;
+}
+.Values_fila_One{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2vw 0;
+}
+.Values_one{
+    display: grid;
+    padding: 0 2vw;
+}
+.Values_fila_two{
+    display: flex;
+    justify-content: center;
+    padding: 2vw 0 2vw 0;
+}
+.Values_two{
+    display: grid;
+    padding: 0 2vw;
+}
 
 
 
 
+.Our_Team{
+    width: 98.7vw;
+    height: 50vw;
+    background: #4333bd;
+    padding: 3vw 3vw 3vw 3vw;
+    font-size: 1.3vw;
+    margin-top: 12vw;
+    color: #FFFFFF;
+}
+.Emcabezado_Team{
+    display: flex;
+    justify-content: space-between;
+    width: 64vw;
+    margin-left: 15vw;
+}
+.title_team{
+    display: grid;
+    gap: 1vw;
+}
+.Emcabezado_Team button{
+    width: 10vw;
+    height: 3vw;
+    position: relative;
+    top: 1.5vw;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.Emcabezado_Team button:hover{
+    background: #5400f1;
+    color: #FFFFFF;
+}
+.content_team{
+    display: flex;
+    gap: 2vw;
+    padding: 2vw 2vw 2vw 15vw;
+}
+.team_triple{
+    display: grid;
+    text-align: center;
+}
+.team_triple span{
+    padding-top: 1.5vw;
+}
+.iconos_team img{
+    padding-top: 1vw;
+    width: 8vw;
+    cursor: pointer;
+}
+.content_team .Photo_triple{
+    width: 20vw;
+    height: 25vw;
+    border-radius: 2vw;
+}
 
 
 
+
+.Investors{
+    width: 80vw;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-top: 15vw;
+    margin-left: 10vw;
+}
+.investors_doble_one{
+    display: flex;
+    gap: 3vw;
+    padding: 3vw 0 0 5vw;
+}
+.investors_doble_two{
+    display: flex;
+    gap: 3vw;
+    padding: 3vw 0 0 5vw;
+}
+.investors_one{
+    text-align: left;
+    display: grid;
+    gap: 1vw;
+    padding: 2vw;
+}
+.investors_one img{
+    width: 8vw;
+}
+.dist{
+    background: #e4e2e2;
+    border-radius: 1vw;
+}
+.dast{
+    background: #e4e2e2;
+    border-radius: 1vw;
+}
 
 
 

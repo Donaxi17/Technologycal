@@ -19,9 +19,6 @@ body{
 .Links{
     display: flex;
     gap: 2vw;
-    /* position: relative; */
-    /* top: 0.5vw;
-    width: 40%; */
 }
 ul{
     display: flex;
@@ -73,7 +70,6 @@ li{
 /* FALLIDO 404 */
 .fallido{
     text-align: center;
-    /* height: 110vh; */
 }
 .fallido img{
     width: 40vw;
@@ -84,7 +80,6 @@ li{
     justify-content: center;
     gap: 3vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* font-size: 25px; */
 }
 .text_btn button{
     width: 12vw;
