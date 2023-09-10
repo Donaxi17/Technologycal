@@ -115,19 +115,409 @@ header{
     position: absolute;
     color: white;
     top: 20vh;
-    left: 32vw;
+    left: 24vw;
 }
 
 .fondo__header h2{
     font-size: 3vw;
+    text-align: center;
 }
 
 .fondo__header p{
     font-size: 1.1vw;
     width: 22vw;
     margin-top: 2vh;
-    margin-left: 4vw;
+    margin-left: 10vw;
     text-align: center;
 }
 
 /* ------------------------------- */
+
+
+
+/* ------------------- Estilo main ------------------------- */
+
+main{
+    margin-top: 10vh;
+    height: 500vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .content__main{
+    height: 490vh;
+    width: 66vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__main .img_principal{
+    width: 100%;
+    height: 74vh;
+}
+
+.content__main .img_principal img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+.content__main h2{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 2.6vw;
+}
+
+.content__main .parrafo_1,
+.content__main .parrafo_2{
+    font-size: 1.2vw;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    width: 46vw;
+    color: #808080;
+}
+
+.content__main ul{
+    margin-top: 12vh;
+    width: 42vw;
+    list-style: none;
+}
+
+.content__main ul li{
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    margin-bottom: 1.8vh;
+    color: #808080;
+}
+
+.content__main ul h4{
+    color: black;
+    font-size: 1.6vw;
+    margin-right: 1vw;
+}
+
+.content__main .parrafo_2{
+    margin-top: 10vh;
+}
+
+.content__main .imagen_secundaria{
+    margin-top: 8vh;
+    width: 48vw;
+    height: 54vh;
+}
+
+.imagen_secundaria img{
+   width: 100%;
+   height: 100%;
+   border-radius: 1vw;
+}
+
+.content__main h3{
+    font-size: 2.2vw;
+    margin-right: 9vw;
+    margin-top: 5vh;
+}
+
+.content__main .fondo__conTexto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: 46vw;
+    height: 36vh;
+}
+
+.fondo__conTexto .fondo__colores{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+.fondo__conTexto div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fondo__conTexto div img{
+    width: 4vw;
+}
+
+.fondo__conTexto div span{
+    font-size: 2.4vw;
+    font-weight: 600;
+}
+
+.fondo__conTexto div p{
+    width: 34vw;
+    margin-top: 2vh;
+    font-size: 1.3vw;
+    text-align: center;
+    color: white;
+}
+
+.content__main h5{
+    font-size: 1.8vw;
+    margin-top: 12vh;
+    margin-right: 8vw;
+}
+
+.btn__redes{
+    border-top: 0.1vw solid #DCDCDC;
+    border-bottom: 0.1vw solid #DCDCDC;
+    margin-top: 10vh;
+    width: 45vw;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn__redes .btns button{
+    font-size: 1vw;
+    width: 7vw;
+    height: 6vh;
+    margin-left: 1vw;
+    border-radius: 2vw;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn__redes .redes img{
+    margin-left: 0.6vw;
+    width: 1.6vw;
+}
+
+.autor{
+    margin-top: 8vh;
+    width: 46vw;
+    height: 34vh;
+}
+
+.autor img{
+    border-radius: 1vw;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------- */
+
+/*------------------------Estilos Footer----------------------------*/
+
+footer{
+    padding:4% 7% 2% 7%;
+    margin-top: 10vh;
+}
+
+.Footer_Cuerpo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.Footer_Encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+    border-top: 0.1vw solid #DCDCDC;
+    border-bottom: 0.1vw solid #DCDCDC;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+
+.Logo img{
+    width: 4vw;
+    height: 2vw;
+}
+
+.Logo h2{
+    font-size: 1.6vw;
+}
+
+.Footer_Encabezado button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    text-align: center;
+    border: 0.1vw solid #DCDCDC;
+    background-color: white;
+    padding: 1vw 1.5vw;
+    border-radius: 2vw;
+}
+
+.Footer_Medio{
+    grid-template-columns: 60% 37%;
+    display: grid;
+    padding: 4vw 0;
+    gap: 2.5vw;
+}
+
+.Footer_Links{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    width: 100%;
+}
+
+.Resources,.Utility_Pages{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.Utility_Pages{
+    border-right: 0.1vw solid #DCDCDC;
+}
+
+.Resources,.Utility_Pages h3{
+    font-family: "Mulish";
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.Links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Links a{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 2vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #808080;
+}
+
+.Careers{
+    display: flex;
+    padding-top: 26%;
+}
+
+.startup_25{
+    display: grid;
+    grid-template-columns: 50% 48%;
+    background-color: #2F2F2F;
+    align-items: center;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 2vw;
+    width: 100%;
+}
+
+.startup_izquierda{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    border-right: 0.1vw solid #646464;
+}
+
+.startup_izquierda img{
+    width: 8vw;
+}
+
+.startup_izquierda h4{
+    font-family: "Mulish";
+    font-size: 1.4vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.startup_izquierda span{
+    font-family: "Mulish";
+    font-size: 3vw;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.startup_izquierda button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #424242;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2vw;
+    width: 11.5vw;
+    height: 3.6vw;
+    cursor: pointer;
+}
+
+.startup_derecha{
+    display: flex;
+    flex-direction: column;
+}
+
+.startup_derecha article{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.startup_derecha img{
+    width: 1.1vw;
+    height: 1.1vw;
+}
+
+.startup_derecha h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.startup_derecha span{
+    color: #38D4FF;
+}
+
+.Footer_Final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vw;
+    border-top: 0.1vw solid #DCDCDC;
+}
+
+.Footer_Final h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+}
+
+.Footer_Final span{
+    font-weight: 700;
+    color: #2F2F2F;
+}
+
+.Redes_Footer{
+    display: flex;
+    gap: 1vw;
+}
+
+.Redes_Footer img{
+    width: 1.3vw;
+    height: 1.3vw;
+}
+/* ------------------------ */
