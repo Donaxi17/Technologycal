@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: clamp(1rem, 1.3vw, 20rem);
+}
+/* EMCABEZADO */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10vw;
+    padding: 2vw 2vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Links{
+    display: flex;
+    gap: 2vw;
+}
+ul{
+    display: flex;
+    width: 35vw;
+    gap: 3vw;
+    list-style: none;
+}
+li{
+    cursor: pointer;
+    font-size: 1.2vw;
+    letter-spacing: 0em;
+}
+.tittle{
+    display: flex;
+    gap: 1vw;
+}
+.tittle img{
+    width: 4vw;
+    background-repeat: no-repeat;
+}
+.tittle h1{
+    gap: 0px;
+    font-size: 2vw;
+}
+.Btn_compra{
+    display: flex;
+    gap: 1vw;
+    padding: 0.1vw;
+    width: 15vw;
+}
+.Btn_compra img{
+    padding: 0 0 0.1vw 0;
+    cursor: pointer;
+    width: 3.2vw;
+}
+.Btn_compra button{
+    padding: 1vw 2vw 1vw 2vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 0.1vw solid black;
+    cursor: pointer;
+    font-size: 1vw;
+}
+.Btn_compra button:hover{
+    background:rgb(109, 118, 239) ;
+    font-weight: 500;
+}
+/* FIN */
+
+
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container img{
+    width: 70%;
+    position: relative;
+    /* display: inline-block; */
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-size: 1.2vw;
+    position: absolute;
+    bottom: 28vw;
+    left: 40vw;
+    color: #FFFFFF;
+}
+.text p{
+    width: 20vw;
+}
+.contenedor{
+    position: relative;
+    left: 9vw;
+    top: 10vw;
+    width: 80vw;
+    height: 60vw;
+    display: flex;
+    gap: 2vw;
+    font-size: 1.2vw;
+}
+.text_conten{
+    padding: 1vw 1vw 1vw 1vw;
+}
+.doble{
+    padding: 2vw 0vw 0vw 0vw;
+}
+.doble img{
+    width:8vw;
+}
+.inform{
+    position: relative;
+    left: 8.2vw;
+    bottom: 6vw;
+}
+.inform span{
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+.conten_img{
+    width: 40vw;
+    height: 40vw;
+}
+.defin_conten button{
+    width: 10vw;
+    height: 3vw;
+    background: #424242;
+    border: none;
+    border-radius: 3vw;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1vw;
+}
+.defin_conten button:hover{
+    background: #2F2F2F;
+    color: deepskyblue;
+}
+
+
+
+.porcent{
+    text-align: center;
+    width: 98.2vw;
+    height: 40vw;
+    font-size: 1.5vw;
+}
+.porcent img{
+    width: 60vw;
+    padding: 4vw;
+}
+.mission{
+    position: relative;
+    bottom: 15vw;
+    left: 11vw;
+    width: 70vw;
+    height: 25vw;
+    /* display: grid; */
+    gap: 2vw;
+    font-size: 1.2vw;
+}
+.text_mission{
+    font-size: 1.2vw;
+    padding: 1vw 1vw 1vw 1vw;
+    width: 80vw;
+    gap: 1vw;
+    display: grid;
+}
+.mission_insisos{
+    padding: 1vw 1vw 1vw 1vw;
+    display: grid;
+    gap: 2vw;
+}
+.insisos_mission{
+    font-size: 1.5vw;
+}
+.insisos_mission img{
+    width: 1.4vw;
+}
+.img_consulta img{
+    width: 40vw;
+    position: relative;
+    bottom: 20vw;
+    left: 34vw;
+}
+
+
+
+
+.Our_Values{
+    width: 98.6vw;
+    height: 40vw;
+    display: grid;
+    text-align: center;
+    font-size: 1.3vw;
+}
+.Our_Values img{
+    margin-left: 6vw;
+    width: 5vw;
+    height: 5vw;
+}
+.Our_Values span{
+    font-weight: 800;
+}
+.Values_fila_One{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2vw 0;
+}
+.Values_one{
+    display: grid;
+    padding: 0 2vw;
+}
+.Values_fila_two{
+    display: flex;
+    justify-content: center;
+    padding: 2vw 0 2vw 0;
+}
+.Values_two{
+    display: grid;
+    padding: 0 2vw;
+}
+
+
+
+
+.Our_Team{
+    width: 98.7vw;
+    height: 50vw;
+    background: #4333bd;
+    padding: 3vw 3vw 3vw 3vw;
+    font-size: 1.3vw;
+    margin-top: 12vw;
+    color: #FFFFFF;
+}
+.Emcabezado_Team{
+    display: flex;
+    justify-content: space-between;
+    width: 64vw;
+    margin-left: 15vw;
+}
+.title_team{
+    display: grid;
+    gap: 1vw;
+}
+.Emcabezado_Team button{
+    width: 10vw;
+    height: 3vw;
+    position: relative;
+    top: 1.5vw;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.Emcabezado_Team button:hover{
+    background: #5400f1;
+    color: #FFFFFF;
+}
+.content_team{
+    display: flex;
+    gap: 2vw;
+    padding: 2vw 2vw 2vw 15vw;
+}
+.team_triple{
+    display: grid;
+    text-align: center;
+}
+.team_triple span{
+    padding-top: 1.5vw;
+}
+.iconos_team img{
+    padding-top: 1vw;
+    width: 8vw;
+    cursor: pointer;
+}
+.content_team .Photo_triple{
+    width: 20vw;
+    height: 25vw;
+    border-radius: 2vw;
+}
+
+
+
+
+.Investors{
+    width: 80vw;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-top: 15vw;
+    margin-left: 10vw;
+}
+.investors_doble_one{
+    display: flex;
+    gap: 3vw;
+    padding: 3vw 0 0 5vw;
+}
+.investors_doble_two{
+    display: flex;
+    gap: 3vw;
+    padding: 3vw 0 0 5vw;
+}
+.investors_one{
+    text-align: left;
+    display: grid;
+    gap: 1vw;
+    padding: 2vw;
+}
+.investors_one img{
+    width: 8vw;
+}
+.dist{
+    background: #e4e2e2;
+    border-radius: 1vw;
+}
+.dast{
+    background: #e4e2e2;
+    border-radius: 1vw;
+}
+
+
+
+/* FOOTER */
+footer{
+    padding:4% 7% 2% 7%;
+}
+.Footer_Cuerpo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.Footer_Encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+    border-top: 0.1vw solid #DCDCDC;
+    border-bottom: 0.1vw solid #DCDCDC;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    font-size: 1.5vw;
+}
+.Logo img{
+    width: 3vw;
+    height: 2vw;
+}
+.Footer_Encabezado button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    font-weight: 600;
+    text-align: center;
+    border: 0.1vw solid #DCDCDC;
+    background-color: white;
+    padding: 1vw 1.5vw;
+    border-radius: 2vw;
+}
+.Footer_Medio{
+    grid-template-columns: 60% 37%;
+    display: grid;
+    padding: 4vw 0;
+    gap: 2.5vw;
+}
+.Footer_Links{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    width: 100%;
+}
+.Resources,.Utility_Pages{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.Utility_Pages{
+    border-right: 0.1vw solid #DCDCDC;
+}
+.Resources,.Utility_Pages h3{
+    font-family: "Mulish";
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Links a{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 0.2vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #808080;
+}
+.Careers{
+    display: flex;
+    padding-top: 26%;
+}
+.startup_25{
+    display: grid;
+    grid-template-columns: 50% 48%;
+    background-color: #2F2F2F;
+    align-items: center;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 2vw;
+    width: 100%;
+    height: 100%;
+}
+.startup_izquierda{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+    border-right: 0.1vw solid #646464;
+}
+.startup_izquierda img{
+    width: 6vw;
+}
+.startup_izquierda h4{
+    font-family: "Mulish";
+    font-size: 1.4vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.startup_izquierda span{
+    font-family: "Mulish";
+    font-size: 3vw;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.startup_izquierda button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #424242;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2vw;
+    width: 9vw;
+    height: 3vw;
+    cursor: pointer;
+}
+.startup_derecha{
+    display: flex;
+    flex-direction: column;
+}
+.startup_derecha article{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.startup_derecha img{
+    width: 0.5vw;
+    height: 0.5vw;
+}
+.startup_derecha h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.startup_derecha span{
+    color: #38D4FF;
+}
+.Footer_Final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vw;
+    border-top: 0.1vw solid #DCDCDC;
+}
+.Footer_Final h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+}
+.Footer_Final span{
+    font-weight: 700;
+    color: #2F2F2F;
+}
+.Redes_Footer{
+    display: flex;
+    gap: 1vw;
+}
+.Redes_Footer img{
+    width: 1.3vw;
+    height: 1.3vw;
+}
+/* FIN */

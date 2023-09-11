@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: clamp(1rem, 1.3vw, 20rem);
+}
+/* EMCABEZADO */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10vw;
+    padding: 2vw 2vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Links{
+    display: flex;
+    gap: 2vw;
+}
+ul{
+    display: flex;
+    width: 35vw;
+    gap: 3vw;
+    list-style: none;
+}
+li{
+    cursor: pointer;
+    font-size: 1.2vw;
+    letter-spacing: 0em;
+}
+.tittle{
+    display: flex;
+    gap: 1vw;
+}
+.tittle img{
+    width: 4vw;
+}
+.tittle h1{
+    gap: 0px;
+    font-size: 2vw;
+}
+.Btn_compra{
+    display: flex;
+    gap: 1vw;
+    padding: 0.1vw;
+    width: 15vw;
+}
+.Btn_compra img{
+    padding: 0 0 0.1vw 0;
+    cursor: pointer;
+    width: 3.2vw;
+}
+.Btn_compra button{
+    padding: 1vw 2vw 1vw 2vw;
+    height: 3vw;
+    border-radius: 2vw;
+    border: 0.1vw solid black;
+    cursor: pointer;
+    font-size: 1vw;
+}
+.Btn_compra button:hover{
+    background:rgb(109, 118, 239) ;
+    font-weight: 500;
+}
+/* FIN */
+
+/* FALLIDO 404 */
+.fallido{
+    text-align: center;
+}
+.fallido img{
+    width: 40vw;
+}
+.text_btn{
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text_btn button{
+    width: 12vw;
+    font-size: 1vw;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 3vw;
+    border:none;
+    background: #2F2F2F;
+    color: white;
+    cursor: pointer;
+}
+.text_btn button:hover{
+    background: #1e1c1c;
+}
+span{
+    color: #5956E9;
+}
+/* Fin */
+
+/* FOOTER */
+footer{
+    padding:4% 7% 2% 7%;
+}
+.Footer_Cuerpo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2vw;
+}
+.Footer_Encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+    border-top: 0.1vw solid #DCDCDC;
+    border-bottom: 0.1vw solid #DCDCDC;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+.Logo img{
+    width: 3vw;
+    height: 2vw;
+}
+.Footer_Encabezado button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    font-weight: 600;
+    text-align: center;
+    border: 0.1vw solid #DCDCDC;
+    background-color: white;
+    padding: 1vw 1.5vw;
+    border-radius: 2vw;
+}
+.Footer_Medio{
+    grid-template-columns: 60% 37%;
+    display: grid;
+    padding: 4vw 0;
+    gap: 2.5vw;
+}
+.Footer_Links{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    width: 100%;
+}
+.Resources,.Utility_Pages{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.Utility_Pages{
+    border-right: 0.1vw solid #DCDCDC;
+}
+.Resources,.Utility_Pages h3{
+    font-family: "Mulish";
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Links a{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 0.2vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #808080;
+}
+.Careers{
+    display: flex;
+    padding-top: 26%;
+}
+.startup_25{
+    display: grid;
+    grid-template-columns: 50% 48%;
+    background-color: #2F2F2F;
+    align-items: center;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 2vw;
+    width: 100%;
+}
+.startup_izquierda{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+    border-right: 0.1vw solid #646464;
+}
+.startup_izquierda img{
+    width: 6vw;
+}
+.startup_izquierda h4{
+    font-family: "Mulish";
+    font-size: 1.4vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.startup_izquierda span{
+    font-family: "Mulish";
+    font-size: 3vw;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.startup_izquierda button{
+    font-family: "Mulish";
+    font-size: 1.1vw;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #424242;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2vw;
+    width: 9vw;
+    height: 3vw;
+    cursor: pointer;
+}
+.startup_derecha{
+    display: flex;
+    flex-direction: column;
+}
+.startup_derecha article{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.startup_derecha img{
+    width: 0.5vw;
+    height: 0.5vw;
+}
+.startup_derecha h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.startup_derecha span{
+    color: #38D4FF;
+}
+.Footer_Final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vw;
+    border-top: 0.1vw solid #DCDCDC;
+}
+.Footer_Final h4{
+    font-family: "Mulish";
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+}
+.Footer_Final span{
+    font-weight: 700;
+    color: #2F2F2F;
+}
+.Redes_Footer{
+    display: flex;
+    gap: 1vw;
+}
+.Redes_Footer img{
+    width: 1.3vw;
+    height: 1.3vw;
+}
+/* FIN */
