@@ -189,7 +189,7 @@ header{
     margin-top: 3vh;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #DCDCDC;
+    border-bottom: 0.1vw solid #DCDCDC;
     color: #808080;
     font-size: 1vw;
     height: 5vh;
