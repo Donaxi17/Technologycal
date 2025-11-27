@@ -1,225 +1,308 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
-    <link rel="stylesheet" href="./Css/case_Study_Single.css">
-    <title>Case Study Single</title>
-  </head>
-  <body>
-    <header>
-      <div class="Header_Logo">
-        <img src="./Imagenes/HomePage/Logo.png" alt="">
-        <h2>Technologycal</h2>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Blog Single - Technologycal</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5956E9',
+            dark: '#2F2F2F',
+            gray: '#808080',
+            lightgray: '#DCDCDC',
+            accent: '#38D4FF'
+          },
+          fontFamily: {
+            mulish: ['Mulish', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+    }
+  </style>
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body class="bg-white text-dark">
+  <!-- Header (Same as other pages) -->
+  <header class="flex justify-between items-center px-6 md:px-12 lg:px-16 py-4 md:py-6">
+    <div class="flex items-center gap-2">
+      <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-8 md:w-10 lg:w-12">
+      <h2 class="font-mulish text-xl md:text-2xl lg:text-3xl font-extrabold text-dark">Technologycal</h2>
+    </div>
+    <nav class="hidden lg:flex gap-6 xl:gap-8">
+      <a href="./index.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Home</a>
+      <a href="./Features.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Features</a>
+      <a href="./case_Study_Single.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Study</a>
+      <a href="./pricing.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Pricing</a>
+      <a href="./blog.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Blog</a>
+    </nav>
+    <div class="flex items-center gap-3 md:gap-4">
+      <div class="hidden md:flex w-10 h-10 lg:w-12 lg:h-12 rounded-full items-center justify-center bg-primary">
+        <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="Cart" class="w-5 lg:w-6">
       </div>
-      <div class="Header_Links">
-        <a href="./index.html">Home</a>
-        <a href="./Features.html">Features</a>
-        <a href="">Resources</a>
-        <a href="./pricing.html">Pricing</a>
-        <a href="./blog.html">Blog</a>
+      <button
+        class="font-opensans text-sm md:text-base lg:text-lg text-dark border border-lightgray rounded-full px-6 md:px-8 py-2 md:py-3 hover:bg-primary hover:text-white hover:border-primary transition-all">Sign
+        In</button>
+      <button id="mobileMenuBtn" class="lg:hidden text-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden lg:hidden flex-col gap-4 px-6 py-4 bg-gray-50 border-b border-lightgray">
+    <a href="./index.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Home</a>
+    <a href="./Features.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Features</a>
+    <a href="./case_Study_Single.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Study</a>
+    <a href="./pricing.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Pricing</a>
+    <a href="./blog.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Blog</a>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="relative px-4 md:px-8 lg:px-16 mt-8">
+    <div class="max-w-7xl mx-auto relative">
+      <img src="./Imagenes/Homepage/fondo_header.png" alt="Banner" class="w-full h-64 md:h-96 object-cover rounded-2xl">
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
+        <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-center">Making Social Media Marketing <br
+            class="hidden md:block"> Even More Efficient</h1>
+        <p class="mt-4 text-sm md:text-base text-center max-w-2xl">Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry.</p>
       </div>
-      <div class="Sing_up">
-        <div>
-          <img src="./Imagenes/HomePage/Cart Icon.png" alt="">
-        </div>
-        <button>Sign In</button>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <article class="mt-16 px-4 md:px-8 lg:px-16">
+    <div class="max-w-4xl mx-auto">
+      <img src="./Imagenes/Blog_Single/img_principal.png" alt="Article" class="w-full h-auto rounded-2xl mb-8">
+
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Automated Google Search Ads Autopilot</h2>
+
+      <p class="text-base md:text-lg text-gray leading-relaxed mb-6">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industry's
+        standard dummy text ever since the 1500s, when an unknown printegalley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+      </p>
+
+      <p class="text-base md:text-lg text-gray leading-relaxed mb-8">
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letrsheets containing Lorem
+        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+        Lorem Ipsum.
+      </p>
+
+      <ul class="space-y-4 mb-8">
+        <li class="flex items-start gap-3">
+          <span class="font-bold text-primary text-lg">01.</span>
+          <span class="text-base md:text-lg text-dark">Listen to what they say about you</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="font-bold text-primary text-lg">02.</span>
+          <span class="text-base md:text-lg text-dark">Randomised words which don't look even slightly
+            believable.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="font-bold text-primary text-lg">03.</span>
+          <span class="text-base md:text-lg text-dark">Lorem Ipsum generators on the Internet tend to repeat predefined
+            chunks</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="font-bold text-primary text-lg">04.</span>
+          <span class="text-base md:text-lg text-dark">Automate multiple scenarios and eliminate tedious tasks.</span>
+        </li>
+      </ul>
+
+      <p class="text-base md:text-lg text-gray leading-relaxed mb-8">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industry's
+        standard dummy text ever since the 1500s, when an unknown printegalley of type and scrambled it to make a type
+        specimen book.
+      </p>
+
+      <img src="./Imagenes/Blog_Single/digitando_teclado.png" alt="Secondary" class="w-full h-auto rounded-2xl mb-8">
+
+      <h3 class="text-2xl md:text-3xl font-bold text-dark mb-6">Detailed insights for your social media</h3>
+
+      <p class="text-base md:text-lg text-gray leading-relaxed mb-8">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industry's
+        standard dummy text ever since the 1500s, when an unknown printegalley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+      </p>
+
+      <!-- Quote Section -->
+      <div class="relative bg-gradient-to-r from-primary to-accent rounded-2xl p-8 md:p-12 my-12">
+        <img src="./Imagenes/Homepage/imagen_comillas.png" alt="Quote" class="w-12 h-12 mb-4 opacity-50">
+        <p class="text-white text-lg md:text-xl leading-relaxed">
+          When an unknown printegalley of type and scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting.
+        </p>
       </div>
-    </header>
-    <section class="fondo__header">
-      <article>
-        <img src="./Imagenes/Homepage/fondo_header.png" alt="">
-        <div>
-          <h2>Case Study Details</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of 
-            the printing and typesetting industry.
-          </p>
+
+      <h4 class="text-xl md:text-2xl font-bold text-dark mb-4">What technology stack do we use at Technology?</h4>
+      <p class="text-base md:text-lg text-gray leading-relaxed mb-8">
+        It was popularised in the 1960s with the release of Letrsheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+
+      <!-- Tags and Social -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 py-8 border-t border-b border-lightgray">
+        <div class="flex gap-3">
+          <span class="bg-gray-100 px-4 py-2 rounded-lg text-sm font-medium">Analyze</span>
+          <span class="bg-gray-100 px-4 py-2 rounded-lg text-sm font-medium">Marketing</span>
         </div>
-      </article>
-    </section>
-    <main>
-      <section>
-        <div class="foto__redes">
-          <img src="./Imagenes/Cases_Study_Single/redes.png" alt="">
+        <div class="flex gap-4">
+          <img src="./Imagenes/Fetures_Single/Insta.png" alt="Instagram"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/facek.png" alt="Facebook"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Twiter.png" alt="Twitter"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="Pinterest"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
         </div>
-        <h2>Posting the right content at the right frequency</h2>
-        <p class="parrafo_1">
-          Lorem Ipsum is simply dummy text of the printing and 
-          typesetting industry. Lorem Ipsum been the industry's 
-          standard dummy text ever since the 1500s, when an 
-          unknown printegalley of type and scrambled it to make 
-          a type specimen book. It has survived not only five 
-          centuries, but also the leap into electronic typesetting.
-        </p>
-        <p class="parrafo_2">
-          remaining essentially unchanged. It was popularised 
-          in the 1960s with the release of Letrsheets containing 
-          Lorem Ipsum passages, and more recently with desktop 
-          publishing software like Aldus PageMaker including 
-          versions of Lorem Ipsum.
-        </p>
-        <div class="listas__conImg">
-          <ul>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Listen to what they say about you
-            </li>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Randomised words which.
-            </li>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Internet tend to repeat predefined chunks
-            </li>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Automate multiple scenarios
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Listen to what they say about you
-            </li>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Randomised words which.
-            </li>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Internet tend to repeat predefined chunks
-            </li>
-            <li>
-              <img src="./Imagenes/Cases_Study_Single/Pattern.png" alt="">
-              Automate multiple scenarios
-            </li>
-          </ul>
+      </div>
+
+      <!-- Author -->
+      <div class="mt-8">
+        <img src="./Imagenes/Blog_Single/Autor.png" alt="Author" class="w-full h-auto">
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer (Same as other pages) -->
+  <footer class="mt-16 md:mt-24 lg:mt-32 px-6 md:px-12 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-8 border-t border-b border-lightgray">
+        <div class="flex items-center gap-3">
+          <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-10 md:w-12">
+          <h2 class="font-mulish text-2xl md:text-3xl font-extrabold text-dark">Technologycal</h2>
         </div>
-        <p class="parrafo_3">
-          Lorem Ipsum is simply dummy text of the printing and 
-          typesetting industry. Lorem Ipsum been the industry's 
-          standard dummy text ever since the 1500s, when an 
-          unknown printegalley of type and scrambled it to 
-          make a type specimen book.
-        </p>
-        <div class="conten_2Img">
+        <button
+          class="border border-lightgray px-8 py-3 rounded-full text-base hover:bg-dark hover:text-white transition-all">See
+          our Case Studies</button>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div>
-            <img src="./Imagenes/Cases_Study_Single/digitando.png" alt="">
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Resources</h3>
+            <div class="flex flex-col gap-2">
+              <a href="./index.html" class="text-gray hover:text-primary transition-colors">Home</a>
+              <a href="./About_Us.html" class="text-gray hover:text-primary transition-colors">About</a>
+              <a href="./Contact.html" class="text-gray hover:text-primary transition-colors">Contact</a>
+              <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+              <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+              <a href="./pricing.html" class="text-gray hover:text-primary transition-colors">Pricing</a>
+              <a href="./pricing_single.html" class="text-gray hover:text-primary transition-colors">Pricing Single</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 sm:pt-12">
+            <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+            <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+            <a href="./Career.html" class="text-gray hover:text-primary transition-colors">Careers</a>
+            <a href="#" class="text-gray hover:text-primary transition-colors">Why choose us</a>
+            <a href="./case_Study.html" class="text-gray hover:text-primary transition-colors">Case studies</a>
           </div>
           <div>
-            <img src="./Imagenes/Cases_Study_Single/escuchando_musica.png" alt="">
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Utility Pages</h3>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-gray hover:text-primary transition-colors">Start here</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Style guide</a>
+              <a href="./Password.html" class="text-gray hover:text-primary transition-colors">Password protected</a>
+              <a href="./Fallido404.html" class="text-gray hover:text-primary transition-colors">404 Not found</a>
+              <a href="./licences.html" class="text-gray hover:text-primary transition-colors">Licenses</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Changelog</a>
+            </div>
           </div>
         </div>
-        <h3>
-          Our Working Proccess
-        </h3>
-        <p class="parrafo_1">
-          Lorem Ipsum is simply dummy text of the printing and 
-          typesetting industry. Lorem Ipsum been the industry's 
-          standard dummy text ever since the 1500s, when an 
-          unknown printegalley of type and scrambled it to make 
-          a type specimen book. It has survived not only five 
-          centuries, but also the leap into electronic typesetting.
-        </p>
-        <p class="parrafo_2">
-          remaining essentially unchanged. It was popularised 
-          in the 1960s with the release of Letrsheets containing 
-          Lorem Ipsum passages, and more recently with desktop 
-          publishing software like Aldus PageMaker including 
-          versions of Lorem Ipsum.
-        </p>
-      </section>
-    </main>
-    <footer>
-      <div class="Footer_Cuerpo">
-        <div class="Footer_Encabezado">
-          <div class="Logo">
-            <img src="./imagenes/HomePage/Logo.png" alt="">
-            <h2>Technologycal</h2>
-          </div>
-          <button>See our Case Studies</button>
-        </div>
-        <div class="Footer_Medio">
-          <div class="Footer_Links">
-            <div class="Resources">
-              <h3>Resources</h3>
-              <div class="Links">
-                <a href="./index.html">Home</a>
-                <a href="./About_Us.html">About</a>
-                <a href="./Contact.html">Contact</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./Blog_Single.html">Blog Post</a>
-                <a href="./pricing.html">Pricing</a>
-                <a href="./pricing_single.html">Pricing Single</a>
+        <div class="bg-dark rounded-2xl p-6 md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div class="border-b md:border-b-0 md:border-r border-gray-600 pb-6 md:pb-0 md:pr-8">
+              <img src="./Imagenes/Fetures_Single/Popular.png" alt="Popular" class="w-20 mb-4">
+              <h4 class="text-white text-2xl font-bold">Startup $<span class="text-4xl">25</span></h4>
+              <button
+                class="mt-4 bg-gray-700 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Choose
+                Plan</button>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">3 Social Set</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm"><span class="text-accent">150 post</span> per social</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">5 users</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Phone <span class="text-accent">Support</span></h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Planning & publishing</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Analytics tools</h4>
               </div>
             </div>
-            <div class="Links Careers">
-              <a href="./blog.html">Blog</a>
-              <a href="./Blog_Single.html">Blog Post</a>
-              <a href="/Carer.html">Careers</a>
-              <a href="">Why choose us</a>
-              <a href="./case_Study.html">Case studies</a>
-            </div>
-            <div class="Utility_Pages">
-              <h3>Utility Pages</h3>
-              <div class="Links">
-                <a href="">Star here</a>
-                <a href="">Style guide</a>
-                <a href="./Password.html">Password protected</a>
-                <a href="./Fallido404.html">404 Not found</a>
-                <a href="./licences.html">Licenses</a>
-                <a href="./Changelong.html">Changelog</a>
-              </div>
-            </div>
-          </div>
-          <div class="startup_25">
-            <div class="startup_izquierda">
-              <img src="./Imagenes/HomePage/Popular.png" alt="">
-              <h4>Startup $<span>25</span></h4>
-              <button>Choose Plan</button>
-            </div>
-            <div class="startup_derecha">
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>3 Social Set</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4><span>150 post</span> per social</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>5 users</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>Phone <span>Support</span></h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>Planning & publishing</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>Analytics tools</h4>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="Footer_Final">
-          <h4>Copyright © Technologycal | Designed by <span>VictorFlow</span> Templates - Powered by <span>Webflow</span>
-          </h4>
-          <div class="Redes_Footer">
-            <img src="./imagenes/HomePage/Insta.png" alt="">
-            <img src="./Imagenes/HomePage/Fb.png" alt="">
-            <img src="./Imagenes/HomePage/Twiter.png" alt="">
-            <img src="./Imagenes/HomePage/Pintrest.png" alt="">
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-lightgray">
+        <h4 class="text-gray text-sm text-center md:text-left">
+          Copyright Â© Technologycal | Designed by <span class="font-bold text-dark">VictorFlow</span> Templates -
+          Powered by <span class="font-bold text-dark">Webflow</span>
+        </h4>
+        <div class="flex gap-4">
+          <img src="./Imagenes/Fetures_Single/Insta.png" alt="Instagram"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/facek.png" alt="Facebook"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Twiter.png" alt="Twitter"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="Pinterest"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
+</body>
+
 </html>

@@ -1,304 +1,424 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
-    <link rel="stylesheet" href="./Css/blog.css">
-    <title>Blog</title>
-  </head>
-  <body>
-    <header>
-      <div class="Header_Logo">
-        <img src="./Imagenes/HomePage/Logo.png" alt="">
-        <h2>Technologycal</h2>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Blog - Technologycal</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5956E9',
+            dark: '#2F2F2F',
+            gray: '#808080',
+            lightgray: '#DCDCDC',
+            accent: '#38D4FF'
+          },
+          fontFamily: {
+            mulish: ['Mulish', 'sans-serif'],
+            opensans: ['Open Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+    }
+  </style>
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body class="bg-white text-dark">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 md:px-12 lg:px-16 py-4 md:py-6">
+    <div class="flex items-center gap-2">
+      <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-8 md:w-10 lg:w-12">
+      <h2 class="font-mulish text-xl md:text-2xl lg:text-3xl font-extrabold text-dark">Technologycal</h2>
+    </div>
+
+    <nav class="hidden lg:flex gap-6 xl:gap-8">
+      <a href="./index.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Home</a>
+      <a href="./Features.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Features</a>
+      <a href="./case_Study_Single.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Study</a>
+      <a href="./pricing.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Pricing</a>
+      <a href="./blog.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Blog</a>
+    </nav>
+
+    <div class="flex items-center gap-3 md:gap-4">
+      <div class="hidden md:flex w-10 h-10 lg:w-12 lg:h-12 rounded-full items-center justify-center bg-primary">
+        <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="Cart" class="w-5 lg:w-6">
       </div>
-      <div class="Header_Links">
-        <a href="./index.html">Home</a>
-        <a href="./Features.html">Features</a>
-        <a href="">Resources</a>
-        <a href="./pricing.html">Pricing</a>
-        <a href="./blog.html">Blog</a>
+      <button
+        class="font-opensans text-sm md:text-base lg:text-lg text-dark border border-lightgray rounded-full px-6 md:px-8 py-2 md:py-3 hover:bg-primary hover:text-white hover:border-primary transition-all">Sign
+        In</button>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden lg:hidden flex-col gap-4 px-6 py-4 bg-gray-50 border-b border-lightgray">
+    <a href="./index.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Home</a>
+    <a href="./Features.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Features</a>
+    <a href="./case_Study_Single.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Study</a>
+    <a href="./pricing.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Pricing</a>
+    <a href="./blog.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Blog</a>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="relative px-4 md:px-8 lg:px-16 mt-8">
+    <div class="max-w-7xl mx-auto relative">
+      <img src="./Imagenes/Homepage/fondo_header.png" alt="Banner" class="w-full h-64 md:h-96 object-cover rounded-2xl">
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-center">Latest News & Articles</h1>
+        <p class="mt-4 text-sm md:text-base lg:text-lg text-center max-w-2xl">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
       </div>
-      <div class="Sing_up">
-        <div>
-          <img src="./Imagenes/HomePage/Cart Icon.png" alt="">
-        </div>
-        <button>Sign In</button>
-      </div>
-    </header>
-    <section class="fondo__header">
-      <article>
-        <img src="./Imagenes/Homepage/fondo_header.png" alt="">
-        <div>
-          <h2>Latest News & Articles</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of 
-            the printing and typesetting industry.
-          </p>
-        </div>
-      </article>
-    </section>
-    <section class="section--noticias__article">
-      <article class="noticias__article">
-        <section>
-          <div class="img_noticia">
-            <img src="./Imagenes/HomePage/table.png" alt="">
-            <div>
-              <button type="submit">Analyze</button>
-              <button type="submit">Marketing</button>
+    </div>
+  </section>
+
+  <!-- Blog Articles Grid -->
+  <section class="mt-16 md:mt-24 px-4 md:px-8 lg:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Article 1 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/table.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4 flex gap-2">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Marketing</span>
             </div>
           </div>
-          <div class="fecha_noticia">
-            <p>December 05, 2021</p>
-            <p>3 min read</p>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
           </div>
-          <h3>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
             Detailed insights for your <br>
             social media
           </h3>
-          <p class="descripcion__noticia">
-            Lorem Ipsum is simply dummy text
-            the printing and typesetting industry.
-            Lorem Ipsum has been the standard dummy.
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
           </p>
-          <h4>View More</h4>
-        </section>
-        <section>
-          <div class="img_noticia">
-            <img src="./Imagenes/HomePage/persona_negra.png" alt="">
-            <div>
-              <button type="submit">Analyze</button>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/persona_negra.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
             </div>
           </div>
-          <div class="fecha_noticia">
-            <p>December 05, 2021</p>
-            <p>3 min read</p>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
           </div>
-          <h3>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
             New Device Invention for <br>
             Digital Platform
           </h3>
-          <p class="descripcion__noticia">
-            Lorem Ipsum is simply dummy text
-            the printing and typesetting industry.
-            Lorem Ipsum has been the standard dummy.
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
           </p>
-          <h4>View More</h4>
-        </section>
-        <section>
-          <div class="img_noticia">
-            <img src="./Imagenes/HomePage/laptod.png" alt="">
-            <div>
-              <button type="submit">Analyze</button>
-              <button type="submit">Marketing</button>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/laptod.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4 flex gap-2">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Marketing</span>
             </div>
           </div>
-          <div class="fecha_noticia">
-            <p>December 05, 2021</p>
-            <p>3 min read</p>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
           </div>
-          <h3>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
             Business Strategy Make <br>
             His Goal Acheive
           </h3>
-          <p class="descripcion__noticia">
-            Lorem Ipsum is simply dummy text
-            the printing and typesetting industry.
-            Lorem Ipsum has been the standard dummy.
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
           </p>
-          <h4>View More</h4>
-        </section>
-        <section>
-          <div class="img_noticia">
-            <img src="./Imagenes/Homepage/foto_celular.png" alt="">
-            <div>
-              <button type="submit">Analyze</button>
-              <button type="submit">Marketing</button>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/foto_celular.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4 flex gap-2">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Marketing</span>
             </div>
           </div>
-          <div class="fecha_noticia">
-            <p>December 05, 2021</p>
-            <p>3 min read</p>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
           </div>
-          <h3>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
             Social Media Holidays <br>
             Calendar for 2022
           </h3>
-          <p class="descripcion__noticia">
-            Lorem Ipsum is simply dummy text
-            the printing and typesetting industry.
-            Lorem Ipsum has been the standard dummy.
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
           </p>
-          <h4>View More</h4>
-        </section>
-        <section>
-          <div class="img_noticia">
-            <img src="./Imagenes/Homepage/mujer_noticia.png" alt="">
-            <div>
-              <button type="submit">Analyze</button>
-              <button type="submit">Marketing</button>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/mujer_noticia.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4 flex gap-2">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Marketing</span>
             </div>
           </div>
-          <div class="fecha_noticia">
-            <p>December 05, 2021</p>
-            <p>3 min read</p>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
           </div>
-          <h3>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
             Create content faster with <br>
             artificial intelligence
           </h3>
-          <p class="descripcion__noticia">
-            Lorem Ipsum is simply dummy text
-            the printing and typesetting industry.
-            Lorem Ipsum has been the standard dummy.
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
           </p>
-          <h4>View More</h4>
-        </section>
-        <section>
-          <div class="img_noticia">
-            <img src="./Imagenes/Homepage/charla_amigos.png" alt="">
-            <div>
-              <button type="submit">Analyze</button>
-              <button type="submit">Marketing</button>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/charla_amigos.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4 flex gap-2">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Marketing</span>
             </div>
           </div>
-          <div class="fecha_noticia">
-            <p>December 05, 2021</p>
-            <p>3 min read</p>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
           </div>
-          <h3>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
             How to Drive Sales with <br>
             Automated Instagram
           </h3>
-          <p class="descripcion__noticia">
-            Lorem Ipsum is simply dummy text
-            the printing and typesetting industry.
-            Lorem Ipsum has been the standard dummy.
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
           </p>
-          <h4>View More</h4>
-        </section>
-      </article>
-    </section>
-    <section class="prueba_gratis">
-      <div class="content__pruebaGratis">
-        <img src="./Imagenes/HomePage/fondo_prubaGratis.png" alt="" class="fondo_prubaGratis">
-        <section class="pruebaGratis__secciones">
-          <article>
-            <h2>Start your 7-day free trial</h2>
-            <p class="descricion_pG">Felix can help bring your dream website to life with ease.</p>
-            <div class="mail_bok">
-              <input type="text" placeholder="Enter your Email">
-              <button type="submit">Start</button>
-            </div>
-            <section class="section__3Puntos">
-              <div>
-                <img src="./Imagenes/HomePage/circulo_puntoAzul.png" alt="">
-                <p>Free 7-day trial</p>
-              </div>
-              <div>
-                <img src="./Imagenes/HomePage/circulo_puntoAzul.png" alt="">
-                <p>No credit card required</p>
-              </div>
-              <div>
-                <img src="./Imagenes/HomePage/circulo_puntoAzul.png" alt="">
-                <p>Cancel anytime</p>
-              </div>
-            </section>
-          </article>
-          <article>
-            <img src="./Imagenes/HomePage/foto_pruebaGratis.png" alt="" class="foto_pruebaGratis">
-          </article>
-        </section>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
       </div>
-    </section>
-    <footer>
-      <div class="Footer_Cuerpo">
-        <div class="Footer_Encabezado">
-          <div class="Logo">
-            <img src="./imagenes/HomePage/Logo.png" alt="">
-            <h2>Technologycal</h2>
+    </div>
+  </section>
+
+  <!-- Free Trial Section -->
+  <section class="mt-16 md:mt-24 px-4 md:px-8 lg:px-16">
+    <div class="relative max-w-7xl mx-auto overflow-hidden rounded-3xl">
+      <img src="./Imagenes/Fetures_Single/fondo_prubaGratis.png" alt="Background" class="w-full h-auto">
+      <div
+        class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-6 md:px-12 lg:px-16 py-8 md:py-12">
+        <div class="text-white">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">Start your 7-day free trial</h2>
+          <p class="mt-3 text-sm md:text-base opacity-90">Felix can help bring your dream website to life with ease.</p>
+          <div class="mt-6 relative">
+            <input type="email" placeholder="Enter your Email"
+              class="w-full px-6 py-4 rounded-full text-dark text-base pr-32">
+            <button
+              class="absolute right-2 top-1/2 -translate-y-1/2 bg-dark text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Start</button>
           </div>
-          <button>See our Case Studies</button>
-        </div>
-        <div class="Footer_Medio">
-          <div class="Footer_Links">
-            <div class="Resources">
-              <h3>Resources</h3>
-              <div class="Links">
-                <a href="./index.html">Home</a>
-                <a href="./About_Us.html">About</a>
-                <a href="./Contact.html">Contact</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./Blog_Single.html">Blog Post</a>
-                <a href="./pricing.html">Pricing</a>
-                <a href="./pricing_single.html">Pricing Single</a>
-              </div>
+          <div class="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-6">
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="Check" class="w-5 h-5">
+              <p class="text-sm">Free 7-day trial</p>
             </div>
-            <div class="Links Careers">
-              <a href="./blog.html">Blog</a>
-              <a href="./Blog_Single.html">Blog Post</a>
-              <a href="/Carer.html">Careers</a>
-              <a href="">Why choose us</a>
-              <a href="./case_Study.html">Case studies</a>
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="Check" class="w-5 h-5">
+              <p class="text-sm">No credit card required</p>
             </div>
-            <div class="Utility_Pages">
-              <h3>Utility Pages</h3>
-              <div class="Links">
-                <a href="">Star here</a>
-                <a href="">Style guide</a>
-                <a href="./Password.html">Password protected</a>
-                <a href="./Fallido404.html">404 Not found</a>
-                <a href="./licences.html">Licenses</a>
-                <a href="./Changelong.html">Changelog</a>
-              </div>
-            </div>
-          </div>
-          <div class="startup_25">
-            <div class="startup_izquierda">
-              <img src="./Imagenes/HomePage/Popular.png" alt="">
-              <h4>Startup $<span>25</span></h4>
-              <button>Choose Plan</button>
-            </div>
-            <div class="startup_derecha">
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>3 Social Set</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4><span>150 post</span> per social</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>5 users</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>Phone <span>Support</span></h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>Planning & publishing</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/HomePage/Vector (2).png" alt="">
-                <h4>Analytics tools</h4>
-              </article>
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="Check" class="w-5 h-5">
+              <p class="text-sm">Cancel anytime</p>
             </div>
           </div>
         </div>
-        <div class="Footer_Final">
-          <h4>Copyright © Technologycal | Designed by <span>VictorFlow</span> Templates - Powered by <span>Webflow</span>
-          </h4>
-          <div class="Redes_Footer">
-            <img src="./imagenes/HomePage/Insta.png" alt="">
-            <img src="./Imagenes/HomePage/Fb.png" alt="">
-            <img src="./Imagenes/HomePage/Twiter.png" alt="">
-            <img src="./Imagenes/HomePage/Pintrest.png" alt="">
-          </div>
+        <div class="hidden lg:block">
+          <img src="./Imagenes/Fetures_Single/foto_pruebaGratis.png" alt="Trial" class="w-full h-auto">
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 md:mt-24 lg:mt-32 px-6 md:px-12 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-8 border-t border-b border-lightgray">
+        <div class="flex items-center gap-3">
+          <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-10 md:w-12">
+          <h2 class="font-mulish text-2xl md:text-3xl font-extrabold text-dark">Technologycal</h2>
+        </div>
+        <button
+          class="border border-lightgray px-8 py-3 rounded-full text-base hover:bg-dark hover:text-white transition-all">See
+          our Case Studies</button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Resources</h3>
+            <div class="flex flex-col gap-2">
+              <a href="./index.html" class="text-gray hover:text-primary transition-colors">Home</a>
+              <a href="./About_Us.html" class="text-gray hover:text-primary transition-colors">About</a>
+              <a href="./Contact.html" class="text-gray hover:text-primary transition-colors">Contact</a>
+              <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+              <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+              <a href="./pricing.html" class="text-gray hover:text-primary transition-colors">Pricing</a>
+              <a href="./pricing_single.html" class="text-gray hover:text-primary transition-colors">Pricing Single</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2 sm:pt-12">
+            <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+            <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+            <a href="./Career.html" class="text-gray hover:text-primary transition-colors">Careers</a>
+            <a href="#" class="text-gray hover:text-primary transition-colors">Why choose us</a>
+            <a href="./case_Study.html" class="text-gray hover:text-primary transition-colors">Case studies</a>
+          </div>
+
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Utility Pages</h3>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-gray hover:text-primary transition-colors">Start here</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Style guide</a>
+              <a href="./Password.html" class="text-gray hover:text-primary transition-colors">Password protected</a>
+              <a href="./Fallido404.html" class="text-gray hover:text-primary transition-colors">404 Not found</a>
+              <a href="./licences.html" class="text-gray hover:text-primary transition-colors">Licenses</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Changelog</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-dark rounded-2xl p-6 md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div class="border-b md:border-b-0 md:border-r border-gray-600 pb-6 md:pb-0 md:pr-8">
+              <img src="./Imagenes/Fetures_Single/Popular.png" alt="Popular" class="w-20 mb-4">
+              <h4 class="text-white text-2xl font-bold">Startup $<span class="text-4xl">25</span></h4>
+              <button
+                class="mt-4 bg-gray-700 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Choose
+                Plan</button>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">3 Social Set</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm"><span class="text-accent">150 post</span> per social</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">5 users</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Phone <span class="text-accent">Support</span></h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Planning & publishing</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Analytics tools</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-lightgray">
+        <h4 class="text-gray text-sm text-center md:text-left">
+          Copyright Â© Technologycal | Designed by <span class="font-bold text-dark">VictorFlow</span> Templates -
+          Powered by <span class="font-bold text-dark">Webflow</span>
+        </h4>
+        <div class="flex gap-4">
+          <img src="./Imagenes/Fetures_Single/Insta.png" alt="Instagram"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/facek.png" alt="Facebook"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Twiter.png" alt="Twitter"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="Pinterest"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
+</body>
+
 </html>

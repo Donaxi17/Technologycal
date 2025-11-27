@@ -1,237 +1,501 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Css/style_pri-single.css">
   <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pricing - Technologycal</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5956E9',
+            dark: '#2F2F2F',
+            gray: '#808080',
+            lightgray: '#DCDCDC',
+            accent: '#38D4FF'
+          },
+          fontFamily: {
+            mulish: ['Mulish', 'sans-serif'],
+            opensans: ['Open Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,500&family=Nunito+Sans:opsz,wght@6..12,800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>Pricing Single</title>
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+    }
+  </style>
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
-<body>
-  <header>
-    <div class="Header_Logo">
-      <img src="Imagenes/Pricing/logo.png" alt="">
-      <h2>Technologycal</h2>
+<body class="bg-white text-dark">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 md:px-12 lg:px-16 py-4 md:py-6">
+    <div class="flex items-center gap-2">
+      <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-8 md:w-10 lg:w-12">
+      <h2 class="font-mulish text-xl md:text-2xl lg:text-3xl font-extrabold text-dark">Technologycal</h2>
     </div>
-    <div class="Header_Links">
-      <a href="./index.html">Home</a>
-      <a href="./Features.html">Features</a>
-      <a href="">Resources</a>
-      <a href="./pricing.html">Pricing</a>
-      <a href="./blog.html">Blog</a>
-    </div>
-    <div class="Sing_up">
-      <div>
-        <img src="Imagenes/HomePage/Carrito_Mercado.png" alt="">
+
+    <nav class="hidden lg:flex gap-6 xl:gap-8">
+      <a href="./index.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Home</a>
+      <a href="./Features.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Features</a>
+      <a href="./case_Study_Single.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Study</a>
+      <a href="./pricing.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Pricing</a>
+      <a href="./blog.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Blog</a>
+    </nav>
+
+    <div class="flex items-center gap-3 md:gap-4">
+      <div class="hidden md:flex w-10 h-10 lg:w-12 lg:h-12 rounded-full items-center justify-center bg-primary">
+        <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="Cart" class="w-5 lg:w-6">
       </div>
-      <button>Sign In</button>
+      <button
+        class="font-opensans text-sm md:text-base lg:text-lg text-dark border border-lightgray rounded-full px-6 md:px-8 py-2 md:py-3 hover:bg-primary hover:text-white hover:border-primary transition-all">Sign
+        In</button>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </header>
 
-  <div class="background">
-    <h3 class="background__title">
-      Super Plan
-    </h3>
-    <p class="background__parrafo">
-      Lorem Ipsum is simply dummy text of the printing <br>
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden lg:hidden flex-col gap-4 px-6 py-4 bg-gray-50 border-b border-lightgray">
+    <a href="./index.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Home</a>
+    <a href="./Features.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Features</a>
+    <a href="./case_Study_Single.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Study</a>
+    <a href="./pricing.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Pricing</a>
+    <a href="./blog.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Blog</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="mt-12 px-4 md:px-8 lg:px-16 py-12 text-center">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark">This is Our Pricing Table</h1>
+    <p class="mt-4 text-base md:text-lg text-gray">
+      Lorem Ipsum is simply dummy text of the printing <br class="hidden md:block">
       and typesetting industry.
     </p>
-  </div>
+  </section>
 
-  <div class="single">
-    <div class="single__princing">
-
-      <div class="princing__chose">
-        <h3 class="chose__title">
-          Choose Your Plan Duration
-        </h3>
-        <p class="chose__lorem">
-          Building an enterprise level site doesn't need <br>
-          nightmare or cost your thousands.
-        </p>
-        <h5 class="chose__cantidad">
-          $14.99 / month
-        </h5>
-        <div class="chose__select">
-          Select Plan Duration <span><img class="img" src="Imagenes/Pricing_Single/vector__flecha.png" alt=""></span>
+  <!-- Pricing Cards -->
+  <section class="px-4 md:px-8 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Standard Plan -->
+      <div class="border border-lightgray rounded-2xl p-8 hover:shadow-2xl transition-shadow">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-dark">Standard</h2>
+          <span class="bg-gray-200 px-4 py-2 rounded-full text-sm font-semibold">Save 20%</span>
         </div>
-        <button class="chose__add">
-          Add to Cart
-        </button>
+        <div class="mb-8">
+          <h3 class="text-4xl font-bold text-dark">$7.99 <span class="text-lg font-normal text-gray">/ m</span></h3>
+          <p class="text-sm text-gray mt-2">$190 billed annually</p>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">3 Social Set</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">150 posts per social</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Phone Support</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Planning & publishing</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Advanced Analytics</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-gray">1,000 Posts/mo across</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-gray">Instagram, Pinterest & Facebook</span>
+          </li>
+        </ul>
+        <button class="w-full bg-dark text-white py-4 rounded-full font-semibold hover:bg-primary transition-all">Get
+          Started</button>
       </div>
 
-      <div class="princing__automated">
+      <!-- Super Plan (Popular) -->
+      <div class="border-2 border-primary rounded-2xl p-8 shadow-2xl relative transform lg:scale-105">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+          <img src="./Imagenes/Pricing/Popular.png" alt="Popular" class="h-8">
+        </div>
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-dark">Super</h2>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-4xl font-bold text-primary">$14.99 <span class="text-lg font-normal text-gray">/ m</span></h3>
+          <p class="text-sm text-gray mt-2">$190 billed annually</p>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">3 Social Set</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">150 posts per social</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Phone Support</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Planning & publishing</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Advanced Analytics</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">1,000 Posts/mo across</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Instagram, Pinterest & Facebook</span>
+          </li>
+        </ul>
+        <button class="w-full bg-primary text-white py-4 rounded-full font-semibold hover:bg-dark transition-all">Get
+          Started</button>
+      </div>
 
-        <h3 class="automated__title">
-          Automated Google Search <br>
-          Ads Autopilot
-        </h3>
-        <p class="automated__parrafo">
-          Building an enterprisecompletxability to create level site doesn't need nightmare cost your
-          thousands. Felix is purpose built for ease of use and completxability to create even the most
-          powerful of products.
+      <!-- Supreme Plan -->
+      <div class="border border-lightgray rounded-2xl p-8 hover:shadow-2xl transition-shadow">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-dark">Supreme</h2>
+          <span class="bg-gray-200 px-4 py-2 rounded-full text-sm font-semibold">Save 20%</span>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-4xl font-bold text-dark">$19.99 <span class="text-lg font-normal text-gray">/ m</span></h3>
+          <p class="text-sm text-gray mt-2">$190 billed annually</p>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">3 Social Set</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">150 posts per social</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Phone Support</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Planning & publishing</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Advanced Analytics</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">1,000 Posts/mo across</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Imagenes/Pricing/chulito.png" alt="Check" class="w-5 h-5">
+            <span class="text-base text-dark">Instagram, Pinterest & Facebook</span>
+          </li>
+        </ul>
+        <button class="w-full bg-dark text-white py-4 rounded-full font-semibold hover:bg-primary transition-all">Get
+          Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Money Back Guarantee -->
+  <section class="px-4 md:px-8 lg:px-16 py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-shrink-0">
+        <img src="./Imagenes/Pricing/Icon (12).png" alt="Guarantee" class="w-24 h-24 md:w-32 md:h-32">
+      </div>
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-dark mb-4">Our 100% No-Risk Money Back Guarantee</h2>
+        <p class="text-base text-gray leading-relaxed mb-4">
+          "Over the next 5 days, make an informed decision if Thech meets the hype. If you're not whistling with joy
+          from the content Jarvis wrote for you, then simply email we'll instantly refund 100% of your money. I'm
+          confident that when you sign up today, you'll get exactly what you need to write content at scale, fast."
         </p>
+        <h3 class="text-lg font-semibold text-dark">Co-Founder, CEO</h3>
+      </div>
+    </div>
+  </section>
 
-        <div class="automated__listen">
-          <img src="Imagenes/Pricing_Single/Vector.png" class="listen__imagen" alt="">
-          <p class="listen__parrafo">All in Basic, plus</p>
+  <!-- Compare Pricing Packages -->
+  <section class="px-4 md:px-8 lg:px-16 py-16">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-12">Compare pricing packages</h2>
+
+      <!-- Comparison Table - Desktop -->
+      <div class="hidden lg:block overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="border-b-2 border-lightgray">
+              <th class="text-left py-6 px-4 text-xl font-bold text-dark">Features</th>
+              <th class="text-center py-6 px-4">
+                <div class="text-xl font-bold text-dark">Standard</div>
+                <div class="text-sm text-gray mt-2">$7.99 / month</div>
+              </th>
+              <th class="text-center py-6 px-4">
+                <div class="text-xl font-bold text-primary">Super</div>
+                <div class="text-sm text-gray mt-2">$14.99 / month</div>
+              </th>
+              <th class="text-center py-6 px-4">
+                <div class="text-xl font-bold text-dark">Supreme</div>
+                <div class="text-sm text-gray mt-2">$19.99 / month</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-50">
+              <td colspan="4" class="py-4 px-4 font-bold text-dark">Social Platforms</td>
+            </tr>
+            <tr class="border-b border-lightgray">
+              <td class="py-4 px-4 text-dark">Facebook</td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+            </tr>
+            <tr class="border-b border-lightgray">
+              <td class="py-4 px-4 text-dark">Twitter</td>
+              <td class="text-center py-4"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+            </tr>
+            <tr class="border-b border-lightgray">
+              <td class="py-4 px-4 text-dark">Instagram</td>
+              <td class="text-center py-4"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td colspan="4" class="py-4 px-4 font-bold text-dark">Publish</td>
+            </tr>
+            <tr class="border-b border-lightgray">
+              <td class="py-4 px-4 text-dark">Monthly Posts</td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+            </tr>
+            <tr class="border-b border-lightgray">
+              <td class="py-4 px-4 text-dark">Hashtag Suggestions</td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td colspan="4" class="py-4 px-4 font-bold text-dark">Analyze</td>
+            </tr>
+            <tr class="border-b border-lightgray">
+              <td class="py-4 px-4 text-dark">Post Insights</td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+              <td class="text-center py-4"></td>
+              <td class="text-center py-4"><img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check"
+                  class="w-6 h-6 mx-auto"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-center text-gray mt-8">* Custom plans can also be offered</p>
+      </div>
+
+      <!-- Comparison - Mobile -->
+      <div class="lg:hidden space-y-6">
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-dark mb-4">Standard - $7.99/mo</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check" class="w-5 h-5">
+              <span class="text-dark">Facebook, Monthly Posts, Hashtag Suggestions, Post Insights</span>
+            </li>
+          </ul>
         </div>
-
-        <div class="automated__listen">
-          <img src="Imagenes/Pricing_Single/Vector.png" class="listen__imagen" alt="">
-          <p class="listen__parrafo"> Up to 10 credit cards</p>
+        <div class="bg-primary/10 rounded-2xl p-6 border-2 border-primary">
+          <h3 class="text-xl font-bold text-primary mb-4">Super - $14.99/mo (Popular)</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check" class="w-5 h-5">
+              <span class="text-dark">All Standard features + Twitter, Instagram, Hashtag Suggestions</span>
+            </li>
+          </ul>
         </div>
-
-        <div class="automated__listen">
-          <img src="Imagenes/Pricing_Single/Vector.png" class="listen__imagen" alt="">
-          <p class="listen__parrafo"> Invest in stocks, ETFs and cryptos</p>
-        </div>
-
-        <div class="automated__listen">
-          <img src="Imagenes/Pricing_Single/Vector.png" class="listen__imagen" alt="">
-          <p class="listen__parrafo"> Premium customer support
-          </p>
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-dark mb-4">Supreme - $19.99/mo</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check" class="w-5 h-5">
+              <span class="text-dark">All features included</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </section>
 
-
-    <div class="star">
-      <div class="Star">
-
-        <div class="Star__your">
-          <h2 class="your__day">
-            Start your 7-day free trial
-          </h2>
-          <p class="your__felix">
-            Felix can help bring your dream website to life with ease.
-          </p>
-          <div class="your__email">
-            <p class="email__parra">
-              Enter your Email
-            </p>
-            <button class="email__star">
-              Start
-            </button>
-          </div>
-
-          <div class="your__free">
-            <img class="free__img" src="Imagenes/Pricing_Single/circulo_puntoAzul.png" alt="">
-            <p>Free 7-day trial</p>
-            <img class="free__img" src="Imagenes/Pricing_Single/circulo_puntoAzul.png" alt="">
-            <p>No credit card required</p>
-            <img class="free__img" src="Imagenes/Pricing_Single/circulo_puntoAzul.png" alt="">
-            <p>Cancel anytime</p>
-
-          </div>
+  <!-- Footer -->
+  <footer class="mt-16 md:mt-24 lg:mt-32 px-6 md:px-12 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-8 border-t border-b border-lightgray">
+        <div class="flex items-center gap-3">
+          <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-10 md:w-12">
+          <h2 class="font-mulish text-2xl md:text-3xl font-extrabold text-dark">Technologycal</h2>
         </div>
-        <div class="Star__imagen">
-          <img class="image__rotate" src="Imagenes/Pricing_Single/imagen_rotate.png" alt="">
-        </div>
+        <button
+          class="border border-lightgray px-8 py-3 rounded-full text-base hover:bg-dark hover:text-white transition-all">See
+          our Case Studies</button>
       </div>
-    </div>
-  </div>
-  <footer>
-    <div class="Footer_Cuerpo">
-      <div class="Footer_Encabezado">
-        <div class="Logo">
-          <img src="Imagenes/Pricing/logo.png" alt="">
-          <h2>Technologycal</h2>
-        </div>
-        <button>See our Case Studies</button>
-      </div>
-      <div class="Footer_Medio">
-        <div class="Footer_Links">
-          <div class="Resources">
-            <h3>Resources</h3>
-            <div class="Links">
-              <a href="./index.html">Home</a>
-              <a href="./About_Us.html">About</a>
-              <a href="./Contact.html">Contact</a>
-              <a href="./blog.html">Blog</a>
-              <a href="./Blog_Single.html">Blog Post</a>
-              <a href="./pricing.html">Pricing</a>
-              <a href="./pricing_single.html">Pricing Single</a>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Resources</h3>
+            <div class="flex flex-col gap-2">
+              <a href="./index.html" class="text-gray hover:text-primary transition-colors">Home</a>
+              <a href="./About_Us.html" class="text-gray hover:text-primary transition-colors">About</a>
+              <a href="./Contact.html" class="text-gray hover:text-primary transition-colors">Contact</a>
+              <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+              <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+              <a href="./pricing.html" class="text-gray hover:text-primary transition-colors">Pricing</a>
+              <a href="./pricing_single.html" class="text-gray hover:text-primary transition-colors">Pricing Single</a>
             </div>
           </div>
-          <div class="Links Careers">
-            <a href="./blog.html">Blog</a>
-            <a href="./Blog_Single.html">Blog Post</a>
-            <a href="/Carer.html">Careers</a>
-            <a href="">Why choose us</a>
-            <a href="./case_Study.html">Case studies</a>
+
+          <div class="flex flex-col gap-2 sm:pt-12">
+            <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+            <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+            <a href="./Career.html" class="text-gray hover:text-primary transition-colors">Careers</a>
+            <a href="#" class="text-gray hover:text-primary transition-colors">Why choose us</a>
+            <a href="./case_Study.html" class="text-gray hover:text-primary transition-colors">Case studies</a>
           </div>
-          <div class="Utility_Pages">
-            <h3>Utility Pages</h3>
-            <div class="Links">
-              <a href="">Star here</a>
-              <a href="">Style guide</a>
-              <a href="./Password.html">Password protected</a>
-              <a href="./Fallido404.html">404 Not found</a>
-              <a href="./licences.html">Licenses</a>
-              <a href="./Changelong.html">Changelog</a>
+
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Utility Pages</h3>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-gray hover:text-primary transition-colors">Start here</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Style guide</a>
+              <a href="./Password.html" class="text-gray hover:text-primary transition-colors">Password protected</a>
+              <a href="./Fallido404.html" class="text-gray hover:text-primary transition-colors">404 Not found</a>
+              <a href="./licences.html" class="text-gray hover:text-primary transition-colors">Licenses</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Changelog</a>
             </div>
           </div>
         </div>
-        <div class="startup_25">
-          <div class="startup_izquierda">
-            <img src="/Imagenes/Pricing/Popular.png" alt="">
-            <h4>Startup $<span>25</span></h4>
-            <button>Choose Plan</button>
-          </div>
-          <div class="startup_derecha">
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>3 Social Set</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4><span>150 post</span> per social</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>5 users</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>Phone <span>Support</span></h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>Planning & publishing</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>Analytics tools</h4>
-            </article>
+
+        <div class="bg-dark rounded-2xl p-6 md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div class="border-b md:border-b-0 md:border-r border-gray-600 pb-6 md:pb-0 md:pr-8">
+              <img src="./Imagenes/Fetures_Single/Popular.png" alt="Popular" class="w-20 mb-4">
+              <h4 class="text-white text-2xl font-bold">Startup $<span class="text-4xl">25</span></h4>
+              <button
+                class="mt-4 bg-gray-700 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Choose
+                Plan</button>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">3 Social Set</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm"><span class="text-accent">150 post</span> per social</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">5 users</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Phone <span class="text-accent">Support</span></h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Planning & publishing</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Analytics tools</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="Footer_Final">
-        <h4>Copyright © Technologycal | Designed by <span>VictorFlow</span> Templates - Powered by
-          <span>Webflow</span>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-lightgray">
+        <h4 class="text-gray text-sm text-center md:text-left">
+          Copyright Â© Technologycal | Designed by <span class="font-bold text-dark">VictorFlow</span> Templates -
+          Powered by <span class="font-bold text-dark">Webflow</span>
         </h4>
-        <div class="Redes_Footer">
-          <img src="/Imagenes/Pricing/Instagram.png" alt="">
-          <img src="/Imagenes/Pricing/facebook.png" alt="">
-          <img src="/Imagenes/Pricing/Twiter.png" alt="">
-          <img src="/Imagenes/Pricing/Pintrest.png" alt="">
+        <div class="flex gap-4">
+          <img src="./Imagenes/Fetures_Single/Insta.png" alt="Instagram"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/facek.png" alt="Facebook"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Twiter.png" alt="Twitter"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="Pinterest"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
         </div>
       </div>
     </div>
   </footer>
 
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
 </body>
 
 </html>

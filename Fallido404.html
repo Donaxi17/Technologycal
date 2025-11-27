@@ -1,140 +1,70 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <link rel="stylesheet" href="./Css/Fallido404.css">
     <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>404 - Page Not Found</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5956E9',
+                        dark: '#2F2F2F',
+                        gray: '#808080',
+                        lightgray: '#DCDCDC',
+                        accent: '#38D4FF'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mulish', sans-serif;
+        }
+    </style>
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
-<body>
-    <!-- MENU -->
-    <div>
-        <header>
-            <div class="Header_Logo">
-              <img src="./Imagenes/Homepage/logo.png" alt="">
-              <h2>Technologycal</h2>
-            </div>
-            <div class="Header_Links">
-              <a href="./index.html">Home</a>
-              <a href="./Features.html">Features</a>
-              <a href="">Resources</a>
-              <a href="./pricing.html">Pricing</a>
-              <a href="./blog.html">Blog</a>
-            </div>
-            <div class="Sing_up">
-              <div>
-                <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="">
-              </div>
-              <button>Sign In</button>
-            </div>
-          </header>
-        <!-- MENU FIN -->
+<body class="bg-white text-dark">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 md:px-12 lg:px-16 py-4 md:py-6">
+        <div class="flex items-center gap-2">
+            <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-8 md:w-10 lg:w-12">
+            <h2 class="font-mulish text-xl md:text-2xl lg:text-3xl font-extrabold text-dark">Technologycal</h2>
+        </div>
+        <a href="./index.html"
+            class="border border-lightgray px-6 md:px-8 py-2 md:py-3 rounded-full text-sm md:text-base hover:bg-primary hover:text-white hover:border-primary transition-all">Go
+            Home</a>
+    </header>
 
-        <!-- IMG 404 -->
-        <div class="fallido">
-            <img src="./Imagenes/Fallido404/404.png" alt="">
-            <div class="text_btn">
-                <p>This page <span>doesn't exist</span> or removed! <br>
-                    We suggest you back to home</p>
-                <button>Go to Home</button>
+    <!-- 404 Content -->
+    <section class="min-h-screen flex items-center justify-center px-4 py-16">
+        <div class="text-center max-w-2xl">
+            <h1 class="text-9xl md:text-[200px] font-extrabold text-primary">404</h1>
+            <h2 class="mt-8 text-3xl md:text-5xl font-bold text-dark">Page Not Found</h2>
+            <p class="mt-6 text-lg md:text-xl text-gray">
+                Oops! The page you are looking for doesn't exist. <br class="hidden md:block">
+                It might have been moved or deleted.
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="./index.html"
+                    class="bg-primary text-white px-10 py-4 rounded-full font-semibold hover:bg-dark transition-all">Back
+                    to Home</a>
+                <a href="./Contact.html"
+                    class="border-2 border-primary text-primary px-10 py-4 rounded-full font-semibold hover:bg-primary hover:text-white transition-all">Contact
+                    Us</a>
             </div>
         </div>
-        <!-- FIN IMG 404 -->
-
-        <!-- FOOTER -->
-        <footer>
-            <div class="Footer_Cuerpo">
-                <div class="Footer_Encabezado">
-                    <div class="Logo">
-                        <img src="./Imagenes/Homepage/logo.png" alt="">
-                        <h2>Technologycal</h2>
-                    </div>
-                    <button>See our Case Studies</button>
-                </div>
-                <div class="Footer_Medio">
-                    <div class="Footer_Links">
-                        <div class="Resources">
-                            <h3>Resources</h3>
-                            <div class="Links">
-                                <a href="./index.html">Home</a>
-                                <a href="./About_Us.html">About</a>
-                                <a href="./Contact.html">Contact</a>
-                                <a href="./blog.html">Blog</a>
-                                <a href="./Blog_Single.html">Blog Post</a>
-                                <a href="./pricing.html">Pricing</a>
-                                <a href="./pricing_single.html">Pricing Single</a>
-                            </div>
-                        </div>
-                        <div class="Links Careers">
-                            <a href="./blog.html">Blog</a>
-                            <a href="./Blog_Single.html">Blog Post</a>
-                            <a href="/Carer.html">Careers</a>
-                            <a href="">Why choose us</a>
-                            <a href="./case_Study.html">Case studies</a>
-                        </div>
-                        <div class="Utility_Pages">
-                            <h3>Utility Pages</h3>
-                            <div class="Links">
-                                <a href="">Star here</a>
-                                <a href="">Style guide</a>
-                                <a href="./Password.html">Password protected</a>
-                                <a href="./Fallido404.html">404 Not found</a>
-                                <a href="./licences.html">Licenses</a>
-                                <a href="./Changelong.html">Changelog</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="startup_25">
-                        <div class="startup_izquierda">
-                            <img src="./Imagenes/Fetures_Single/Popular.png" alt="">
-                            <h4>Startup $<span>25</span></h4>
-                            <button>Choose Plan</button>
-                        </div>
-                        <div class="startup_derecha">
-                            <article>
-                                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                                <h4>3 Social Set</h4>
-                            </article>
-                            <article>
-                                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                                <h4><span>150 post</span> per social</h4>
-                            </article>
-                            <article>
-                                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                                <h4>5 users</h4>
-                            </article>
-                            <article>
-                                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                                <h4>Phone <span>Support</span></h4>
-                            </article>
-                            <article>
-                                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                                <h4>Planning & publishing</h4>
-                            </article>
-                            <article>
-                                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                                <h4>Analytics tools</h4>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <div class="Footer_Final">
-                    <h4>Copyright © Technologycal | Designed by <span>VictorFlow</span> Templates - Powered by
-                        <span>Webflow</span>
-                    </h4>
-                    <div class="Redes_Footer">
-                        <img src="./Imagenes/Fetures_Single/Insta.png" alt="">
-                        <img src="./Imagenes/Fetures_Single/facek.png" alt="">
-                        <img src="./Imagenes/Fetures_Single/Twiter.png" alt="">
-                        <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    </section>
 </body>
 
 </html>

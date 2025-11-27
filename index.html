@@ -1,539 +1,715 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
-  <link rel="stylesheet" href="./Css/style.css">
-  <title>Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Homepage - Technologycal</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5956E9',
+            dark: '#2F2F2F',
+            gray: '#808080',
+            lightgray: '#DCDCDC',
+            accent: '#38D4FF'
+          },
+          fontFamily: {
+            mulish: ['Mulish', 'sans-serif'],
+            opensans: ['Open Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+    }
+  </style>
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
-<body>
-  <header>
-    <div class="Header_Logo">
-      <img src="./Imagenes/Homepage/logo.png" alt="">
-      <h2>Technologycal</h2>
+<body class="bg-white text-dark">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 md:px-12 lg:px-16 py-4 md:py-6">
+    <div class="flex items-center gap-2">
+      <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-8 md:w-10 lg:w-12">
+      <h2 class="font-mulish text-xl md:text-2xl lg:text-3xl font-extrabold text-dark">Technologycal</h2>
     </div>
-    <div class="Header_Links">
-      <a href="./index.html">Home</a>
-      <a href="./Features.html">Features</a>
-      <a href="./case_Study_Single.html">Study</a>
-      <a href="./pricing.html">Pricing</a>
-      <a href="./blog.html">Blog</a>
-    </div>
-    <div class="Sing_up">
-      <div>
-        <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="">
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex gap-6 xl:gap-8">
+      <a href="./index.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Home</a>
+      <a href="./Features.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Features</a>
+      <a href="./case_Study_Single.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Study</a>
+      <a href="./pricing.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Pricing</a>
+      <a href="./blog.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Blog</a>
+    </nav>
+
+    <div class="flex items-center gap-3 md:gap-4">
+      <div class="hidden md:flex w-10 h-10 lg:w-12 lg:h-12 rounded-full items-center justify-center bg-primary">
+        <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="Cart" class="w-5 lg:w-6">
       </div>
-      <button>Sign In</button>
+      <button
+        class="font-opensans text-sm md:text-base lg:text-lg text-dark border border-lightgray rounded-full px-6 md:px-8 py-2 md:py-3 hover:bg-primary hover:text-white hover:border-primary transition-all">Sign
+        In</button>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="lg:hidden text-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </header>
-  <section class="encabezado">
-    <div class="Background__img">
-      <article class="encabezado__article">
-        <h2>All In One Social Media Management <br>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden lg:hidden flex-col gap-4 px-6 py-4 bg-gray-50 border-b border-lightgray">
+    <a href="./index.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Home</a>
+    <a href="./Features.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Features</a>
+    <a href="./case_Study_Single.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Study</a>
+    <a href="./pricing.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Pricing</a>
+    <a href="./blog.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Blog</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="mt-8 px-4 md:px-8 lg:px-16">
+    <div class="relative max-w-7xl mx-auto">
+      <img src="./Imagenes/Fetures_Single/banner.png" alt="Banner" class="w-full h-auto rounded-2xl">
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white px-4 md:px-8">
+        <h2 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center leading-tight">
+          All In One Social Media Management <br class="hidden md:block">
           Solution For Businesses
         </h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <button type="button">Create Free Account</button>
-      </article>
-      <img src="./Imagenes/Fetures_Single/banner.png" alt="">
-      <div class="fechas__redes">
-        <img src="./Imagenes/Fetures_Single/Graphics Image.png" alt="">
+        <p class="mt-4 md:mt-6 text-sm md:text-base lg:text-lg text-center max-w-2xl">Lorem Ipsum is simply dummy text
+          of the printing and typesetting industry.</p>
+        <button
+          class="mt-6 md:mt-8 bg-white text-dark px-8 md:px-12 py-3 md:py-4 rounded-full text-sm md:text-base font-semibold hover:bg-primary hover:text-white transition-all shadow-lg">Create
+          Free Account</button>
+      </div>
+    </div>
+
+    <!-- Graphics Image -->
+    <div class="max-w-5xl mx-auto -mt-12 md:-mt-24 lg:-mt-32 px-4">
+      <img src="./Imagenes/Fetures_Single/Graphics Image.png" alt="Graphics"
+        class="w-full h-auto rounded-3xl shadow-2xl shadow-primary/30">
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 py-8 md:py-12">
+    <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16 px-4">
+      <img src="./Imagenes/Homepage/home.png" alt="Brand"
+        class="h-8 md:h-10 lg:h-12 w-auto grayscale hover:grayscale-0 transition-all">
+      <img src="./Imagenes/Homepage/vs.png" alt="Brand"
+        class="h-8 md:h-10 lg:h-12 w-auto grayscale hover:grayscale-0 transition-all">
+      <img src="./Imagenes/Homepage/brand.png" alt="Brand"
+        class="h-8 md:h-10 lg:h-12 w-auto grayscale hover:grayscale-0 transition-all">
+      <img src="./Imagenes/Homepage/nature_home.png" alt="Brand"
+        class="h-8 md:h-10 lg:h-12 w-auto grayscale hover:grayscale-0 transition-all">
+      <img src="./Imagenes/Homepage/classic.png" alt="Brand"
+        class="h-8 md:h-10 lg:h-12 w-auto grayscale hover:grayscale-0 transition-all">
+    </div>
+  </section>
+
+  <!-- The Tool Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 px-4 md:px-8 lg:px-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div class="order-2 lg:order-1">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight">
+          The Tool That <br>
+          Feels Like a..
+        </h2>
+        <p class="mt-4 md:mt-6 text-base md:text-lg text-gray leading-relaxed">
+          Building an enterprise level site doesn't need nightmare or cost your thousands. Felix is purpose built for
+          ease of use and complete flexability to create even the most powerful of products.
+        </p>
+        <div class="mt-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check" class="w-6 h-6">
+            <p class="text-base md:text-lg text-dark">Posting to social media, blogs, and messengers</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check" class="w-6 h-6">
+            <p class="text-base md:text-lg text-dark">Working with images and videos</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./Imagenes/Homepage/circulo_chulito.png" alt="Check" class="w-6 h-6">
+            <p class="text-base md:text-lg text-dark">The Future of Writing Blog Articles</p>
+          </div>
+        </div>
+        <button
+          class="mt-8 bg-dark text-white px-10 py-4 rounded-full text-base font-semibold hover:bg-primary transition-all">Get
+          Started</button>
+      </div>
+      <div class="order-1 lg:order-2">
+        <img src="./Imagenes/Fetures_Single/fecha__herramienta.png" alt="Tool" class="w-full h-auto">
       </div>
     </div>
   </section>
-  <section class="marcas">
-    <img src="./Imagenes/Homepage/home.png" alt="">
-    <img src="./Imagenes/Homepage/vs.png" alt="">
-    <img src="./Imagenes/Homepage/brand.png" alt="">
-    <img src="./Imagenes/Homepage/nature_home.png" alt="">
-    <img src="./Imagenes/Homepage/classic.png" alt="">
-  </section>
-  <section class="sentir__herramientas">
-    <div class="conten__herramientas">
-      <article>
-        <h2>The Tool That <br>
-          Feels Like a..
-        </h2>
-        <p class="descricion">
-          Building an enterprise level site doesn't need
-          nightmare or cost your thousands. Felix is purpose
-          built for ease of use and complete flexability to
-          create even the most powerful of products.
-        </p>
-        <div>
-          <img src="./Imagenes/Homepage/circulo_chulito.png" alt="">
-          <p>Posting to social media, blogs, and messengers</p>
-        </div>
-        <div>
-          <img src="./Imagenes/Homepage/circulo_chulito.png" alt="">
-          <p>Working with images and videos</p>
-        </div>
-        <div>
-          <img src="./Imagenes/Homepage/circulo_chulito.png" alt="">
-          <p>The Future of Writing Blog Articles</p>
-        </div>
-        <button type="submit">Get Started</button>
-      </article>
-      <article class="img__herramienta">
-        <img src="./Imagenes/Fetures_Single/fecha__herramienta.png" alt="">
-      </article>
-    </div>
-  </section>
-  <section class="funciones">
-    <div class="todasLas_funciones">
-      <h2>Simple, yet Powerful Features</h2>
-      <article class="contenedor__funciones">
-        <section class="cuadros__funciones">
-          <button type="submit" class="btn__primero">Publish</button>
-          <h3>Save time <br>
+
+  <!-- Features Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 px-4 md:px-8 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-dark mb-12">Simple, yet Powerful Features
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Feature Card 1 -->
+        <div class="border border-lightgray rounded-2xl p-6 hover:shadow-xl transition-shadow">
+          <button class="bg-gray-200 px-6 py-2 rounded-full text-sm font-medium">Publish</button>
+          <h3 class="mt-6 text-xl md:text-2xl font-bold text-dark">
+            Save time <br>
             by scheduling posts
           </h3>
-          <p>
-            Building an enterprisedoesn't
-            need nightmare or cost your
-            thousands. Felix is purpose built.
+          <p class="mt-4 text-gray text-base">
+            Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
           </p>
-          <div>
-            <img src="./Imagenes/Homepage/tiempo_libro.png" alt="">
-            <button type="submit">Get Started</button>
+          <div class="mt-6 pt-6 border-t border-lightgray flex items-center justify-between">
+            <img src="./Imagenes/Homepage/tiempo_libro.png" alt="Icon" class="w-12 h-12">
+            <button
+              class="border border-lightgray px-6 py-2 rounded-full text-sm hover:bg-dark hover:text-white transition-all">Get
+              Started</button>
           </div>
-        </section>
-        <section class="cuadros__funciones">
-          <button type="submit" class="btn__primero">Respond</button>
-          <h3>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="border border-lightgray rounded-2xl p-6 hover:shadow-xl transition-shadow">
+          <button class="bg-gray-200 px-6 py-2 rounded-full text-sm font-medium">Respond</button>
+          <h3 class="mt-6 text-xl md:text-2xl font-bold text-dark">
             All your conversations <br>
             in one place
           </h3>
-          <p>
-            Building an enterprisedoesn't
-            need nightmare or cost your
-            thousands. Felix is purpose built.
+          <p class="mt-4 text-gray text-base">
+            Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
           </p>
-          <div>
-            <img src="./Imagenes/Homepage/fucion_particulas.png" alt="">
-            <button type="submit" style="background: #5956E9; color: white;">Get Started</button>
+          <div class="mt-6 pt-6 border-t border-lightgray flex items-center justify-between">
+            <img src="./Imagenes/Homepage/fucion_particulas.png" alt="Icon" class="w-12 h-12">
+            <button class="bg-primary text-white px-6 py-2 rounded-full text-sm hover:bg-dark transition-all">Get
+              Started</button>
           </div>
-        </section>
-        <section class="cuadros__funciones">
-          <button type="submit" class="btn__primero">Automate</button>
-          <h3>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="border border-lightgray rounded-2xl p-6 hover:shadow-xl transition-shadow">
+          <button class="bg-gray-200 px-6 py-2 rounded-full text-sm font-medium">Automate</button>
+          <h3 class="mt-6 text-xl md:text-2xl font-bold text-dark">
             Truly automate your <br>
             social media
           </h3>
-          <p>
-            Building an enterprisedoesn't
-            need nightmare or cost your
-            thousands. Felix is purpose built.
+          <p class="mt-4 text-gray text-base">
+            Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
           </p>
-          <div>
-            <img src="./Imagenes/Homepage/brazo_mecanico.png" alt="">
-            <button type="submit">Get Started</button>
+          <div class="mt-6 pt-6 border-t border-lightgray flex items-center justify-between">
+            <img src="./Imagenes/Homepage/brazo_mecanico.png" alt="Icon" class="w-12 h-12">
+            <button
+              class="border border-lightgray px-6 py-2 rounded-full text-sm hover:bg-dark hover:text-white transition-all">Get
+              Started</button>
           </div>
-        </section>
-        <section class="cuadros__funciones">
-          <button type="submit" class="btn__primero">Monitor</button>
-          <h3>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="border border-lightgray rounded-2xl p-6 hover:shadow-xl transition-shadow">
+          <button class="bg-gray-200 px-6 py-2 rounded-full text-sm font-medium">Monitor</button>
+          <h3 class="mt-6 text-xl md:text-2xl font-bold text-dark">
             Listen to what they <br>
             say about you
           </h3>
-          <p>
-            Building an enterprisedoesn't
-            need nightmare or cost your
-            thousands. Felix is purpose built.
+          <p class="mt-4 text-gray text-base">
+            Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
           </p>
-          <div>
-            <img src="./Imagenes/Homepage/monitor.png" alt="">
-            <button type="submit">Get Started</button>
+          <div class="mt-6 pt-6 border-t border-lightgray flex items-center justify-between">
+            <img src="./Imagenes/Homepage/monitor.png" alt="Icon" class="w-12 h-12">
+            <button
+              class="border border-lightgray px-6 py-2 rounded-full text-sm hover:bg-dark hover:text-white transition-all">Get
+              Started</button>
           </div>
-        </section>
-        <section class="cuadros__funciones">
-          <button type="submit" class="btn__primero">Analyze</button>
-          <h3>
+        </div>
+
+        <!-- Feature Card 5 -->
+        <div class="border border-lightgray rounded-2xl p-6 hover:shadow-xl transition-shadow">
+          <button class="bg-gray-200 px-6 py-2 rounded-full text-sm font-medium">Analyze</button>
+          <h3 class="mt-6 text-xl md:text-2xl font-bold text-dark">
             Detailed insights for your <br>
             social media
           </h3>
-          <p>
-            Building an enterprisedoesn't
-            need nightmare or cost your
-            thousands. Felix is purpose built.
+          <p class="mt-4 text-gray text-base">
+            Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
           </p>
-          <div>
-            <img src="./Imagenes/Homepage/stadisticas.png" alt="">
-            <button type="submit">Get Started</button>
+          <div class="mt-6 pt-6 border-t border-lightgray flex items-center justify-between">
+            <img src="./Imagenes/Homepage/stadisticas.png" alt="Icon" class="w-12 h-12">
+            <button
+              class="border border-lightgray px-6 py-2 rounded-full text-sm hover:bg-dark hover:text-white transition-all">Get
+              Started</button>
           </div>
-        </section>
-        <section class="cuadros__funciones">
-          <button type="submit" class="btn__primero" style="width: 11vw;">Creative Content</button>
-          <h3>
+        </div>
+
+        <!-- Feature Card 6 -->
+        <div class="border border-lightgray rounded-2xl p-6 hover:shadow-xl transition-shadow">
+          <button class="bg-gray-200 px-8 py-2 rounded-full text-sm font-medium">Creative Content</button>
+          <h3 class="mt-6 text-xl md:text-2xl font-bold text-dark">
             Artificial Intelligence <br>
             trained Team
           </h3>
-          <p>
-            Building an enterprisedoesn't
-            need nightmare or cost your
-            thousands. Felix is purpose built.
+          <p class="mt-4 text-gray text-base">
+            Building an enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
           </p>
-          <div>
-            <img src="./Imagenes/Homepage/hoja_lapiz.png" alt="">
-            <button type="submit">Get Started</button>
+          <div class="mt-6 pt-6 border-t border-lightgray flex items-center justify-between">
+            <img src="./Imagenes/Homepage/hoja_lapiz.png" alt="Icon" class="w-12 h-12">
+            <button
+              class="border border-lightgray px-6 py-2 rounded-full text-sm hover:bg-dark hover:text-white transition-all">Get
+              Started</button>
           </div>
-        </section>
-      </article>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="ayuda_amigos">
-    <img src="./Imagenes/Fetures_Single/fondo_color2.png" alt="" class="fondo_ayuda_amigos">
-    <article class="titulo__btn">
-      <div>
-        <h2>
-          Doing Everything <br>
-          Yourself is Difficult
-        </h2>
-        <p>Crush your social goals.Again and again</p>
-      </div>
-      <button type="submit">Contact Us</button>
-    </article>
-    <section class="foto_amigos">
-      <img src="./Imagenes/Homepage/foto_amigos.png" alt="">
-      <div class="foto__button">
-        <img src="./Imagenes/Homepage/Play Button.png" alt="">
-        <p>
-          Super customizable <br>
-          <span>See oru Simple Tutorial</span>
-        </p>
-      </div>
-    </section>
-  </section>
-  <section class="contantos__redesSociales">
-    <article class="descricion__redesSociales">
-      <h2>
-        Connect all the social <br>
-        networks you love
-      </h2>
-      <p>
-        We currently support Facebook, Instagram,
-        LinkedIn and Twitter. More to come. Felix is
-        purpose built for ease of use and complete flexability.
-      </p>
-      <button type="submit">Get Started</button>
-    </article>
-    <article class="foto__redesSociales">
-      <img src="./Imagenes/Homepage/redes_sociales.png" alt="">
-    </article>
-  </section>
-  <section class="como_trabajamos">
-    <article class="trabajamos__descripcion">
-      <img src="./Imagenes/Homepage/fondo_azul.png" alt="">
-      <div>
-        <h2>Our Working Process - How We Work For Our Customers</h2>
-        <p>
-          We currently support Facebook, Instagram,
-          LinkedIn and Twitter. More to come.
-        </p>
-        <button type="submit">Get Started</button>
-      </div>
-    </article>
-    <article class="trabajamos__puntos">
-      <section>
-        <h2>01</h2>
-        <h4>
-          Create your free <br>
-          account
-        </h4>
-        <p>
-          Building ddfgan enterprisedoesn't need
-          nightmare or cost your thousands. Felix
-          is purpose built.
-        </p>
-      </section>
-      <section>
-        <h2 style="color: #5956E9;">02</h2>
-        <h4>
-          Connect your <br>
-          channels
-        </h4>
-        <p>
-          Building ddfgan enterprisedoesn't need
-          nightmare or cost your thousands. Felix
-          is purpose built.
-        </p>
-      </section>
-      <section>
-        <h2>03</h2>
-        <h4>
-          Schedule your <br>
-          posts
-        </h4>
-        <p>
-          Building ddfgan enterprisedoesn't need
-          nightmare or cost your thousands. Felix
-          is purpose built.
-        </p>
-      </section>
-      <section>
-        <h2>04</h2>
-        <h4>
-          Publish & get your <br>
-          planning on point
-        </h4>
-        <p>
-          Building ddfgan enterprisedoesn't need
-          nightmare or cost your thousands. Felix
-          is purpose built.
-        </p>
-      </section>
-    </article>
-  </section>
-  <section class="nuestra_familia">
-    <div class="content__nFamilia">
-      <article>
-        <div class="titulo__persona">
-          <h2>Our Happy Family</h2>
-          <img src="./Imagenes/Homepage/Person_familia.png" alt="">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the when an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-          </p>
-        </div>
-        <div class="confianza__buffer">
-          <h2>
-            Businesses all over the world trust <br>
-            Buffer to build their brand
+
+  <!-- CTA Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 px-4 md:px-8 lg:px-16">
+    <div class="relative max-w-7xl mx-auto">
+      <img src="./Imagenes/Fetures_Single/fondo_color2.png" alt="Background" class="w-full h-auto rounded-2xl">
+      <div
+        class="absolute inset-0 flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-16 py-8 md:py-12">
+        <div class="text-white text-center lg:text-left mb-6 lg:mb-0">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+            Doing Everything <br>
+            Yourself is Difficult
           </h2>
-          <div class="tiempo_persona">
-            <div>
-              <h3>10 years</h3>
-              <p>In Business</p>
-            </div>
-            <div>
-              <h3>75,000+</h3>
-              <p>Customers</p>
-            </div>
-            <div>
-              <h3>100k+</h3>
-              <p>Monthly Blog Readers</p>
-            </div>
-            <div>
-              <h3>1.2m+</h3>
-              <p>Social Followers</p>
-            </div>
-          </div>
+          <p class="mt-2 md:mt-4 text-sm md:text-base">Crush your social goals. Again and again</p>
         </div>
-        <div class="texto__btn">
-          <p>Join 160,000+ small businesses like yours</p>
-          <button type="submit">Select a Plan</button>
-        </div>
-      </article>
+        <button
+          class="bg-white text-dark px-8 py-3 rounded-full text-sm md:text-base font-semibold hover:bg-primary hover:text-white transition-all">Contact
+          Us</button>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="relative max-w-7xl mx-auto mt-8 md:mt-12">
+      <img src="./Imagenes/Homepage/foto_amigos.png" alt="Friends" class="w-full h-auto rounded-2xl">
+      <div
+        class="absolute bottom-4 left-4 md:bottom-8 md:left-8 bg-white rounded-full px-4 md:px-6 py-3 md:py-4 flex items-center gap-3 md:gap-4 shadow-lg">
+        <img src="./Imagenes/Homepage/Play Button.png" alt="Play"
+          class="w-8 md:w-12 h-8 md:h-12 cursor-pointer hover:scale-110 transition-transform">
+        <p class="text-xs md:text-sm">
+          Super customizable <br>
+          <span class="text-primary font-semibold">See our Simple Tutorial</span>
+        </p>
+      </div>
     </div>
   </section>
-  <section class="ultimas_noticias">
-    <div class="ultimas_titulo">
+
+  <!-- Social Networks Section -->
+  <section class="mt-24 md:mt-32 lg:mt-40 px-4 md:px-8 lg:px-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
       <div>
-        <h2>Latest News and Articles</h2>
-        <p>
-          We currently support Facebook, Instagram, LinkedIn
-          and Twitter. More to come. Felix is purpose built
-          for ease of use and complete flexability.
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight">
+          Connect all the social <br>
+          networks you love
+        </h2>
+        <p class="mt-4 md:mt-6 text-base md:text-lg text-gray leading-relaxed">
+          We currently support Facebook, Instagram, LinkedIn and Twitter. More to come. Felix is purpose built for ease
+          of use and complete flexability.
         </p>
+        <button
+          class="mt-8 bg-dark text-white px-10 py-4 rounded-full text-base font-semibold hover:bg-primary transition-all">Get
+          Started</button>
       </div>
-      <button type="submit">See More News</button>
-    </div>
-    <article class="noticias__article">
-      <section>
-        <div class="img_noticia">
-          <img src="./Imagenes/Homepage/table.png" alt="">
-          <div>
-            <button type="submit">Analyze</button>
-            <button type="submit">Marketing</button>
-          </div>
-        </div>
-        <div class="fecha_noticia">
-          <p>December 05, 2021</p>
-          <p>3 min read</p>
-        </div>
-        <h3>
-          Detailed insights for your <br>
-          social media
-        </h3>
-        <p class="descripcion__noticia">
-          Lorem Ipsum is simply dummy text
-          the printing and typesetting industry.
-          Lorem Ipsum has been the standard dummy.
-        </p>
-        <h4>View More</h4>
-      </section>
-      <section>
-        <div class="img_noticia">
-          <img src="./Imagenes/Homepage/persona_negra.png" alt="">
-          <div>
-            <button type="submit">Analyze</button>
-          </div>
-        </div>
-        <div class="fecha_noticia">
-          <p>December 05, 2021</p>
-          <p>3 min read</p>
-        </div>
-        <h3>
-          New Device Invention for <br>
-          Digital Platform
-        </h3>
-        <p class="descripcion__noticia">
-          Lorem Ipsum is simply dummy text
-          the printing and typesetting industry.
-          Lorem Ipsum has been the standard dummy.
-        </p>
-        <h4>View More</h4>
-      </section>
-      <section>
-        <div class="img_noticia">
-          <img src="./Imagenes/Homepage/laptod.png" alt="">
-          <div>
-            <button type="submit">Analyze</button>
-            <button type="submit">Marketing</button>
-          </div>
-        </div>
-        <div class="fecha_noticia">
-          <p>December 05, 2021</p>
-          <p>3 min read</p>
-        </div>
-        <h3>
-          Business Strategy Make <br>
-          His Goal Acheive
-        </h3>
-        <p class="descripcion__noticia">
-          Lorem Ipsum is simply dummy text
-          the printing and typesetting industry.
-          Lorem Ipsum has been the standard dummy.
-        </p>
-        <h4>View More</h4>
-      </section>
-    </article>
-  </section>
-  <section class="prueba_gratis">
-    <div class="content__pruebaGratis">
-      <img src="./Imagenes/Fetures_Single/fondo_prubaGratis.png" alt="" class="fondo_prubaGratis">
-      <section class="pruebaGratis__secciones">
-        <article>
-          <h2>Start your 7-day free trial</h2>
-          <p class="descricion_pG">Felix can help bring your dream website to life with ease.</p>
-          <div class="mail_bok">
-            <input type="text" placeholder="Enter your Email">
-            <button type="submit">Start</button>
-          </div>
-          <section class="section__3Puntos">
-            <div>
-              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="">
-              <p>Free 7-day trial</p>
-            </div>
-            <div>
-              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="">
-              <p>No credit card required</p>
-            </div>
-            <div>
-              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="">
-              <p>Cancel anytime</p>
-            </div>
-          </section>
-        </article>
-        <article>
-          <img src="./Imagenes/Fetures_Single/foto_pruebaGratis.png" alt="" class="foto_pruebaGratis">
-        </article>
-      </section>
+      <div class="flex justify-center lg:justify-end">
+        <img src="./Imagenes/Homepage/redes_sociales.png" alt="Social Networks" class="w-full max-w-lg h-auto">
+      </div>
     </div>
   </section>
-  <footer>
-    <div class="Footer_Cuerpo">
-      <div class="Footer_Encabezado">
-        <div class="Logo">
-          <img src="./imagenes/Homepage/logo.png" alt="">
-          <h2>Technologycal</h2>
-        </div>
-        <button>See our Case Studies</button>
-      </div>
-      <div class="Footer_Medio">
-        <div class="Footer_Links">
-          <div class="Resources">
-            <h3>Resources</h3>
-            <div class="Links">
-              <a href="./index.html">Home</a>
-              <a href="./About_Us.html">About</a>
-              <a href="./Contact.html">Contact</a>
-              <a href="./blog.html">Blog</a>
-              <a href="./Blog_Single.html">Blog Post</a>
-              <a href="./pricing.html">Pricing</a>
-              <a href="./pricing_single.html">Pricing Single</a>
-            </div>
-          </div>
-          <div class="Links Careers">
-            <a href="./blog.html">Blog</a>
-            <a href="./Blog_Single.html">Blog Post</a>
-            <a href="./Career.html">Careers</a>
-            <a href="#">Why choose us</a>
-            <a href="./case_Study.html">Case studies</a>
-          </div>
-          <div class="Utility_Pages">
-            <h3>Utility Pages</h3>
-            <div class="Links">
-              <a href="#">Start here</a>
-              <a href="#">Style guide</a>
-              <a href="./Password.html">Password protected</a>
-              <a href="./Fallido404.html">404 Not found</a>
-              <a href="./licences.html">Licenses</a>
-              <a href="#">Changelog</a>
-            </div>
-          </div>
-        </div>
-        <div class="startup_25">
-          <div class="startup_izquierda">
-            <img src="./Imagenes/Fetures_Single/Popular.png" alt="">
-            <h4>Startup $<span>25</span></h4>
-            <button>Choose Plan</button>
-          </div>
-          <div class="startup_derecha">
-            <article>
-              <img src="./Imagenes/Homepage/vector (2).png" alt="">
-              <h4>3 Social Set</h4>
-            </article>
-            <article>
-              <img src="./Imagenes/Homepage/vector (2).png" alt="">
-              <h4><span>150 post</span> per social</h4>
-            </article>
-            <article>
-              <img src="./Imagenes/Homepage/vector (2).png" alt="">
-              <h4>5 users</h4>
-            </article>
-            <article>
-              <img src="./Imagenes/Homepage/vector (2).png" alt="">
-              <h4>Phone <span>Support</span></h4>
-            </article>
-            <article>
-              <img src="./Imagenes/Homepage/vector (2).png" alt="">
-              <h4>Planning & publishing</h4>
-            </article>
-            <article>
-              <img src="./Imagenes/Homepage/vector (2).png" alt="">
-              <h4>Analytics tools</h4>
-            </article>
-          </div>
+
+  <!-- Working Process Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 px-4 md:px-8 lg:px-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <!-- Left Side -->
+      <div class="relative">
+        <img src="./Imagenes/Homepage/fondo_azul.png" alt="Background" class="w-full h-full object-cover rounded-2xl">
+        <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-12 text-white">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">Our Working Process - How We Work For Our
+            Customers</h2>
+          <p class="mt-4 text-sm md:text-base">
+            We currently support Facebook, Instagram, LinkedIn and Twitter. More to come.
+          </p>
+          <button
+            class="mt-6 bg-white text-dark px-8 py-3 rounded-full text-sm md:text-base font-semibold hover:bg-primary hover:text-white transition-all w-fit">Get
+            Started</button>
         </div>
       </div>
-      <div class="Footer_Final">
-        <h4>Copyright © Technologycal | Designed by <span>VictorFlow</span> Templates - Powered by <span>Webflow</span>
+
+      <!-- Right Side - Steps -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-300">01</h2>
+          <h4 class="mt-3 text-lg md:text-xl font-bold text-dark">
+            Create your free <br>
+            account
+          </h4>
+          <p class="mt-2 text-sm md:text-base text-gray">
+            Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold text-primary">02</h2>
+          <h4 class="mt-3 text-lg md:text-xl font-bold text-dark">
+            Connect your <br>
+            channels
+          </h4>
+          <p class="mt-2 text-sm md:text-base text-gray">
+            Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-300">03</h2>
+          <h4 class="mt-3 text-lg md:text-xl font-bold text-dark">
+            Schedule your <br>
+            posts
+          </h4>
+          <p class="mt-2 text-sm md:text-base text-gray">
+            Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-300">04</h2>
+          <h4 class="mt-3 text-lg md:text-xl font-bold text-dark">
+            Publish & get your <br>
+            planning on point
+          </h4>
+          <p class="mt-2 text-sm md:text-base text-gray">
+            Building ddfgan enterprisedoesn't need nightmare or cost your thousands. Felix is purpose built.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Happy Family Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 px-4 md:px-8 lg:px-16 py-12 md:py-16">
+    <div class="max-w-6xl mx-auto bg-gray-100 rounded-3xl px-6 md:px-12 py-12 md:py-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-dark">Our Happy Family</h2>
+      <img src="./Imagenes/Homepage/Person_familia.png" alt="Person" class="mx-auto mt-8 w-32 md:w-40 h-auto">
+      <p class="mt-6 text-center text-base md:text-lg text-dark max-w-3xl mx-auto leading-relaxed">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book.
+      </p>
+
+      <div class="mt-12 border-t border-b border-gray-300 py-8 md:py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-dark">
+          Businesses all over the world trust <br>
+          Buffer to build their brand
+        </h2>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold text-primary">10 years</h3>
+            <p class="mt-2 text-sm md:text-base text-gray">In Business</p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold text-primary">75,000+</h3>
+            <p class="mt-2 text-sm md:text-base text-gray">Customers</p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold text-primary">100k+</h3>
+            <p class="mt-2 text-sm md:text-base text-gray">Monthly Blog Readers</p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold text-primary">1.2m+</h3>
+            <p class="mt-2 text-sm md:text-base text-gray">Social Followers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-lg md:text-xl font-semibold text-dark">Join 160,000+ small businesses like yours</p>
+        <button
+          class="mt-6 bg-dark text-white px-10 py-4 rounded-full text-base font-semibold hover:bg-primary transition-all">Select
+          a Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 px-4 md:px-8 lg:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark">Latest News and Articles</h2>
+          <p class="mt-4 text-base md:text-lg text-gray max-w-2xl">
+            We currently support Facebook, Instagram, LinkedIn and Twitter. More to come. Felix is purpose built for
+            ease of use and complete flexability.
+          </p>
+        </div>
+        <button
+          class="border border-lightgray px-8 py-3 rounded-full text-sm md:text-base hover:bg-dark hover:text-white transition-all whitespace-nowrap">See
+          More News</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Article 1 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/table.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4 flex gap-2">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Marketing</span>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
+          </div>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
+            Detailed insights for your <br>
+            social media
+          </h3>
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
+          </p>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/persona_negra.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
+          </div>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
+            New Device Invention for <br>
+            Digital Platform
+          </h3>
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
+          </p>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img src="./Imagenes/Homepage/laptod.png" alt="Article"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute bottom-4 left-4 flex gap-2">
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Analyze</span>
+              <span class="bg-white px-4 py-2 rounded-lg text-xs font-medium">Marketing</span>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-between text-sm text-gray border-b border-lightgray pb-3">
+            <span>December 05, 2021</span>
+            <span>3 min read</span>
+          </div>
+          <h3 class="mt-4 text-xl md:text-2xl font-bold text-dark">
+            Business Strategy Make <br>
+            His Goal Acheive
+          </h3>
+          <p class="mt-3 text-base text-gray">
+            Lorem Ipsum is simply dummy text the printing and typesetting industry. Lorem Ipsum has been the standard
+            dummy.
+          </p>
+          <h4 class="mt-4 text-base font-semibold text-dark cursor-pointer hover:text-primary transition-colors">View
+            More â†’</h4>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Trial Section -->
+  <section class="mt-16 md:mt-24 lg:mt-32 px-4 md:px-8 lg:px-16">
+    <div class="relative max-w-7xl mx-auto overflow-hidden rounded-3xl">
+      <img src="./Imagenes/Fetures_Single/fondo_prubaGratis.png" alt="Background" class="w-full h-auto">
+      <div
+        class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-6 md:px-12 lg:px-16 py-8 md:py-12">
+        <div class="text-white">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">Start your 7-day free trial</h2>
+          <p class="mt-3 text-sm md:text-base opacity-90">Felix can help bring your dream website to life with ease.</p>
+          <div class="mt-6 relative">
+            <input type="email" placeholder="Enter your Email"
+              class="w-full px-6 py-4 rounded-full text-dark text-base pr-32">
+            <button
+              class="absolute right-2 top-1/2 -translate-y-1/2 bg-dark text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Start</button>
+          </div>
+          <div class="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-6">
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="Check" class="w-5 h-5">
+              <p class="text-sm">Free 7-day trial</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="Check" class="w-5 h-5">
+              <p class="text-sm">No credit card required</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Fetures_Single/circulo_puntoAzul.png" alt="Check" class="w-5 h-5">
+              <p class="text-sm">Cancel anytime</p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <img src="./Imagenes/Fetures_Single/foto_pruebaGratis.png" alt="Trial" class="w-full h-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 md:mt-24 lg:mt-32 px-6 md:px-12 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto">
+      <!-- Footer Header -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-8 border-t border-b border-lightgray">
+        <div class="flex items-center gap-3">
+          <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-10 md:w-12">
+          <h2 class="font-mulish text-2xl md:text-3xl font-extrabold text-dark">Technologycal</h2>
+        </div>
+        <button
+          class="border border-lightgray px-8 py-3 rounded-full text-base hover:bg-dark hover:text-white transition-all">See
+          our Case Studies</button>
+      </div>
+
+      <!-- Footer Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 py-12">
+        <!-- Links Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Resources</h3>
+            <div class="flex flex-col gap-2">
+              <a href="./index.html" class="text-gray hover:text-primary transition-colors">Home</a>
+              <a href="./About_Us.html" class="text-gray hover:text-primary transition-colors">About</a>
+              <a href="./Contact.html" class="text-gray hover:text-primary transition-colors">Contact</a>
+              <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+              <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+              <a href="./pricing.html" class="text-gray hover:text-primary transition-colors">Pricing</a>
+              <a href="./pricing_single.html" class="text-gray hover:text-primary transition-colors">Pricing Single</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2 sm:pt-12">
+            <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+            <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+            <a href="./Career.html" class="text-gray hover:text-primary transition-colors">Careers</a>
+            <a href="#" class="text-gray hover:text-primary transition-colors">Why choose us</a>
+            <a href="./case_Study.html" class="text-gray hover:text-primary transition-colors">Case studies</a>
+          </div>
+
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Utility Pages</h3>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-gray hover:text-primary transition-colors">Start here</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Style guide</a>
+              <a href="./Password.html" class="text-gray hover:text-primary transition-colors">Password protected</a>
+              <a href="./Fallido404.html" class="text-gray hover:text-primary transition-colors">404 Not found</a>
+              <a href="./licences.html" class="text-gray hover:text-primary transition-colors">Licenses</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Changelog</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Card -->
+        <div class="bg-dark rounded-2xl p-6 md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div class="border-b md:border-b-0 md:border-r border-gray-600 pb-6 md:pb-0 md:pr-8">
+              <img src="./Imagenes/Fetures_Single/Popular.png" alt="Popular" class="w-20 mb-4">
+              <h4 class="text-white text-2xl font-bold">Startup $<span class="text-4xl">25</span></h4>
+              <button
+                class="mt-4 bg-gray-700 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Choose
+                Plan</button>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">3 Social Set</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm"><span class="text-accent">150 post</span> per social</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">5 users</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Phone <span class="text-accent">Support</span></h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Planning & publishing</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Analytics tools</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-lightgray">
+        <h4 class="text-gray text-sm text-center md:text-left">
+          Copyright Â© Technologycal | Designed by <span class="font-bold text-dark">VictorFlow</span> Templates -
+          Powered by <span class="font-bold text-dark">Webflow</span>
         </h4>
-        <div class="Redes_Footer">
-          <img src="./imagenes/Fetures_Single/Insta.png" alt="">
-          <img src="./Imagenes/Fetures_Single/facek.png" alt="">
-          <img src="./Imagenes/Fetures_Single/Twiter.png" alt="">
-          <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="">
+        <div class="flex gap-4">
+          <img src="./Imagenes/Fetures_Single/Insta.png" alt="Instagram"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/facek.png" alt="Facebook"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Twiter.png" alt="Twitter"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="Pinterest"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
 </body>
 
 </html>

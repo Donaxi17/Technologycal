@@ -1,212 +1,355 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Css/sty_carer-single.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>carer single</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Careers - Technologycal</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5956E9',
+                        dark: '#2F2F2F',
+                        gray: '#808080',
+                        lightgray: '#DCDCDC',
+                        accent: '#38D4FF'
+                    },
+                    fontFamily: {
+                        mulish: ['Mulish', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mulish', sans-serif;
+        }
+    </style>
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
-<body>
-
-  <header>
-    <div class="Header_Logo">
-      <img src="Imagenes/Pricing/logo.png" alt="">
-      <h2>Technologycal</h2>
-    </div>
-    <div class="Header_Links">
-      <a href="./index.html">Home</a>
-      <a href="./Features.html">Features</a>
-      <a href="">Resources</a>
-      <a href="./pricing.html">Pricing</a>
-      <a href="./blog.html">Blog</a>
-    </div>
-    <div class="Sing_up">
-      <div>
-        <img src="Imagenes/HomePage/Carrito_Mercado.png" alt="">
-      </div>
-      <button>Sign In</button>
-    </div>
-  </header>
-
-  <div class="background">
-    <h3 class="background__title">
-      Copywriter (Intermediate)
-    </h3>
-    <p class="background__parrafo">
-      Lorem Ipsum is simply dummy text of the printing <br>
-      and typesetting industry.
-    </p>
-  </div>
-
-  <div class="carer">
-    <div class="carer__carer">
-      <div class="carer__job">
-        <h2 class="job__title">Job Responsibilities</h2>
-        <p class="job__lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum been the
-          industry's standard dummy text ever since the 1500s, when an unknown printegalley of type
-        </p>
-        <div class="carer__listen">
-          <img class="listen__img" src="Imagenes/Homepage/Pattern.png" alt="">
-          <p class="listen__parra">
-            Listen to what they say about you
-          </p>
+<body class="bg-white text-dark">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 md:px-12 lg:px-16 py-4 md:py-6">
+        <div class="flex items-center gap-2">
+            <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-8 md:w-10 lg:w-12">
+            <h2 class="font-mulish text-xl md:text-2xl lg:text-3xl font-extrabold text-dark">Technologycal</h2>
         </div>
-
-        <div class="carer__listen">
-          <img class="listen__img" src="Imagenes/Homepage/Pattern.png" alt="">
-          <p class="listen__parra">
-            Randomised words which.
-          </p>
-        </div>
-
-        <div class="carer__listen">
-          <img class="listen__img" src="Imagenes/Homepage/Pattern.png" alt="">
-          <p class="listen__parra">
-            Automate multiple scenarios
-          </p>
-        </div>
-
-        <div class="carer__listen">
-          <img class="listen__img" src="Imagenes/Homepage/Pattern.png" alt="">
-          <p class="listen__parra">
-            Listen to what they say about you
-          </p>
-        </div>
-
-        <p class="job__lorem">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the
-          industry's standard dummy
-        </p>
-
-        <img class="job__img" src="Imagenes/Homepage/mujer_aipad.png" alt="">
-
-        <h2 class="job__title">
-          Job Requirements
-        </h2>
-
-        <p class="job__lorem">
-          When an unknown printegalley of type and scrambled it to make a type specimen book. It has survived
-          not only five cedfgfnturies, but alsjkjo the leap into electronic typesetting.
-        </p>
-
-        <p class="job__lorem">
-          remaining essentially unchanged. It was popularised in the 1960s with theLetrsheets containing Lorem
-          Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
-
-        </p>
-      </div>
-
-
-      <div class="carer__apply">
-        <h3 class="apply__title">Apply today</h3>
-        <p class="apply__parra">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been standard
-          dummy .
-        </p>
-
-        <button class="apply__now">
-          Apply Now
-        </button>
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
-    <div class="Footer_Cuerpo">
-      <div class="Footer_Encabezado">
-        <div class="Logo">
-          <img src="Imagenes/Pricing/logo.png" alt="">
-          <h2>Technologycal</h2>
-        </div>
-        <button>See our Case Studies</button>
-      </div>
-      <div class="Footer_Medio">
-        <div class="Footer_Links">
-          <div class="Resources">
-            <h3>Resources</h3>
-            <div class="Links">
-              <a href="./index.html">Home</a>
-              <a href="./About_Us.html">About</a>
-              <a href="./Contact.html">Contact</a>
-              <a href="./blog.html">Blog</a>
-              <a href="./Blog_Single.html">Blog Post</a>
-              <a href="./pricing.html">Pricing</a>
-              <a href="./pricing_single.html">Pricing Single</a>
+        <nav class="hidden lg:flex gap-6 xl:gap-8">
+            <a href="./index.html"
+                class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Home</a>
+            <a href="./Features.html"
+                class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Features</a>
+            <a href="./case_Study_Single.html"
+                class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Study</a>
+            <a href="./pricing.html"
+                class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Pricing</a>
+            <a href="./blog.html"
+                class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Blog</a>
+        </nav>
+        <div class="flex items-center gap-3 md:gap-4">
+            <div class="hidden md:flex w-10 h-10 lg:w-12 lg:h-12 rounded-full items-center justify-center bg-primary">
+                <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="Cart" class="w-5 lg:w-6">
             </div>
-          </div>
-          <div class="Links Careers">
-            <a href="./blog.html">Blog</a>
-            <a href="./Blog_Single.html">Blog Post</a>
-            <a href="/Carer.html">Careers</a>
-            <a href="">Why choose us</a>
-            <a href="./case_Study.html">Case studies</a>
-          </div>
-          <div class="Utility_Pages">
-            <h3>Utility Pages</h3>
-            <div class="Links">
-              <a href="">Star here</a>
-              <a href="">Style guide</a>
-              <a href="./Password.html">Password protected</a>
-              <a href="./Fallido404.html">404 Not found</a>
-              <a href="./licences.html">Licenses</a>
-              <a href="./Changelong.html">Changelog</a>
-            </div>
-          </div>
+            <button
+                class="font-opensans text-sm md:text-base lg:text-lg text-dark border border-lightgray rounded-full px-6 md:px-8 py-2 md:py-3 hover:bg-primary hover:text-white hover:border-primary transition-all">Sign
+                In</button>
+            <button id="mobileMenuBtn" class="lg:hidden text-dark">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
         </div>
-        <div class="startup_25">
-          <div class="startup_izquierda">
-            <img src="/Imagenes/Pricing/Popular.png" alt="">
-            <h4>Startup $<span>25</span></h4>
-            <button>Choose Plan</button>
-          </div>
-          <div class="startup_derecha">
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>3 Social Set</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4><span>150 post</span> per social</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>5 users</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>Phone <span>Support</span></h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>Planning & publishing</h4>
-            </article>
-            <article>
-              <img src="/Imagenes/Pricing/chulito.png" alt="">
-              <h4>Analytics tools</h4>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="Footer_Final">
-        <h4>Copyright © Technologycal | Designed by <span>VictorFlow</span> Templates - Powered by
-          <span>Webflow</span>
-        </h4>
-        <div class="Redes_Footer">
-          <img src="/Imagenes/Pricing/Instagram.png" alt="">
-          <img src="/Imagenes/Pricing/facebook.png" alt="">
-          <img src="/Imagenes/Pricing/Twiter.png" alt="">
-          <img src="/Imagenes/Pricing/Pintrest.png" alt="">
-        </div>
-      </div>
-    </div>
-  </footer>
+    </header>
 
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="hidden lg:hidden flex-col gap-4 px-6 py-4 bg-gray-50 border-b border-lightgray">
+        <a href="./index.html"
+            class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Home</a>
+        <a href="./Features.html"
+            class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Features</a>
+        <a href="./case_Study_Single.html"
+            class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Study</a>
+        <a href="./pricing.html"
+            class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Pricing</a>
+        <a href="./blog.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Blog</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="mt-12 px-4 md:px-8 lg:px-16 py-12 text-center">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark">Career</h1>
+        <p class="mt-4 text-base md:text-lg text-gray">Lorem Ipsum is simply dummy text of the printing <br
+                class="hidden md:block"> and typesetting industry.</p>
+    </section>
+
+    <!-- Intro -->
+    <section class="px-4 md:px-8 lg:px-16 py-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-lg md:text-xl text-gray leading-relaxed">
+                Become a part of our big family to inspire and get inspired by <span
+                    class="font-bold text-dark">professional experts.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="px-4 md:px-8 lg:px-16 py-12">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <!-- Marketing -->
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mb-8">Marketing</h2>
+                <div class="space-y-6">
+                    <div class="border border-lightgray rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-bold text-dark mb-2">Copywriter (Intermediate)</h3>
+                                <p class="text-base text-gray mb-4">San Francisco, CA | <span
+                                        class="text-primary font-semibold">Part Time</span></p>
+                                <p class="text-base text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum been the industry's standard dummy text ever since
+                                    the 1500s.</p>
+                            </div>
+                            <button
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-primary transition-all whitespace-nowrap">Apply
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="border border-lightgray rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-bold text-dark mb-2">Marketing Manager</h3>
+                                <p class="text-base text-gray mb-4">New York | <span
+                                        class="text-primary font-semibold">Full Time</span></p>
+                                <p class="text-base text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum been the industry's standard dummy text ever since
+                                    the 1500s.</p>
+                            </div>
+                            <button
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-primary transition-all whitespace-nowrap">Apply
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development -->
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mb-8">Development</h2>
+                <div class="space-y-6">
+                    <div class="border border-lightgray rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-bold text-dark mb-2">Frontend Developer</h3>
+                                <p class="text-base text-gray mb-4">Remote | <span
+                                        class="text-primary font-semibold">Full Time</span></p>
+                                <p class="text-base text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum been the industry's standard dummy text ever since
+                                    the 1500s.</p>
+                            </div>
+                            <button
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-primary transition-all whitespace-nowrap">Apply
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="border border-lightgray rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-bold text-dark mb-2">DevOps Engineer</h3>
+                                <p class="text-base text-gray mb-4">San Francisco, CA | <span
+                                        class="text-primary font-semibold">Full Time</span></p>
+                                <p class="text-base text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum been the industry's standard dummy text ever since
+                                    the 1500s.</p>
+                            </div>
+                            <button
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-primary transition-all whitespace-nowrap">Apply
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product -->
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mb-8">Product</h2>
+                <div class="space-y-6">
+                    <div class="border border-lightgray rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-bold text-dark mb-2">Product Manager</h3>
+                                <p class="text-base text-gray mb-4">Toronto | <span
+                                        class="text-primary font-semibold">Full Time</span></p>
+                                <p class="text-base text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum been the industry's standard dummy text ever since
+                                    the 1500s.</p>
+                            </div>
+                            <button
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-primary transition-all whitespace-nowrap">Apply
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="border border-lightgray rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-bold text-dark mb-2">UX Designer (Senior)</h3>
+                                <p class="text-base text-gray mb-4">New York | <span
+                                        class="text-primary font-semibold">Full Time</span></p>
+                                <p class="text-base text-gray">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum been the industry's standard dummy text ever since
+                                    the 1500s.</p>
+                            </div>
+                            <button
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-primary transition-all whitespace-nowrap">Apply
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="px-4 md:px-8 lg:px-16 py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl md:text-3xl font-bold text-dark mb-4">Can't find the perfect position?</h3>
+            <p class="text-base md:text-lg text-gray mb-8">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br class="hidden md:block">
+                Lorem Ipsum been the industry's standard dummy
+            </p>
+            <button
+                class="bg-primary text-white px-12 py-4 rounded-full font-semibold hover:bg-dark transition-all">Contact
+                Us</button>
+        </div>
+    </section>
+
+    <!-- Footer (Same structure as other pages) -->
+    <footer class="mt-16 md:mt-24 lg:mt-32 px-6 md:px-12 lg:px-16 py-12">
+        <div class="max-w-7xl mx-auto">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center gap-6 py-8 border-t border-b border-lightgray">
+                <div class="flex items-center gap-3">
+                    <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-10 md:w-12">
+                    <h2 class="font-mulish text-2xl md:text-3xl font-extrabold text-dark">Technologycal</h2>
+                </div>
+                <button
+                    class="border border-lightgray px-8 py-3 rounded-full text-base hover:bg-dark hover:text-white transition-all">See
+                    our Case Studies</button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 py-12">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="font-mulish text-xl font-bold text-dark mb-4">Resources</h3>
+                        <div class="flex flex-col gap-2">
+                            <a href="./index.html" class="text-gray hover:text-primary transition-colors">Home</a>
+                            <a href="./About_Us.html" class="text-gray hover:text-primary transition-colors">About</a>
+                            <a href="./Contact.html" class="text-gray hover:text-primary transition-colors">Contact</a>
+                            <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+                            <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog
+                                Post</a>
+                            <a href="./pricing.html" class="text-gray hover:text-primary transition-colors">Pricing</a>
+                            <a href="./pricing_single.html"
+                                class="text-gray hover:text-primary transition-colors">Pricing Single</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 sm:pt-12">
+                        <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+                        <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog
+                            Post</a>
+                        <a href="./Career.html" class="text-gray hover:text-primary transition-colors">Careers</a>
+                        <a href="#" class="text-gray hover:text-primary transition-colors">Why choose us</a>
+                        <a href="./case_Study.html" class="text-gray hover:text-primary transition-colors">Case
+                            studies</a>
+                    </div>
+                    <div>
+                        <h3 class="font-mulish text-xl font-bold text-dark mb-4">Utility Pages</h3>
+                        <div class="flex flex-col gap-2">
+                            <a href="#" class="text-gray hover:text-primary transition-colors">Start here</a>
+                            <a href="#" class="text-gray hover:text-primary transition-colors">Style guide</a>
+                            <a href="./Password.html" class="text-gray hover:text-primary transition-colors">Password
+                                protected</a>
+                            <a href="./Fallido404.html" class="text-gray hover:text-primary transition-colors">404 Not
+                                found</a>
+                            <a href="./licences.html"
+                                class="text-gray hover:text-primary transition-colors">Licenses</a>
+                            <a href="#" class="text-gray hover:text-primary transition-colors">Changelog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark rounded-2xl p-6 md:p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                        <div class="border-b md:border-b-0 md:border-r border-gray-600 pb-6 md:pb-0 md:pr-8">
+                            <img src="./Imagenes/Fetures_Single/Popular.png" alt="Popular" class="w-20 mb-4">
+                            <h4 class="text-white text-2xl font-bold">Startup $<span class="text-4xl">25</span></h4>
+                            <button
+                                class="mt-4 bg-gray-700 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Choose
+                                Plan</button>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-2">
+                                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                                <h4 class="text-white text-sm">3 Social Set</h4>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                                <h4 class="text-white text-sm"><span class="text-accent">150 post</span> per social</h4>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                                <h4 class="text-white text-sm">5 users</h4>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                                <h4 class="text-white text-sm">Phone <span class="text-accent">Support</span></h4>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                                <h4 class="text-white text-sm">Planning & publishing</h4>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                                <h4 class="text-white text-sm">Analytics tools</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-lightgray">
+                <h4 class="text-gray text-sm text-center md:text-left">
+                    Copyright Â© Technologycal | Designed by <span class="font-bold text-dark">VictorFlow</span>
+                    Templates - Powered by <span class="font-bold text-dark">Webflow</span>
+                </h4>
+                <div class="flex gap-4">
+                    <img src="./Imagenes/Fetures_Single/Insta.png" alt="Instagram"
+                        class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+                    <img src="./Imagenes/Fetures_Single/facek.png" alt="Facebook"
+                        class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+                    <img src="./Imagenes/Fetures_Single/Twiter.png" alt="Twitter"
+                        class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+                    <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="Pinterest"
+                        class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+    </script>
 </body>
 
 </html>

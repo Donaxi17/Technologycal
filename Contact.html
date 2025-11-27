@@ -1,265 +1,414 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="./Css/Contact.css">
+  <title>Contact - Technologycal</title>
   <link rel="icon" href="./Imagenes/Fetures_Single/circulo_puntoAzul.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5956E9',
+            dark: '#2F2F2F',
+            gray: '#808080',
+            lightgray: '#DCDCDC',
+            accent: '#38D4FF'
+          },
+          fontFamily: {
+            mulish: ['Mulish', 'sans-serif'],
+            opensans: ['Open Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+    }
+  </style>
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
-<body>
-  <div>
-    <header>
-      <div class="Header_Logo">
-        <img src="./Imagenes/Homepage/logo.png" alt="">
-        <h2>Technologycal</h2>
-      </div>
-      <div class="Header_Links">
-        <a href="./index.html">Home</a>
-        <a href="./Features.html">Features</a>
-        <a href="">Resources</a>
-        <a href="./pricing.html">Pricing</a>
-        <a href="./blog.html">Blog</a>
-      </div>
-      <div class="Sing_up">
-        <div>
-          <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="">
-        </div>
-        <button>Sign In</button>
-      </div>
-    </header>
-
-    <div class="banner">
-      <img src="./Imagenes/Fetures_Single/banner.png" alt="" class="banners">
-      <p>Get in Touch</p>
-      <div class="contactos">
-        <div class="contact_correo"><img src="./Imagenes/Contact_Us/Mail.png" alt="">
-          <h4>contact@technologycal</h4>
-        </div>
-        <div class="contact_numer"><img src="./Imagenes/Contact_Us/Icon telefono.png" alt="">
-          <h4>(011) 6543 8974 210</h4>
-        </div>
-      </div>
-      <div class="banner_contact">
-        <div class="formulario">
-          <div class="form">
-            <span>Full Name *</span>
-            <input type="text" placeholder="john david">
-          </div>
-        </div>
-        <div class="formulario">
-          <div class="form">
-            <span>Company *</span>
-            <input type="text" placeholder="your company name here">
-          </div>
-        </div>
-        <div class="formulario left">
-          <div class="form">
-            <span>Your Email *</span>
-            <input type="email" placeholder="example@yourmail.com">
-          </div>
-        </div>
-        <div class="formulario left">
-          <div class="form">
-            <span>Subject *</span>
-            <input type="text" placeholder="how can we help">
-          </div>
-        </div>
-        <div class="formulario textarea">
-          <div class="form">
-            <span class="tarea">Message *</span>
-            <textarea name="" id="" cols="30" rows="10"
-              placeholder="Hello there,I would like to talk about how to..."></textarea>
-          </div>
-        </div>
-        <button>Send Message</button>
-      </div>
+<body class="bg-white text-dark">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 md:px-12 lg:px-16 py-4 md:py-6">
+    <div class="flex items-center gap-2">
+      <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-8 md:w-10 lg:w-12">
+      <h2 class="font-mulish text-xl md:text-2xl lg:text-3xl font-extrabold text-dark">Technologycal</h2>
     </div>
 
-    <div class="global_Growing">
-      <div class="titulo_global">
-        <h2>We’re Global and Growing</h2>
-        <p>Building an enterprise level site doesn't need nightmare or cost <br>
-          your thousands. Felix is purpose built</p>
-      </div>
+    <nav class="hidden lg:flex gap-6 xl:gap-8">
+      <a href="./index.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Home</a>
+      <a href="./Features.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Features</a>
+      <a href="./case_Study_Single.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Study</a>
+      <a href="./pricing.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Pricing</a>
+      <a href="./blog.html"
+        class="font-mulish text-base xl:text-lg text-dark hover:text-primary transition-colors">Blog</a>
+    </nav>
 
-      <div class="tarj_global">
-        <div class="tarj">
-          <button>Main Office</button>
-          <img src="./Imagenes/Contact_Us/USA.png" alt="" class="USA_img">
-          <h3>United States</h3>
-          <p>55/123 Norman Street, <br>
-            Sydney NSW 20</p>
-        </div>
-        <div class="tarj">
-          <img src="./Imagenes/Contact_Us/AUS.png" alt="">
-          <h3>Australia</h3>
-          <p>55/123 Norman Street, <br>
-            Sydney NSW 20</p>
-        </div>
-        <div class="tarj">
-          <img src="./Imagenes/Contact_Us/UK.png" alt="">
-          <h3>United Kingdom</h3>
-          <p>55/123 Norman Street, <br>
-            Sydney NSW 20</p>
-        </div>
+    <div class="flex items-center gap-3 md:gap-4">
+      <div class="hidden md:flex w-10 h-10 lg:w-12 lg:h-12 rounded-full items-center justify-center bg-primary">
+        <img src="./Imagenes/Fetures_Single/Cart Icon.png" alt="Cart" class="w-5 lg:w-6">
       </div>
+      <button
+        class="font-opensans text-sm md:text-base lg:text-lg text-dark border border-lightgray rounded-full px-6 md:px-8 py-2 md:py-3 hover:bg-primary hover:text-white hover:border-primary transition-all">Sign
+        In</button>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
+  </header>
 
-    <div class="Frequently">
-      <h2>Frequently Asked Questions</h2>
-      <div class="contenedor_freq">
-        <div class="conta_one">
-          <span>1. Where is my order? Quisque molestie</span>
-          <img src="./Imagenes/Contact_Us/circle gris.png" alt="">
-        </div>
-        <div class="cont_freq">
-          <div class="conta_two">
-            <span>2. How can I return an item purchased online?</span>
-            <img src="./Imagenes/Contact_Us/circle blue.png" alt="">
-          </div>
-          <div class="freq_two">
-            <p class="freq_def">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem <br>
-              Ipsum been the industry's standard dummy text ever since the </p>
-            <div class="insisos">
-              <div class="insisos_freq">
-                <img src="./Imagenes/Contact_Us/Pattern.png" alt="">
-                <span>Listen to what they say about you</span>
-              </div>
-              <div class="insisos_freq">
-                <img src="./Imagenes/Contact_Us/Pattern.png" alt="">
-                <span>Randomised words which.</span>
-              </div>
-              <div class="insisos_freq">
-                <img src="./Imagenes/Contact_Us/Pattern.png" alt="">
-                <span> Internet tend to repeat predefined chunks</span>
-              </div>
-              <div class="insisos_freq">
-                <img src="./Imagenes/Contact_Us/Pattern.png" alt="">
-                <span>Automate multiple scenarios</span>
-              </div>
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden lg:hidden flex-col gap-4 px-6 py-4 bg-gray-50 border-b border-lightgray">
+    <a href="./index.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Home</a>
+    <a href="./Features.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Features</a>
+    <a href="./case_Study_Single.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Study</a>
+    <a href="./pricing.html"
+      class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Pricing</a>
+    <a href="./blog.html" class="font-mulish text-base text-dark hover:text-primary transition-colors py-2">Blog</a>
+  </nav>
 
-              <div class="definicion_freq">
-                <span>Do you currently have vacancies?</span>
-                <p>When an unknown printegalley of type and scrambled it to make a type specimen <br>
-                  book. It has survived not only five cedfgfnturies, but alsjkjo the leap into
-                  electronic <br>
-                  typesetting.</p>
-              </div>
-            </div>
+  <!-- Hero Banner -->
+  <section class="relative px-4 md:px-8 lg:px-16 mt-8">
+    <div class="max-w-7xl mx-auto relative">
+      <img src="./Imagenes/Fetures_Single/banner.png" alt="Banner" class="w-full h-64 md:h-96 object-cover rounded-2xl">
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-center">Get in Touch</h1>
+
+        <!-- Contact Info -->
+        <div class="mt-8 flex flex-col md:flex-row gap-6 md:gap-12">
+          <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full">
+            <img src="./Imagenes/Contact_Us/Mail.png" alt="Email" class="w-6 h-6">
+            <h4 class="text-sm md:text-base font-semibold">contact@technologycal</h4>
           </div>
-        </div>
-        <div class="ultimas_triples">
-          <div class="conta_triple">
-            <span>3. Can I cancel or change my order?</span>
-            <img src="./Imagenes/Contact_Us/circle gris.png" alt="">
-          </div>
-          <div class="conta_triple">
-            <span>4. I have a promotional or discount code?</span>
-            <img src="./Imagenes/Contact_Us/circle gris.png" alt="">
-          </div>
-          <div class="conta_triple">
-            <span>5. Can I integrate my store with Facebook?</span>
-            <img src="./Imagenes/Contact_Us/circle gris.png" alt="">
+          <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full">
+            <img src="./Imagenes/Contact_Us/Icon telefono.png" alt="Phone" class="w-6 h-6">
+            <h4 class="text-sm md:text-base font-semibold">(011) 6543 8974 210</h4>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="Footer_Cuerpo">
-        <div class="Footer_Encabezado">
-          <div class="Logo">
-            <img src="./Imagenes/Homepage/logo.png" alt="">
-            <h2>Technologycal</h2>
-          </div>
-          <button>See our Case Studies</button>
+  <!-- Contact Form -->
+  <section class="mt-16 md:mt-24 px-4 md:px-8 lg:px-16">
+    <div class="max-w-4xl mx-auto">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Full Name -->
+        <div class="flex flex-col">
+          <label class="text-sm font-semibold text-dark mb-2">Full Name *</label>
+          <input type="text" placeholder="john david"
+            class="px-4 py-3 border border-lightgray rounded-lg focus:outline-none focus:border-primary transition-colors">
         </div>
-        <div class="Footer_Medio">
-          <div class="Footer_Links">
-            <div class="Resources">
-              <h3>Resources</h3>
-              <div class="Links">
-                <a href="./index.html">Home</a>
-                <a href="./About_Us.html">About</a>
-                <a href="./Contact.html">Contact</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./Blog_Single.html">Blog Post</a>
-                <a href="./pricing.html">Pricing</a>
-                <a href="./pricing_single.html">Pricing Single</a>
-              </div>
-            </div>
-            <div class="Links Careers">
-              <a href="./blog.html">Blog</a>
-              <a href="./Blog_Single.html">Blog Post</a>
-              <a href="/Carer.html">Careers</a>
-              <a href="">Why choose us</a>
-              <a href="./case_Study.html">Case studies</a>
-            </div>
-            <div class="Utility_Pages">
-              <h3>Utility Pages</h3>
-              <div class="Links">
-                <a href="">Star here</a>
-                <a href="">Style guide</a>
-                <a href="./Password.html">Password protected</a>
-                <a href="./Fallido404.html">404 Not found</a>
-                <a href="./licences.html">Licenses</a>
-                <a href="./Changelong.html">Changelog</a>
-              </div>
-            </div>
-          </div>
-          <div class="startup_25">
-            <div class="startup_izquierda">
-              <img src="./Imagenes/Fetures_Single/Popular.png" alt="">
-              <h4>Startup $<span>25</span></h4>
-              <button>Choose Plan</button>
-            </div>
-            <div class="startup_derecha">
-              <article>
-                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                <h4>3 Social Set</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                <h4><span>150 post</span> per social</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                <h4>5 users</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                <h4>Phone <span>Support</span></h4>
-              </article>
-              <article>
-                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                <h4>Planning & publishing</h4>
-              </article>
-              <article>
-                <img src="./Imagenes/Fetures_Single/Correcto.png" alt="">
-                <h4>Analytics tools</h4>
-              </article>
-            </div>
+
+        <!-- Company -->
+        <div class="flex flex-col">
+          <label class="text-sm font-semibold text-dark mb-2">Company *</label>
+          <input type="text" placeholder="your company name here"
+            class="px-4 py-3 border border-lightgray rounded-lg focus:outline-none focus:border-primary transition-colors">
+        </div>
+
+        <!-- Email -->
+        <div class="flex flex-col">
+          <label class="text-sm font-semibold text-dark mb-2">Your Email *</label>
+          <input type="email" placeholder="example@yourmail.com"
+            class="px-4 py-3 border border-lightgray rounded-lg focus:outline-none focus:border-primary transition-colors">
+        </div>
+
+        <!-- Subject -->
+        <div class="flex flex-col">
+          <label class="text-sm font-semibold text-dark mb-2">Subject *</label>
+          <input type="text" placeholder="how can we help"
+            class="px-4 py-3 border border-lightgray rounded-lg focus:outline-none focus:border-primary transition-colors">
+        </div>
+
+        <!-- Message -->
+        <div class="flex flex-col md:col-span-2">
+          <label class="text-sm font-semibold text-dark mb-2">Message *</label>
+          <textarea rows="6" placeholder="Hello there, I would like to talk about how to..."
+            class="px-4 py-3 border border-lightgray rounded-lg focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="md:col-span-2">
+          <button type="submit"
+            class="w-full md:w-auto bg-dark text-white px-12 py-4 rounded-full text-base font-semibold hover:bg-primary transition-all">Send
+            Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Global and Growing -->
+  <section class="mt-16 md:mt-24 px-4 md:px-8 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark">We're Global and Growing</h2>
+        <p class="mt-4 text-base md:text-lg text-gray">
+          Building an enterprise level site doesn't need nightmare or cost <br class="hidden md:block">
+          your thousands. Felix is purpose built
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Office 1 -->
+        <div class="text-center p-8 border border-lightgray rounded-2xl hover:shadow-xl transition-shadow">
+          <span class="inline-block bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">Main
+            Office</span>
+          <img src="./Imagenes/Contact_Us/USA.png" alt="USA" class="mx-auto w-24 h-24 mb-4">
+          <h3 class="text-xl md:text-2xl font-bold text-dark mb-3">United States</h3>
+          <p class="text-base text-gray">
+            55/123 Norman Street, <br>
+            Sydney NSW 20
+          </p>
+        </div>
+
+        <!-- Office 2 -->
+        <div class="text-center p-8 border border-lightgray rounded-2xl hover:shadow-xl transition-shadow">
+          <div class="h-10 mb-6"></div>
+          <img src="./Imagenes/Contact_Us/AUS.png" alt="Australia" class="mx-auto w-24 h-24 mb-4">
+          <h3 class="text-xl md:text-2xl font-bold text-dark mb-3">Australia</h3>
+          <p class="text-base text-gray">
+            55/123 Norman Street, <br>
+            Sydney NSW 20
+          </p>
+        </div>
+
+        <!-- Office 3 -->
+        <div class="text-center p-8 border border-lightgray rounded-2xl hover:shadow-xl transition-shadow">
+          <div class="h-10 mb-6"></div>
+          <img src="./Imagenes/Contact_Us/UK.png" alt="UK" class="mx-auto w-24 h-24 mb-4">
+          <h3 class="text-xl md:text-2xl font-bold text-dark mb-3">United Kingdom</h3>
+          <p class="text-base text-gray">
+            55/123 Norman Street, <br>
+            Sydney NSW 20
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="mt-16 md:mt-24 px-4 md:px-8 lg:px-16 py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-dark mb-12">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-white border border-lightgray rounded-2xl p-6 hover:shadow-lg transition-shadow">
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="text-base md:text-lg font-semibold text-dark">1. Where is my order? Quisque molestie</span>
+            <img src="./Imagenes/Contact_Us/circle gris.png" alt="Expand" class="w-8 h-8">
           </div>
         </div>
-        <div class="Footer_Final">
-          <h4>Copyright © Technologycal | Designed by <span>VictorFlow</span> Templates - Powered by
-            <span>Webflow</span>
-          </h4>
-          <div class="Redes_Footer">
-            <img src="./Imagenes/Fetures_Single/Insta.png" alt="">
-            <img src="./Imagenes/Fetures_Single/facek.png" alt="">
-            <img src="./Imagenes/Fetures_Single/Twiter.png" alt="">
-            <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="">
+
+        <!-- FAQ 2 (Expanded) -->
+        <div class="bg-white border-2 border-primary rounded-2xl p-6 shadow-lg">
+          <div class="flex justify-between items-center cursor-pointer mb-4">
+            <span class="text-base md:text-lg font-semibold text-dark">2. How can I return an item purchased
+              online?</span>
+            <img src="./Imagenes/Contact_Us/circle blue.png" alt="Collapse" class="w-8 h-8">
+          </div>
+
+          <p class="text-base text-gray mb-6">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industry's
+            standard dummy text ever since the
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Contact_Us/Pattern.png" alt="Check" class="w-5 h-5">
+              <span class="text-sm text-dark">Listen to what they say about you</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Contact_Us/Pattern.png" alt="Check" class="w-5 h-5">
+              <span class="text-sm text-dark">Randomised words which.</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Contact_Us/Pattern.png" alt="Check" class="w-5 h-5">
+              <span class="text-sm text-dark">Internet tend to repeat predefined chunks</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./Imagenes/Contact_Us/Pattern.png" alt="Check" class="w-5 h-5">
+              <span class="text-sm text-dark">Automate multiple scenarios</span>
+            </div>
+          </div>
+
+          <div class="border-t border-lightgray pt-6">
+            <h4 class="font-semibold text-dark mb-2">Do you currently have vacancies?</h4>
+            <p class="text-sm text-gray">
+              When an unknown printegalley of type and scrambled it to make a type specimen book. It has survived not
+              only five cedfgfnturies, but alsjkjo the leap into electronic typesetting.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white border border-lightgray rounded-2xl p-6 hover:shadow-lg transition-shadow">
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="text-base md:text-lg font-semibold text-dark">3. Can I cancel or change my order?</span>
+            <img src="./Imagenes/Contact_Us/circle gris.png" alt="Expand" class="w-8 h-8">
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white border border-lightgray rounded-2xl p-6 hover:shadow-lg transition-shadow">
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="text-base md:text-lg font-semibold text-dark">4. I have a promotional or discount code?</span>
+            <img src="./Imagenes/Contact_Us/circle gris.png" alt="Expand" class="w-8 h-8">
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white border border-lightgray rounded-2xl p-6 hover:shadow-lg transition-shadow">
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="text-base md:text-lg font-semibold text-dark">5. Can I integrate my store with Facebook?</span>
+            <img src="./Imagenes/Contact_Us/circle gris.png" alt="Expand" class="w-8 h-8">
           </div>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 md:mt-24 lg:mt-32 px-6 md:px-12 lg:px-16 py-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-8 border-t border-b border-lightgray">
+        <div class="flex items-center gap-3">
+          <img src="./Imagenes/Homepage/logo.png" alt="Logo" class="w-10 md:w-12">
+          <h2 class="font-mulish text-2xl md:text-3xl font-extrabold text-dark">Technologycal</h2>
+        </div>
+        <button
+          class="border border-lightgray px-8 py-3 rounded-full text-base hover:bg-dark hover:text-white transition-all">See
+          our Case Studies</button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Resources</h3>
+            <div class="flex flex-col gap-2">
+              <a href="./index.html" class="text-gray hover:text-primary transition-colors">Home</a>
+              <a href="./About_Us.html" class="text-gray hover:text-primary transition-colors">About</a>
+              <a href="./Contact.html" class="text-gray hover:text-primary transition-colors">Contact</a>
+              <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+              <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+              <a href="./pricing.html" class="text-gray hover:text-primary transition-colors">Pricing</a>
+              <a href="./pricing_single.html" class="text-gray hover:text-primary transition-colors">Pricing Single</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2 sm:pt-12">
+            <a href="./blog.html" class="text-gray hover:text-primary transition-colors">Blog</a>
+            <a href="./Blog_Single.html" class="text-gray hover:text-primary transition-colors">Blog Post</a>
+            <a href="./Career.html" class="text-gray hover:text-primary transition-colors">Careers</a>
+            <a href="#" class="text-gray hover:text-primary transition-colors">Why choose us</a>
+            <a href="./case_Study.html" class="text-gray hover:text-primary transition-colors">Case studies</a>
+          </div>
+
+          <div>
+            <h3 class="font-mulish text-xl font-bold text-dark mb-4">Utility Pages</h3>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-gray hover:text-primary transition-colors">Start here</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Style guide</a>
+              <a href="./Password.html" class="text-gray hover:text-primary transition-colors">Password protected</a>
+              <a href="./Fallido404.html" class="text-gray hover:text-primary transition-colors">404 Not found</a>
+              <a href="./licences.html" class="text-gray hover:text-primary transition-colors">Licenses</a>
+              <a href="#" class="text-gray hover:text-primary transition-colors">Changelog</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-dark rounded-2xl p-6 md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div class="border-b md:border-b-0 md:border-r border-gray-600 pb-6 md:pb-0 md:pr-8">
+              <img src="./Imagenes/Fetures_Single/Popular.png" alt="Popular" class="w-20 mb-4">
+              <h4 class="text-white text-2xl font-bold">Startup $<span class="text-4xl">25</span></h4>
+              <button
+                class="mt-4 bg-gray-700 text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary transition-all">Choose
+                Plan</button>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">3 Social Set</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm"><span class="text-accent">150 post</span> per social</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">5 users</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Phone <span class="text-accent">Support</span></h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Planning & publishing</h4>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./Imagenes/Homepage/vector (2).png" alt="Check" class="w-4 h-4">
+                <h4 class="text-white text-sm">Analytics tools</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-lightgray">
+        <h4 class="text-gray text-sm text-center md:text-left">
+          Copyright Â© Technologycal | Designed by <span class="font-bold text-dark">VictorFlow</span> Templates -
+          Powered by <span class="font-bold text-dark">Webflow</span>
+        </h4>
+        <div class="flex gap-4">
+          <img src="./Imagenes/Fetures_Single/Insta.png" alt="Instagram"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/facek.png" alt="Facebook"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Twiter.png" alt="Twitter"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+          <img src="./Imagenes/Fetures_Single/Pintrest.png" alt="Pinterest"
+            class="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
 </body>
 
 </html>
